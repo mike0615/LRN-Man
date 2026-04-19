@@ -1,0 +1,10 @@
+[AutoRun]
+open=LAUNCH.bat
+icon=art\lrn-man.ico
+label=LRN Man - Defender of the Network
+action=Read LRN Man: Defender of the Network
+
+[Content]
+MusicFiles=false
+PictureFiles=false
+VideoFiles=false
