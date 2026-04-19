@@ -151,6 +151,7 @@
 
         <!-- Curved text paths -->
         <path id="t1-top"    d="M 72,240  A 168,168 0 0,1 408,240"/>
+        <path id="t1-sub"    d="M 90,240  A 150,150 0 0,1 390,240"/>
         <path id="t1-bottom" d="M 68,258  A 172,172 0 0,0 412,258"/>
         <path id="t1-tools"  d="M 105,257 A 135,135 0 0,0 375,257"/>
 
@@ -201,21 +202,10 @@
 
         <!-- ══ LRN MAN CHARACTER — center stage ══ -->
         <image href="../art/LRN Man.png"
-          x="130" y="148" width="220" height="220"
+          x="130" y="120" width="220" height="220"
           clip-path="url(#c1-disc)"
           preserveAspectRatio="xMidYMid meet"
           filter="url(#f1-char)"
-          opacity="1"/>
-
-        <!-- ══ LRN MAN LOGO — top, prominent ══ -->
-        <!-- Dark backing so logo reads on starfield -->
-        <rect x="78" y="34" width="324" height="110" rx="8"
-              fill="url(#g1-logobg)"/>
-        <!-- Logo image — full width, top of disc -->
-        <image href="../art/LRN Man Logo.png"
-          x="78" y="36" width="324" height="108"
-          preserveAspectRatio="xMidYMid meet"
-          filter="url(#f1-logo)"
           opacity="1"/>
 
         <!-- ══ CURVED TOP ARC: MIKE ANDERSON PRESENTS ══ -->
@@ -223,6 +213,14 @@
               fill="#5577aa" letter-spacing="4.5">
           <textPath href="#t1-top" startOffset="50%" text-anchor="middle">
             MIKE ANDERSON PRESENTS
+          </textPath>
+        </text>
+
+        <!-- ══ SUB ARC: 5-ISSUE COMPLETE SERIES ══ -->
+        <text font-family="'Bangers',Impact,fantasy" font-size="12"
+              fill="#ffe84d" letter-spacing="3" opacity="0.9">
+          <textPath href="#t1-sub" startOffset="50%" text-anchor="middle">
+            5-ISSUE COMPLETE SERIES
           </textPath>
         </text>
 
@@ -240,17 +238,6 @@
           <textPath href="#t1-tools" startOffset="50%" text-anchor="middle">
             50+ REAL CYBERSECURITY TOOLS · 5 ISSUES · COMPLETE SERIES
           </textPath>
-        </text>
-
-        <!-- ══ BADGE STRIP ══ -->
-        <rect x="148" y="376" width="184" height="26" rx="4"
-              fill="#1a6aff" opacity="0.9"/>
-        <rect x="149" y="377" width="182" height="24" rx="3"
-              fill="none" stroke="#7aafff" stroke-width="0.8" opacity="0.5"/>
-        <text x="240" y="393" text-anchor="middle"
-              font-family="'Bangers',Impact,fantasy" font-size="13.5"
-              fill="white" letter-spacing="2">
-          5-ISSUE COMPLETE SERIES
         </text>
 
         <!-- ══ OUTER RIM ══ -->
@@ -324,6 +311,7 @@
             fill="none" stroke="#1a3a6a" stroke-width="0.5" opacity="0.28"/>
         </pattern>
         <path id="t2-top"    d="M 72,240  A 168,168 0 0,1 408,240"/>
+        <path id="t2-sub"    d="M 90,240  A 150,150 0 0,1 390,240"/>
         <path id="t2-bottom" d="M 68,258  A 172,172 0 0,0 412,258"/>
         <path id="t2-tools"  d="M 105,257 A 135,135 0 0,0 375,257"/>
       </defs>
@@ -364,25 +352,23 @@
         <circle cx="240" cy="240" r="115" fill="none" stroke="#0840bb" stroke-width="1"   opacity="0.22"/>
 
         <image href="../art/LRN Man.png"
-          x="130" y="148" width="220" height="220"
+          x="130" y="120" width="220" height="220"
           clip-path="url(#c2-disc)"
           preserveAspectRatio="xMidYMid meet"
           filter="url(#f2-char)"
-          opacity="1"/>
-
-        <!-- ══ LRN MAN LOGO — top, prominent ══ -->
-        <rect x="78" y="34" width="324" height="110" rx="8"
-              fill="url(#g2-logobg)"/>
-        <image href="../art/LRN Man Logo.png"
-          x="78" y="36" width="324" height="108"
-          preserveAspectRatio="xMidYMid meet"
-          filter="url(#f2-logo)"
           opacity="1"/>
 
         <text font-family="'Bangers',Impact,fantasy" font-size="14"
               fill="#5577aa" letter-spacing="4.5">
           <textPath href="#t2-top" startOffset="50%" text-anchor="middle">
             MIKE ANDERSON PRESENTS
+          </textPath>
+        </text>
+
+        <text font-family="'Bangers',Impact,fantasy" font-size="12"
+              fill="#ffe84d" letter-spacing="3" opacity="0.9">
+          <textPath href="#t2-sub" startOffset="50%" text-anchor="middle">
+            5-ISSUE COMPLETE SERIES
           </textPath>
         </text>
 
@@ -398,16 +384,6 @@
           <textPath href="#t2-tools" startOffset="50%" text-anchor="middle">
             50+ REAL CYBERSECURITY TOOLS · 5 ISSUES · COMPLETE SERIES
           </textPath>
-        </text>
-
-        <rect x="148" y="376" width="184" height="26" rx="4"
-              fill="#1a6aff" opacity="0.9"/>
-        <rect x="149" y="377" width="182" height="24" rx="3"
-              fill="none" stroke="#7aafff" stroke-width="0.8" opacity="0.5"/>
-        <text x="240" y="393" text-anchor="middle"
-              font-family="'Bangers',Impact,fantasy" font-size="13.5"
-              fill="white" letter-spacing="2">
-          5-ISSUE COMPLETE SERIES
         </text>
 
         <circle cx="240" cy="240" r="231" fill="none" stroke="#1a6aff" stroke-width="3.5" opacity="0.55"/>
