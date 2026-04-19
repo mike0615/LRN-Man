@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LRN Man #1 — The Last Son of Maytag</title>
+<link rel="stylesheet" href="comic.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="issue-nav">
+  <a href="index.html">◀ ALL ISSUES</a>
+  <span class="nav-title">LRN MAN #1 — THE LAST SON OF MAYTAG</span>
+  <a href="issue-02.html">ISSUE #2 ▶</a>
+</nav>
+
+<!-- Cover -->
+<div class="cover-spread">
+  <img src="../art/Copilot_20260328_202719.png" alt="LRN Man #1 — The Last Son of Maytag">
+</div>
+
+<!-- Alternate Cover -->
+<div class="cover-spread" style="margin-top:8px;">
+  <img src="../art/Copilot_20260328_202010.png" alt="LRN Man — Defender of the Network (Alternate Cover)">
+</div>
+
+<!-- Credits -->
+<div class="credits-page">
+  <div class="series-logo">
+    <img src="../art/LRN Man Logo=blk background.png" alt="LRN Man Logo">
+  </div>
+  <div class="issue-number-badge">ISSUE #1</div>
+  <h1>LRN MAN: DEFENDER OF THE NETWORK</h1>
+  <h2>"THE LAST SON OF MAYTAG"</h2>
+  <div class="tagline">"23 Real-World Cybersecurity Tools. One Unstoppable Hero."</div>
+  <div class="credits-grid">
+    <div class="credits-item"><label>Created &amp; Written By</label><span>Mike Anderson</span></div>
+    <div class="credits-item"><label>Published By</label><span>Anderson Computer Consulting</span></div>
+    <div class="credits-item"><label>Universe</label><span>LRN Network Universe</span></div>
+    <div class="credits-item"><label>Issue</label><span>#1 of 5</span></div>
+  </div>
+  <p style="color:#556;font-size:0.8rem;font-style:italic;">
+    © Anderson Computer Consulting. All rights reserved. All cybersecurity tools referenced in this publication are real, publicly available software.
+    Tool names are trademarks of their respective owners. This is an independent educational publication.
+  </p>
+</div>
+
+<!-- ══ PROLOGUE ══════════════════════════════════════════════ -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-number">PROLOGUE</div>
+    <h2>"A SIGNAL FROM THE STARS"</h2>
+    <div class="chapter-subtitle">Deep in the cosmos, beyond the reach of Earth's most powerful telescopes…</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Deep in the cosmos, beyond the reach of Earth's most powerful telescopes, there exists a world where technology
+      is not just a tool — it is life itself.
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202415.png" alt="Planet Maytag — The Council of Root Admins — LRN Man departing">
+        <div class="caption">PLANET MAYTAG — THE COUNCIL OF ROOT ADMINS — THE LAST DEPARTURE</div>
+      </div>
+    </div>
+
+    <div class="dialogue-section">
+      <span class="bubble narration">Planet Maytag. A civilization built on perfect architecture, unbreakable encryption,
+      and absolute network sovereignty. For ten thousand cycles, the Maytag people thrived — their networks impenetrable,
+      their data sacred, their protocols flawless.</span>
+
+      <br><br>
+      <span class="speaker">ELDER SUDO:</span>
+      <span class="bubble villain">"The readings are catastrophic. Planet Earth — their networks are completely exposed.
+      No identity management. No centralized authentication. Their firewalls are… decorative."</span>
+
+      <br>
+      <span class="speaker">ELDER CHMOD:</span>
+      <span class="bubble villain">"It is worse than we feared. The Shadow Syndicate has already detected them. Earth will fall within one solar rotation."</span>
+    </div>
+
+    <div class="panel-grid grid-1" style="margin-top:16px;">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202411.png" alt="LRN on Planet Maytag — Zero-Day King — LRN Man in space">
+        <div class="caption">LRN STEPS FORWARD — THE ZERO-DAY KING STIRS — THE JOURNEY BEGINS</div>
+      </div>
+    </div>
+
+    <div class="dialogue-section">
+      <span class="speaker">LRN:</span>
+      <span class="bubble lrn">"Then I will go. Give me the Utility Belt of Protocols and access to the Full Stack Arsenal.
+      I will build them a network so secure that even the Shadow Syndicate will break against it like packets against a firewall."</span>
+
+      <br>
+      <span class="speaker">ELDER SUDO:</span>
+      <span class="bubble villain">"You understand the risk? Earth's technology is… primitive. You will be working with legacy systems,
+      outdated kernels, and humans who store passwords in plain text."</span>
+
+      <br>
+      <span class="speaker">LRN:</span>
+      <span class="bubble lrn">"Every network starts with a single packet. I will teach them."</span>
+
+      <br><br>
+      <span class="bubble narration">And so, the last great defender of Maytag loaded the tools of his civilization into a capsule
+      of compressed data, aimed for the blue planet, and launched into the void between stars.</span>
+
+      <br>
+      <span class="bubble sfx">WHOOOOOOSH!</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-break-bar">— CHAPTER 1 —</div>
+
+<!-- ══ CHAPTER 1 ══════════════════════════════════════════════ -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-number">CHAPTER 1</div>
+    <h2>"ARRIVAL: FIRST BOOT"</h2>
+    <div class="chapter-subtitle">Earth. A world of seven billion souls connected by networks they barely understand.</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Earth. A world of seven billion souls connected by networks they barely understand — and cannot protect.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202146.png" alt="LRN Man arrives — blue armor, utility belt, city backdrop">
+        <div class="caption">LRN MAN EMERGES — FIRST BOOT COMPLETE</div>
+      </div>
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202348.png" alt="LRN Man with hacker silhouette in background">
+        <div class="caption">SCANNING LOCAL NETWORK TOPOLOGY — THREATS DETECTED</div>
+      </div>
+    </div>
+
+    <div class="dialogue-section">
+      <span class="speaker">LRN MAN:</span>
+      <span class="bubble lrn">"First boot complete. Scanning local network topology…"</span>
+
+      <br><br>
+      <span class="bubble narration">His glasses lit up with data — and what he saw horrified him.</span>
+
+      <br><br>
+      <span class="speaker">LRN MAN (HUD VIEW):</span>
+      <span class="bubble lrn">"By the Root Admins of Maytag… it's worse than the Council feared. These networks are completely naked.
+      No identity governance. No certificate authority. DNS is… unsecured. CRITICAL VULNERABILITIES DETECTED: 4,271,553,902."</span>
+    </div>
+
+    <div class="panel-grid grid-1" style="margin-top:16px;">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202656.png" alt="LRN Man overview — Planet Maytag, Arrival, Secure Network">
+        <div class="caption">FROM PLANET MAYTAG · ARRIVAL ON EARTH · A SUPER SECURE NETWORK — THE MISSION BEGINS</div>
+      </div>
+    </div>
+
+    <div class="dialogue-section">
+      <span class="bubble narration">And so began the greatest infrastructure project in Earth's history.
+      What took the people of Maytag a thousand cycles, LRN Man would accomplish in days.
+      Because the enemy was already here.</span>
+
+      <br><br>
+      <span class="speaker">ZERO-DAY KING (CUTAWAY):</span>
+      <span class="bubble villain">"Something just landed. Something… powerful. I felt the network shift.
+      Find it. Kill it. Before it secures even a single subnet."</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-break-bar">— CHAPTER 2 —</div>
+
+<!-- ══ CHAPTER 2 ══════════════════════════════════════════════ -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-number">CHAPTER 2</div>
+    <h2>"THE FOUNDATION: IDENTITY AND TRUST"</h2>
+    <div class="chapter-subtitle">Every great fortress begins with a foundation — and in the digital world, that foundation is identity.</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Day One. Every great fortress begins with a foundation — and in the digital world, that foundation is identity.
+      Who are you? Can you prove it? LRN Man would accept nothing less than absolute certainty.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202352.png" alt="LRN Man — 4 panels: tablet, command center, confronting villain, fighting">
+        <div class="caption">DEPLOYING THE IDENTITY STACK — FREEIPA · KERBEROS · LDAP · SSSD</div>
+      </div>
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202356.png" alt="LRN Man — 4 panels: shield, monitors, fighting skull villain, global defense">
+        <div class="caption">ENCRYPTION LAYERS ACTIVE — DOGTAG CA · TLS/SSL · AIDE TRIPWIRES</div>
+      </div>
+    </div>
+
+    <div class="tech-box">
+      <div class="tech-header">
+        <span class="tech-icon">⚙ TOOL</span>
+        <span class="tech-name">FreeIPA</span>
+      </div>
+      <p>Centralized identity management, policy enforcement, and authentication. Every user, every machine,
+      every service — all verified through a single source of truth. The cornerstone of the network fortress.</p>
+    </div>
+
+    <div class="tech-box">
+      <div class="tech-header">
+        <span class="tech-icon">⚙ TOOL</span>
+        <span class="tech-name">Kerberos</span>
+      </div>
+      <p>The three-headed guardian of authentication. Ticket-granting tickets, session keys, mutual verification.
+      No one accesses this network without proving exactly who they are.</p>
+    </div>
+
+    <div class="tech-box">
+      <div class="tech-header">
+        <span class="tech-icon">⚙ TOOL</span>
+        <span class="tech-name">DogTag Certificate System</span>
+      </div>
+      <p>LRN Man's own Certificate Authority. X.509 certificates for every server, every service, every user.
+      No unsigned connections. No untrusted handshakes. Every bit of data wrapped in cryptographic proof.</p>
+    </div>
+
+    <div class="dialogue-section">
+      <span class="speaker">LRN MAN:</span>
+      <span class="bubble lrn">"First rule of network defense: if you don't control identity, you control nothing."</span>
+
+      <br>
+      <span class="speaker">LRN MAN:</span>
+      <span class="bubble lrn">"AIDE — my tripwire. Every file checksummed, every directory baselined.
+      If even a single byte changes without authorization, I'll know instantly."</span>
+
+      <br><br>
+      <span class="bubble narration">In twelve hours, LRN Man had built an identity infrastructure that would take Earth's best engineers
+      years to design. But identity was only the foundation. The walls and weapons were next.</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-break-bar">— CHAPTERS 3–4 —</div>
+
+<!-- ══ CHAPTERS 3-4 ══════════════════════════════════════════ -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-number">CHAPTERS 3 &amp; 4</div>
+    <h2>"THE WALLS AND THE WATCHTOWERS"</h2>
+    <div class="chapter-subtitle">Every fortress needs walls. His would be impenetrable. A fortress without sentries is just a tomb.</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="panel-grid grid-1">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202401.png" alt="LRN Man — shield, ACCESS DENIED hackers, workstation, stopping credential theft">
+        <div class="caption">SELINUX ENFORCING · ACCESS DENIED · COMMAND CENTER ACTIVE · CREDENTIALS PROTECTED</div>
+      </div>
+    </div>
+
+    <div class="tech-box">
+      <div class="tech-header">
+        <span class="tech-icon">⚙ TOOL</span>
+        <span class="tech-name">SELinux — Mandatory Access Control</span>
+      </div>
+      <p>Every process confined. Every file labeled. Every action checked against policy. Even if an attacker gets in,
+      they can't move. They can't escalate. They can't breathe. SET TO ENFORCING. No exceptions. No compromises.</p>
+    </div>
+
+    <div class="tech-box">
+      <div class="tech-header">
+        <span class="tech-icon">⚙ TOOL</span>
+        <span class="tech-name">Splunk — The Eye of the Network</span>
+      </div>
+      <p>Every log, every event, every anomaly from every system aggregated, correlated, and analyzed in real time.
+      Custom dashboards, alerting rules, and machine learning models that spot threats humans would miss.</p>
+    </div>
+
+    <div class="tech-box">
+      <div class="tech-header">
+        <span class="tech-icon">⚙ TOOL</span>
+        <span class="tech-name">Wazuh — Host-Based Intrusion Detection</span>
+      </div>
+      <p>File integrity monitoring, rootkit detection, compliance checking, and active response on every endpoint.
+      Every server has a guardian standing watch.</p>
+    </div>
+
+    <div class="tech-box">
+      <div class="tech-header">
+        <span class="tech-icon">⚙ TOOL</span>
+        <span class="tech-name">CyberArk — Privileged Access Management</span>
+      </div>
+      <p>Every admin credential, every service account, every root password — rotated, vaulted, audited,
+      and session-recorded. No one touches a privileged account without going through the vault.</p>
+    </div>
+
+    <div class="dialogue-section">
+      <span class="speaker">LRN MAN:</span>
+      <span class="bubble lrn">"Four watchtowers. Four perspectives. Overlapping fields of vision. Nothing enters this network,
+      nothing moves within it, nothing leaves it — without me knowing."</span>
+
+      <br><br>
+      <span class="bubble narration">The network now had eyes — thousands of them, watching every packet, every process, every login,
+      every file change. The fortress was complete. And just in time.</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-break-bar">— CHAPTER 5 —</div>
+
+<!-- ══ CHAPTER 5 ══════════════════════════════════════════════ -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-number">CHAPTER 5</div>
+    <h2>"THE ARSENAL: AUTOMATION AND DEPLOYMENT"</h2>
+    <div class="chapter-subtitle">The difference between victory and catastrophe is measured in milliseconds.</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202422.png" alt="Council scene — Zero-Day King — LRN Man with Firewall/TLS/CyberArk tools">
+        <div class="caption">THE ARSENAL COMPLETE — AUTOMATION ONLINE — SBAI ACTIVATED</div>
+      </div>
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202425.png" alt="Planet Maytag — Zero-Day King with staff — LRN Man in space">
+        <div class="caption">THE THREAT GATHERS — THE SHADOW SYNDICATE MOBILIZES</div>
+      </div>
+    </div>
+
+    <div class="tech-box">
+      <div class="tech-header">
+        <span class="tech-icon">⚙ TOOL</span>
+        <span class="tech-name">GitLab — Infrastructure as Code</span>
+      </div>
+      <p>Every configuration file, every automation playbook, every security policy version-controlled.
+      Peer-reviewed. CI/CD pipelines that deploy hardened configurations across the entire network in seconds.</p>
+    </div>
+
+    <div class="tech-box">
+      <div class="tech-header">
+        <span class="tech-icon">⚙ TOOL</span>
+        <span class="tech-name">SBAI — Security Baseline Automation Intelligence</span>
+      </div>
+      <p>LRN Man's AI co-processor. Threat intelligence feeds, automated baseline enforcement, and predictive analytics.
+      It learns. It adapts. It never sleeps.</p>
+    </div>
+
+    <div class="dialogue-section">
+      <span class="speaker">LRN MAN:</span>
+      <span class="bubble lrn">"CMMD — mass deployment and configuration management at scale. One command to patch a thousand servers.
+      One push to enforce a new security baseline across the entire fleet. Consistency is security."</span>
+
+      <br><br>
+      <span class="bubble narration">With automation in place, the network became a living organism — self-healing, self-monitoring, self-defending.
+      What would take an army of engineers to manage, LRN Man controlled with a thought. The fortress was complete. And just in time.</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-break-bar">— CHAPTER 6 — THE SIEGE —</div>
+
+<!-- ══ CHAPTER 6 ══════════════════════════════════════════════ -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-number">CHAPTER 6</div>
+    <h2>"THE SIEGE: SHADOW SYNDICATE ATTACKS"</h2>
+    <div class="chapter-subtitle">They came in the dark hours — a coordinated assault from every direction.</div>
+  </div>
+
+  <!-- Shadow Syndicate Villain Reveals -->
+  <div class="comic-page">
+    <div class="page-narration">
+      They came in the dark hours — a coordinated assault from every direction, every vector, every layer of the stack.
+      The Shadow Syndicate had found Earth's new defender, and they brought everything they had.
+    </div>
+
+    <div class="villain-reveal">
+      <div class="villain-header"><span class="skull-icon">☠</span><span class="villain-name">THE ZERO-DAY KING</span></div>
+      <dl class="villain-stats">
+        <dt>Role</dt><dd>Leader of the Shadow Syndicate</dd>
+        <dt>Threat</dt><dd class="threat-omega">OMEGA</dd>
+        <dt>Power</dt><dd>Discovers and weaponizes software vulnerabilities before anyone knows they exist. His attacks are invisible until they strike.</dd>
+      </dl>
+    </div>
+
+    <div class="villain-reveal">
+      <div class="villain-header"><span class="skull-icon">☠</span><span class="villain-name">SHADOW BROKER</span></div>
+      <dl class="villain-stats">
+        <dt>Role</dt><dd>Intelligence Dealer</dd>
+        <dt>Threat</dt><dd class="threat-alpha">ALPHA</dd>
+        <dt>Power</dt><dd>Deals in stolen information. Credentials, personal data, state secrets. He can access, exfiltrate, and sell anything digital.</dd>
+      </dl>
+    </div>
+
+    <div class="villain-reveal">
+      <div class="villain-header"><span class="skull-icon">☠</span><span class="villain-name">PHANTOM PACKET</span></div>
+      <dl class="villain-stats">
+        <dt>Role</dt><dd>Network Infiltrator</dd>
+        <dt>Threat</dt><dd class="threat-beta">BETA</dd>
+        <dt>Power</dt><dd>Phases through firewalls, IDS/IPS systems, and network segmentation. Invisible to most security tools.</dd>
+      </dl>
+    </div>
+
+    <div class="villain-reveal">
+      <div class="villain-header"><span class="skull-icon">☠</span><span class="villain-name">ROOTKIT WRAITH</span></div>
+      <dl class="villain-stats">
+        <dt>Role</dt><dd>Deep System Infiltrator</dd>
+        <dt>Threat</dt><dd class="threat-alpha">ALPHA</dd>
+        <dt>Power</dt><dd>Burrows deep into systems at the kernel level, hiding from antivirus, EDR, and surface-level scans. Patient. Invisible. Inside.</dd>
+      </dl>
+    </div>
+
+    <div class="villain-reveal">
+      <div class="villain-header"><span class="skull-icon">☠</span><span class="villain-name">DNS POISONER</span></div>
+      <dl class="villain-stats">
+        <dt>Role</dt><dd>Traffic Redirector</dd>
+        <dt>Threat</dt><dd class="threat-beta">BETA</dd>
+        <dt>Power</dt><dd>Corrupts the internet's address book. Redirects legitimate traffic to malicious destinations.</dd>
+      </dl>
+    </div>
+
+    <div class="villain-reveal">
+      <div class="villain-header"><span class="skull-icon">☠</span><span class="villain-name">THE SNIFFER</span></div>
+      <dl class="villain-stats">
+        <dt>Role</dt><dd>Traffic Interceptor</dd>
+        <dt>Threat</dt><dd class="threat-gamma">GAMMA</dd>
+        <dt>Power</dt><dd>Intercepts and reads unencrypted communications. Email, voice, data transfers — if it's plain text, he hears it.</dd>
+      </dl>
+    </div>
+
+    <div class="dialogue-section" style="margin-top:16px;">
+      <span class="speaker">ZERO-DAY KING:</span>
+      <span class="bubble villain">"BRING DOWN HIS PRECIOUS NETWORK! OVERWHELM HIS FIREWALLS! EXPLOIT EVERY VULNERABILITY!
+      TONIGHT, EARTH'S NETWORKS FALL — AND THIS 'LRN MAN' FALLS WITH THEM!"</span>
+      <br>
+      <span class="bubble sfx">DOOM DOOM DOOM</span>
+    </div>
+  </div>
+</div>
+
+<div class="page-break-bar">— CHAPTER 7 — COUNTERATTACK —</div>
+
+<!-- ══ CHAPTERS 7–8 ════════════════════════════════════════════ -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-number">CHAPTERS 7 &amp; 8</div>
+    <h2>"THE COUNTERATTACK &amp; THE NETWORK STANDS"</h2>
+    <div class="chapter-subtitle">Defense wins battles. But offense wins wars. THIS IS MY NETWORK. AND I DEFEND IT.</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Defense wins battles. But offense wins wars. LRN Man was done absorbing hits. It was time to strike back.
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202418.png" alt="LRN Man in space — Zero-Day King with exploit — LRN Man counterattack">
+        <div class="caption">ZERO-DAY EXPLOIT LAUNCHED — SELINUX CONTAINS IT — COUNTERATTACK BEGINS</div>
+      </div>
+    </div>
+
+    <div class="dialogue-section">
+      <span class="speaker">LRN MAN:</span>
+      <span class="bubble lrn">"DDoS attack — 4.7 terabits per second across 200,000 bot-net nodes. Impressive.
+      Deploying rate limiting, geo-blocking, and traffic scrubbing. Firewalls — adaptive mode."</span>
+
+      <br>
+      <span class="speaker">ZERO-DAY KING:</span>
+      <span class="bubble villain">"Let's see your precious tools stop THIS, LRN Man! A custom zero-day — crafted specifically for your infrastructure.
+      No signature. No patch. No defense."</span>
+
+      <br>
+      <span class="speaker">LRN MAN:</span>
+      <span class="bubble lrn">"SELinux — enforcing mode. Your exploit made it past the wall — but it's in a cage now.
+      Confined. Contained. Powerless."</span>
+
+      <br><br>
+      <span class="speaker">LRN MAN:</span>
+      <span class="bubble lrn">"CyberArk — emergency credential rotation! Kerberos — ticket invalidation!
+      DogTag — certificate revocation and reissuance! Even if they captured credentials, they're worthless now.
+      Every key just changed."</span>
+      <br>
+      <span class="bubble sfx">KLIK-KLIK-KLIK-KLIK!</span>
+    </div>
+
+    <div class="panel-grid grid-1" style="margin-top:16px;">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202352.png" alt="LRN Man action sequence — 4 panels">
+        <div class="caption">BIND 9 DNS SINKHOLE · HONEYPOTS DEPLOY · SYNDICATE C2 COLLAPSES · NETWORK STANDS</div>
+      </div>
+    </div>
+
+    <div class="dialogue-section">
+      <span class="speaker">RANSOMWARE QUEEN:</span>
+      <span class="bubble villain">"NO! My beautiful ransomware! It's being… overwritten?!"</span>
+
+      <br>
+      <span class="speaker">LRN MAN:</span>
+      <span class="bubble lrn">"CMMD restored from GitLab within 0.3 seconds. Your ransomware never had a chance.
+      Every system baselined. Every configuration version-controlled. You can't corrupt what I can rebuild in milliseconds."</span>
+
+      <br><br>
+      <span class="speaker">ZERO-DAY KING:</span>
+      <span class="bubble villain">"You may have stopped my army. But I am the Zero-Day King. I find the vulnerabilities no one else can see.
+      Every system has a flaw. Even yours."</span>
+
+      <br>
+      <span class="speaker">LRN MAN:</span>
+      <span class="bubble lrn">"Every system has potential flaws. The difference is — I hunt them before you do. Rapid7 scans continuously.
+      Nipper audits every device. SBAI models threats predictively. You're not fighting a man, Zero-Day King.
+      You're fighting a SYSTEM."</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SPLASH PAGE ════════════════════════════════════════════ -->
+<div class="splash-panel">
+  <img src="../art/Copilot_20260328_202356.png" alt="LRN Man — THIS IS MY NETWORK AND I DEFEND IT">
+  <div class="splash-text">
+    <div class="splash-quote">"THIS IS MY NETWORK. AND I DEFEND IT."</div>
+  </div>
+</div>
+
+<div class="page-break-bar">— EPILOGUE —</div>
+
+<!-- ══ EPILOGUE ══════════════════════════════════════════════ -->
+<div class="epilogue-box">
+  <div class="panel-grid grid-1" style="max-width:440px;margin:0 auto 24px;">
+    <div class="panel">
+      <img src="../art/LRN Man.png" alt="LRN Man — Defender of the Network">
+    </div>
+  </div>
+
+  <p class="final-narration">
+    In the days that followed, the world began to notice. Networks that once bled data now stood firm.
+    Systems that once fell to script kiddies now repelled nation-state attacks.
+    And somewhere beneath the city, a defender from another world watched over it all.
+  </p>
+
+  <p class="final-narration" style="margin-top:16px;">
+    He is the last son of Maytag. The architect of the unbreakable network.
+    The guardian who never sleeps, never rests, and never lets a single malicious packet pass unchallenged.
+  </p>
+
+  <div class="series-tagline">HE IS LRN MAN — DEFENDER OF THE NETWORK.</div>
+  <div style="margin-top:12px;font-style:italic;color:#556;">THE NETWORK STANDS. BUT THE THREATS NEVER STOP.</div>
+</div>
+
+<!-- ══ BACK MATTER ════════════════════════════════════════════ -->
+<div class="back-matter">
+
+  <h2>⚙ UTILITY BELT — ISSUE #1 FIELD GUIDE</h2>
+  <p style="color:#778;font-size:0.82rem;margin-bottom:16px;">CLEARANCE LEVEL: ROOT · CLASSIFICATION: MAYTAG COUNCIL EYES ONLY · 23 TOOLS</p>
+
+  <table class="tools-table">
+    <thead><tr><th>#</th><th>Tool</th><th>Category</th><th>Function</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Wireshark</td><td>Network Analysis</td><td>Packet capture and protocol inspection in real-time</td></tr>
+      <tr><td>2</td><td>Splunk</td><td>SIEM</td><td>Log aggregation, correlation, and real-time threat analytics</td></tr>
+      <tr><td>3</td><td>Nmap</td><td>Network Scanning</td><td>Network discovery, host identification, and port scanning</td></tr>
+      <tr><td>4</td><td>pfSense</td><td>Firewall</td><td>Open-source enterprise firewall and router platform</td></tr>
+      <tr><td>5</td><td>Snort</td><td>IDS/IPS</td><td>Real-time intrusion detection and prevention system</td></tr>
+      <tr><td>6</td><td>Suricata</td><td>Network Security</td><td>High-performance multi-threaded network IDS/IPS</td></tr>
+      <tr><td>7</td><td>Zeek (Bro)</td><td>Network Analysis</td><td>Behavioral network analysis beyond signature detection</td></tr>
+      <tr><td>8</td><td>CrowdStrike Falcon</td><td>EDR</td><td>AI-driven endpoint detection and response</td></tr>
+      <tr><td>9</td><td>SELinux</td><td>Access Control</td><td>Mandatory access control enforcement at kernel level</td></tr>
+      <tr><td>10</td><td>DNSSEC</td><td>DNS Security</td><td>Cryptographic DNS authentication to prevent spoofing</td></tr>
+      <tr><td>11</td><td>Let's Encrypt / TLS</td><td>Encryption</td><td>Free certificate authority and encrypted data in transit</td></tr>
+      <tr><td>12</td><td>OSSEC</td><td>HIDS</td><td>Host-based intrusion detection, log analysis, file integrity</td></tr>
+      <tr><td>13</td><td>YARA</td><td>Malware Analysis</td><td>Pattern matching for malware identification and classification</td></tr>
+      <tr><td>14</td><td>NetFlow / sFlow</td><td>Traffic Monitoring</td><td>Network traffic flow monitoring — reveals covert exfiltration</td></tr>
+      <tr><td>15</td><td>OpenVPN</td><td>VPN</td><td>Open-source VPN creating encrypted tunnels</td></tr>
+      <tr><td>16</td><td>Metasploit</td><td>Penetration Testing</td><td>World's most-used penetration testing framework</td></tr>
+      <tr><td>17</td><td>Burp Suite</td><td>Web App Security</td><td>Web application security testing and HTTP analysis</td></tr>
+      <tr><td>18</td><td>Kali Linux</td><td>Pentesting OS</td><td>Penetration tester's OS with hundreds of pre-loaded tools</td></tr>
+      <tr><td>19</td><td>Hashcat</td><td>Password Recovery</td><td>GPU-accelerated password recovery — billions of hashes/second</td></tr>
+      <tr><td>20</td><td>OpenVAS</td><td>Vulnerability Scanning</td><td>Full-featured vulnerability assessment and scanning</td></tr>
+      <tr><td>21</td><td>Fail2Ban</td><td>Intrusion Prevention</td><td>Automated IP banning based on failed authentication attempts</td></tr>
+      <tr><td>22</td><td>ClamAV</td><td>Antivirus</td><td>Open-source antivirus detecting trojans, viruses, and malware</td></tr>
+      <tr><td>23</td><td>ELK Stack</td><td>Log Management</td><td>Elasticsearch, Logstash, Kibana — unified battlefield display</td></tr>
+    </tbody>
+  </table>
+
+  <h2>☠ VILLAINS DOSSIER — ISSUE #1</h2>
+  <table class="villains-table">
+    <thead><tr><th>Villain</th><th>Status</th><th>Threat</th><th>Specialty</th></tr></thead>
+    <tbody>
+      <tr><td>Zero-Day King</td><td class="status-imprisoned">IMPRISONED</td><td class="threat-omega">OMEGA</td><td>Zero-day exploit discovery and weaponization</td></tr>
+      <tr><td>Shadow Broker</td><td class="status-imprisoned">IMPRISONED</td><td class="threat-alpha">ALPHA</td><td>Data theft, exfiltration, and black market sales</td></tr>
+      <tr><td>Phantom Packet</td><td class="status-neutralized">DECOMMISSIONED</td><td class="threat-beta">BETA</td><td>Network invisibility and firewall evasion</td></tr>
+      <tr><td>Rootkit Wraith</td><td class="status-contained">CONTAINED</td><td class="threat-alpha">ALPHA</td><td>Deep system infiltration, kernel-level persistence</td></tr>
+      <tr><td>DNS Poisoner</td><td class="status-neutralized">NEUTRALIZED</td><td class="threat-beta">BETA</td><td>DNS cache poisoning and traffic redirection</td></tr>
+      <tr><td>The Sniffer</td><td class="status-imprisoned">IMPRISONED</td><td class="threat-gamma">GAMMA</td><td>Traffic interception and unencrypted eavesdropping</td></tr>
+    </tbody>
+  </table>
+
+  <div class="next-issue-teaser">
+    <div class="coming-in">LRN MAN WILL RETURN IN</div>
+    <h3>ISSUE #2: THE RANSOMWARE WARS</h3>
+    <p>When the Ransomware Queen launches DARKLOCK — a ransomware campaign that encrypts 47% of the nation's
+    critical infrastructure — LRN Man faces his greatest challenge yet. Hospitals locked out of patient records.
+    Power grids held for ransom. Emergency services paralyzed. Can immutable backups and the 3-2-1-1-0 rule
+    save a world held hostage?</p>
+    <div class="tagline-red">"Locked. Encrypted. Under Siege. No Ransom Will Be Paid."</div>
+  </div>
+
+</div>
+
+<div class="issue-footer">
+  <strong>LRN MAN: DEFENDER OF THE NETWORK — Issue #1 "The Last Son of Maytag"</strong><br>
+  Created by Mike Anderson · Published by Anderson Computer Consulting<br>
+  © Anderson Computer Consulting. All rights reserved.<br>
+  All cybersecurity tools referenced in this publication are real, publicly available software.<br>
+  <em>"Security Is Not a Product — It Is an Architecture."</em><br><br>
+  <a href="index.html">◀ ALL ISSUES</a> &nbsp;|&nbsp; <a href="issue-02.html">NEXT: ISSUE #2 ▶</a>
+</div>
+
+</body>
+</html>

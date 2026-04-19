@@ -1,0 +1,692 @@
+/* LRN Man Comic Book Stylesheet */
+/* Mike Anderson — LRN Network Universe */
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --blue-primary: #1a6aff;
+  --blue-dark: #0d3a8a;
+  --blue-glow: #4dc3ff;
+  --dark-bg: #080810;
+  --panel-bg: #111120;
+  --panel-border: #2a2a5a;
+  --caption-yellow: #ffe84d;
+  --caption-dark: #1a0a00;
+  --bubble-bg: #ffffff;
+  --bubble-border: #111;
+  --tech-green: #00dd77;
+  --tech-bg: #001a0d;
+  --tech-border: #00aa55;
+  --villain-red: #cc1122;
+  --villain-bg: #1a0005;
+  --narration-bg: #1a1040;
+  --narration-border: #4422cc;
+  --gold: #ffcc00;
+  --shadow-syndicate: #330011;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--dark-bg);
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(26,106,255,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 100%, rgba(0,221,119,0.05) 0%, transparent 60%);
+  font-family: 'Comic Neue', 'Comic Sans MS', cursive;
+  color: #dde;
+  min-height: 100vh;
+}
+
+/* ── Navigation ──────────────────────────────────────────── */
+.issue-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8,8,16,0.95);
+  border-bottom: 2px solid var(--blue-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  backdrop-filter: blur(8px);
+}
+
+.issue-nav a {
+  color: var(--blue-glow);
+  text-decoration: none;
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border: 1px solid var(--blue-dark);
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.issue-nav a:hover {
+  background: var(--blue-dark);
+  border-color: var(--blue-glow);
+  color: #fff;
+}
+.issue-nav .nav-title {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.2rem;
+  color: var(--caption-yellow);
+  letter-spacing: 2px;
+}
+
+/* ── Cover ───────────────────────────────────────────────── */
+.cover-spread {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 0;
+  display: block;
+}
+
+.cover-spread img {
+  width: 100%;
+  display: block;
+  border: 4px solid var(--blue-primary);
+  box-shadow: 0 0 60px rgba(26,106,255,0.5), 0 0 120px rgba(26,106,255,0.2);
+}
+
+/* ── Credits Page ────────────────────────────────────────── */
+.credits-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  background: var(--panel-bg);
+  border: 2px solid var(--panel-border);
+  text-align: center;
+}
+
+.credits-page .series-logo img {
+  max-width: 360px;
+  margin: 0 auto 24px;
+  display: block;
+  filter: drop-shadow(0 0 20px rgba(26,106,255,0.7));
+}
+
+.credits-page h1 {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  color: var(--caption-yellow);
+  text-shadow: 2px 2px 0 #000, 4px 4px 0 var(--blue-dark);
+  margin-bottom: 8px;
+}
+
+.credits-page h2 {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  color: var(--blue-glow);
+  margin-bottom: 24px;
+}
+
+.credits-page .tagline {
+  font-style: italic;
+  color: #aab;
+  font-size: 1.05rem;
+  margin-bottom: 32px;
+  border-top: 1px solid var(--panel-border);
+  border-bottom: 1px solid var(--panel-border);
+  padding: 12px 0;
+}
+
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.credits-item label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #778;
+  display: block;
+}
+.credits-item span {
+  color: var(--caption-yellow);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.credits-page .issue-number-badge {
+  display: inline-block;
+  background: var(--villain-red);
+  color: #fff;
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  padding: 4px 16px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* ── Chapter header ──────────────────────────────────────── */
+.chapter {
+  max-width: 900px;
+  margin: 0 auto;
+  border-left: 4px solid var(--blue-primary);
+  border-right: 4px solid var(--blue-primary);
+}
+
+.chapter-header {
+  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--blue-dark) 100%);
+  padding: 20px 32px;
+  border-top: 2px solid var(--blue-primary);
+  border-bottom: 2px solid var(--blue-primary);
+}
+
+.chapter-header .chapter-number {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  color: var(--blue-glow);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.chapter-header h2 {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: 2px 2px 0 var(--blue-dark);
+}
+
+.chapter-header .chapter-subtitle {
+  font-style: italic;
+  color: var(--caption-yellow);
+  margin-top: 4px;
+  font-size: 0.95rem;
+}
+
+/* ── Comic Page ──────────────────────────────────────────── */
+.comic-page {
+  background: var(--panel-bg);
+  padding: 24px;
+  border-bottom: 2px solid var(--panel-border);
+}
+
+.page-narration {
+  background: var(--narration-bg);
+  border: 2px solid var(--narration-border);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #ccd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ── Panel Grids ─────────────────────────────────────────── */
+.panel-grid {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.grid-1  { grid-template-columns: 1fr; }
+.grid-2  { grid-template-columns: 1fr 1fr; }
+.grid-3  { grid-template-columns: 1fr 1fr 1fr; }
+.grid-2x2 { grid-template-columns: 1fr 1fr; }
+.grid-1-2 { grid-template-columns: 1fr 2fr; }
+.grid-2-1 { grid-template-columns: 2fr 1fr; }
+.grid-wide-narrow { grid-template-columns: 3fr 2fr; }
+
+.panel-full { grid-column: 1 / -1; }
+
+/* ── Individual Panel ────────────────────────────────────── */
+.panel {
+  background: #000;
+  border: 3px solid var(--panel-border);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.5);
+}
+
+.panel img {
+  width: 100%;
+  display: block;
+}
+
+.panel .caption {
+  background: var(--caption-yellow);
+  color: var(--caption-dark);
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 5px 10px;
+  line-height: 1.4;
+}
+
+.panel .caption-top {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+}
+
+.panel .narration-box {
+  background: var(--narration-bg);
+  border: 2px solid var(--narration-border);
+  color: #ccd;
+  font-style: italic;
+  font-size: 0.82rem;
+  padding: 6px 10px;
+  line-height: 1.4;
+}
+
+/* ── Speech Bubbles ──────────────────────────────────────── */
+.dialogue-section {
+  padding: 12px 16px;
+  background: var(--panel-bg);
+  border-left: 3px solid var(--panel-border);
+}
+
+.bubble {
+  display: inline-block;
+  background: var(--bubble-bg);
+  border: 2.5px solid #111;
+  border-radius: 18px;
+  padding: 8px 14px;
+  margin: 6px 4px;
+  font-size: 0.88rem;
+  color: #111;
+  font-weight: 700;
+  max-width: 90%;
+  line-height: 1.4;
+  position: relative;
+}
+
+.bubble.villain {
+  background: #1a0005;
+  color: var(--villain-red);
+  border-color: var(--villain-red);
+}
+
+.bubble.lrn {
+  background: #001530;
+  color: var(--blue-glow);
+  border-color: var(--blue-primary);
+}
+
+.bubble.narration {
+  background: var(--narration-bg);
+  color: #bbc;
+  border-color: var(--narration-border);
+  border-radius: 4px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.bubble.sfx {
+  background: transparent;
+  color: var(--caption-yellow);
+  border: none;
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 0 var(--villain-red), 4px 4px 0 #000;
+}
+
+.speaker {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #778;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* ── Tech Box ────────────────────────────────────────────── */
+.tech-box {
+  background: var(--tech-bg);
+  border: 2px solid var(--tech-border);
+  border-radius: 4px;
+  padding: 14px 16px;
+  margin: 16px 0;
+}
+
+.tech-box .tech-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.tech-box .tech-icon {
+  background: var(--tech-green);
+  color: #000;
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+
+.tech-box .tech-name {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: var(--tech-green);
+}
+
+.tech-box p {
+  font-size: 0.85rem;
+  color: #aac;
+  line-height: 1.6;
+}
+
+/* ── Villain Reveal ──────────────────────────────────────── */
+.villain-reveal {
+  background: var(--villain-bg);
+  border: 2px solid var(--villain-red);
+  border-radius: 4px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.villain-reveal .villain-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.villain-reveal .skull-icon {
+  font-size: 1.2rem;
+}
+
+.villain-reveal .villain-name {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: var(--villain-red);
+}
+
+.villain-reveal .villain-stats {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  font-size: 0.82rem;
+}
+.villain-reveal .villain-stats dt {
+  color: #778;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+}
+.villain-reveal .villain-stats dd { color: #ccb; }
+
+/* ── Back Matter ─────────────────────────────────────────── */
+.back-matter {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  background: var(--panel-bg);
+  border: 2px solid var(--panel-border);
+  border-top: 4px solid var(--caption-yellow);
+}
+
+.back-matter h2 {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  color: var(--caption-yellow);
+  border-bottom: 2px solid var(--panel-border);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 32px;
+}
+
+.back-matter h2:first-child { margin-top: 0; }
+
+.tools-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+}
+
+.tools-table th {
+  background: var(--blue-dark);
+  color: var(--blue-glow);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.72rem;
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 2px solid var(--blue-primary);
+}
+
+.tools-table td {
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--panel-border);
+  color: #ccd;
+}
+
+.tools-table tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+.tools-table tr:hover td { background: rgba(26,106,255,0.08); }
+
+.tools-table td:first-child {
+  color: var(--tech-green);
+  font-weight: 700;
+}
+
+.villains-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-bottom: 24px; }
+.villains-table th { background: var(--villain-bg); color: var(--villain-red); text-transform: uppercase; letter-spacing: 1px; font-size: 0.72rem; padding: 8px 12px; text-align: left; border-bottom: 2px solid var(--villain-red); }
+.villains-table td { padding: 7px 12px; border-bottom: 1px solid var(--panel-border); color: #ccd; }
+.villains-table tr:nth-child(even) td { background: rgba(204,17,34,0.04); }
+.villains-table td:first-child { color: #ff6680; font-weight: 700; }
+
+.status-imprisoned { color: #ff9900 !important; }
+.status-neutralized { color: #00dd77 !important; }
+.status-contained { color: #4dc3ff !important; }
+.status-active { color: var(--villain-red) !important; }
+
+.threat-omega { color: var(--villain-red) !important; font-weight: 700; }
+.threat-alpha { color: #ff6600 !important; }
+.threat-beta  { color: #ffaa00 !important; }
+.threat-gamma { color: #ffdd00 !important; }
+
+/* ── Next Issue Teaser ───────────────────────────────────── */
+.next-issue-teaser {
+  background: linear-gradient(135deg, var(--dark-bg), var(--villain-bg));
+  border: 2px solid var(--villain-red);
+  border-radius: 4px;
+  padding: 24px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.next-issue-teaser .coming-in {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: var(--blue-glow);
+  margin-bottom: 8px;
+}
+
+.next-issue-teaser h3 {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+  color: var(--caption-yellow);
+  margin-bottom: 12px;
+}
+
+.next-issue-teaser p {
+  color: #aab;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 16px;
+}
+
+.next-issue-teaser .tagline-red {
+  color: var(--villain-red);
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* ── 3-2-1-1-0 Rule Card ─────────────────────────────────── */
+.rule-card {
+  background: linear-gradient(135deg, #001a30, #001a10);
+  border: 3px solid var(--tech-green);
+  border-radius: 6px;
+  padding: 24px;
+  margin: 20px 0;
+}
+
+.rule-card h3 {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: var(--tech-green);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.rule-card .rule-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0,221,119,0.2);
+}
+
+.rule-card .rule-number {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 2.8rem;
+  color: var(--tech-green);
+  line-height: 1;
+  min-width: 40px;
+  text-align: center;
+}
+
+.rule-card .rule-text strong {
+  display: block;
+  color: #eef;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.rule-card .rule-text small {
+  color: #778;
+  font-size: 0.8rem;
+}
+
+/* ── Splash Panel ────────────────────────────────────────── */
+.splash-panel {
+  max-width: 900px;
+  margin: 0 auto;
+  border-left: 4px solid var(--blue-primary);
+  border-right: 4px solid var(--blue-primary);
+  background: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.splash-panel img {
+  width: 100%;
+  display: block;
+}
+
+.splash-panel .splash-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.95));
+  padding: 40px 24px 20px;
+  text-align: center;
+}
+
+.splash-panel .splash-quote {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: var(--caption-yellow);
+  text-shadow: 2px 2px 0 #000;
+  margin-bottom: 8px;
+}
+
+/* ── Page Break ──────────────────────────────────────────── */
+.page-break-bar {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--blue-dark);
+  border-left: 4px solid var(--blue-primary);
+  border-right: 4px solid var(--blue-primary);
+  padding: 6px 16px;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--blue-glow);
+  text-align: center;
+}
+
+/* ── Epilogue ────────────────────────────────────────────── */
+.epilogue-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--panel-bg);
+  border-left: 4px solid var(--blue-primary);
+  border-right: 4px solid var(--blue-primary);
+  padding: 32px;
+  text-align: center;
+}
+
+.epilogue-box .final-narration {
+  font-style: italic;
+  color: #aab;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 640px;
+  margin: 0 auto 20px;
+}
+
+.epilogue-box .series-tagline {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: var(--blue-glow);
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.issue-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #05050f;
+  border: 2px solid var(--panel-border);
+  padding: 20px 32px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #556;
+  line-height: 1.8;
+}
+
+.issue-footer a { color: var(--blue-glow); text-decoration: none; }
+
+/* ── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--dark-bg); }
+::-webkit-scrollbar-thumb { background: var(--blue-dark); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--blue-primary); }
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .grid-2, .grid-3, .grid-2x2 { grid-template-columns: 1fr; }
+  .grid-1-2, .grid-2-1, .grid-wide-narrow { grid-template-columns: 1fr; }
+  .panel-full { grid-column: 1; }
+  .credits-page h1 { font-size: 2.2rem; }
+  .chapter-header h2 { font-size: 1.8rem; }
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LRN Man — Defender of the Network</title>
+<link rel="stylesheet" href="comic.css">
+<style>
+body { background: #080810; }
+
+.series-header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 32px 32px;
+  text-align: center;
+}
+
+.series-logo {
+  max-width: 440px;
+  margin: 0 auto 32px;
+  display: block;
+  filter: drop-shadow(0 0 30px rgba(26,106,255,0.6));
+}
+
+.series-header h1 {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  color: #778;
+  margin-bottom: 8px;
+}
+
+.series-header .tagline {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  color: var(--caption-yellow);
+  margin-bottom: 24px;
+}
+
+.series-header .universe-text {
+  font-style: italic;
+  color: #aab;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.issue-shelf {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.issue-card {
+  background: var(--panel-bg);
+  border: 2px solid var(--panel-border);
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  transition: all 0.25s;
+}
+
+.issue-card:hover {
+  border-color: var(--blue-primary);
+  box-shadow: 0 0 30px rgba(26,106,255,0.35);
+  transform: translateY(-4px);
+}
+
+.issue-card img {
+  width: 100%;
+  display: block;
+}
+
+.issue-card-info {
+  padding: 14px 16px;
+}
+
+.issue-card-info .number {
+  display: inline-block;
+  background: var(--villain-red);
+  color: #fff;
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  padding: 2px 10px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+.issue-card-info h3 {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  color: var(--caption-yellow);
+  margin-bottom: 6px;
+}
+
+.issue-card-info .subtitle {
+  font-size: 0.82rem;
+  color: var(--blue-glow);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.issue-card-info .tools-count {
+  font-size: 0.75rem;
+  color: var(--tech-green);
+  letter-spacing: 1px;
+}
+
+.universe-divider {
+  max-width: 900px;
+  margin: 0 auto 32px;
+  border: none;
+  border-top: 2px solid var(--panel-border);
+}
+
+.lore-section {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 0 32px;
+}
+
+.lore-section h2 {
+  font-family: 'Bangers', Impact, fantasy;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: var(--blue-glow);
+  margin-bottom: 16px;
+}
+
+.lore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.lore-item {
+  text-align: center;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.lore-item img { width: 100%; max-width: 120px; margin: 0 auto 8px; display: block; }
+.lore-item span { font-size: 0.78rem; color: #aab; display: block; }
+
+.footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 32px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #445;
+  border-top: 1px solid var(--panel-border);
+}
+</style>
+</head>
+<body>
+
+<div class="series-header">
+  <img class="series-logo" src="../art/LRN Man Logo=blk background.png" alt="LRN Man — Defender of the Network">
+  <h1></h1>THE BLIZZARD GALAXY PRESENTS</h1>
+  <div class="tagline">THE LRN NETWORK UNIVERSE</div>
+  <p class="universe-text">
+    From the ashes of Planet Maytag, the last son of the most advanced civilization in the galaxy
+    came to Earth — to build the most secure network the world has ever seen, and to protect it
+    from every cyber threat in the universe. Real tools. Real threats. One unstoppable defender.
+  </p>
+</div>
+
+<div class="issue-shelf">
+
+  <a class="issue-card" href="issue-01.html">
+    <img src="../art/Copilot_20260328_202719.png" alt="Issue #1 Cover">
+    <div class="issue-card-info">
+      <span class="number">ISSUE #1</span>
+      <h3>The Last Son of Maytag</h3>
+      <div class="subtitle">His Origin. His Mission. His First Battle.</div>
+      <div class="tools-count">⚙ 23 CYBERSECURITY TOOLS</div>
+    </div>
+  </a>
+
+  <a class="issue-card" href="issue-02.html">
+    <img src="../art/Copilot_20260328_202443.png" alt="Issue #2 Cover">
+    <div class="issue-card-info">
+      <span class="number">ISSUE #2</span>
+      <h3>The Ransomware Wars</h3>
+      <div class="subtitle">Locked. Encrypted. Under Siege.</div>
+      <div class="tools-count">⚙ 8 NEW TOOLS · 31 TOTAL</div>
+    </div>
+  </a>
+
+  <a class="issue-card" href="issue-03.html">
+    <img src="../art/Copilot_20260328_202454.png" alt="Issue #3 Cover">
+    <div class="issue-card-info">
+      <span class="number">ISSUE #3</span>
+      <h3>The Botnet Invasion</h3>
+      <div class="subtitle">When the Machines Rise</div>
+      <div class="tools-count">⚙ NEW TOOLS · 40+ TOTAL</div>
+    </div>
+  </a>
+
+  <a class="issue-card" href="issue-04.html">
+    <img src="../art/Copilot_20260328_202651.png" alt="Issue #4 Cover">
+    <div class="issue-card-info">
+      <span class="number">ISSUE #4</span>
+      <h3>The Social Engineer</h3>
+      <div class="subtitle">When Hackers Lie, Trust Falls Apart</div>
+      <div class="tools-count">⚙ MFA · OSINT · DEEPFAKE DETECTION</div>
+    </div>
+  </a>
+
+  <a class="issue-card" href="issue-05.html">
+    <img src="../art/Copilot_20260328_202748.png" alt="Issue #5 Cover">
+    <div class="issue-card-info">
+      <span class="number">ISSUE #5</span>
+      <h3>The Quantum Conspiracy</h3>
+      <div class="subtitle">When Encryption Fails, Chaos Reigns</div>
+      <div class="tools-count">⚙ POST-QUANTUM CRYPTOGRAPHY</div>
+    </div>
+  </a>
+
+</div>
+
+<hr class="universe-divider">
+
+<div class="lore-section">
+  <h2>LRN NETWORK UNIVERSE — LORE ASSETS</h2>
+  <div class="lore-grid">
+    <div class="lore-item">
+      <img src="../art/LRN Man.png" alt="LRN Man">
+      <span>LRN Man — The Hero</span>
+    </div>
+    <div class="lore-item">
+      <img src="../art/The Null Logo.png" alt="The Null">
+      <span>The Null — The Corruption</span>
+    </div>
+    <div class="lore-item">
+      <img src="../art/the Mikes logo.png" alt="The Mikes">
+      <span>The Mikes — Warriors of Maytag</span>
+    </div>
+    <div class="lore-item">
+      <img src="../art/LRN Man Logo.png" alt="LRN Man Logo">
+      <span>Official Series Logo</span>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <strong>LRN MAN: DEFENDER OF THE NETWORK</strong><br>
+  Created by Mike Anderson · Published by Mike Anderson<br>
+  © Mike Anderson. All rights reserved. All cybersecurity tools referenced are real, publicly available software.<br>
+  <em>"Security Is Not a Product — It Is an Architecture."</em>
+</div>
+
+</body>
+</html>

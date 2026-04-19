@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LRN Man #4 — The Social Engineer | Mike Anderson</title>
+<link rel="stylesheet" href="comic.css">
+</head>
+<body>
+
+<nav class="issue-nav">
+  <a href="issue-03.html">◀ ISSUE #3</a>
+  <span>ISSUE #4 — THE SOCIAL ENGINEER</span>
+  <a href="issue-05.html">ISSUE #5 ▶</a>
+</nav>
+
+<!-- COVER SPREAD -->
+<div class="cover-spread">
+  <img src="../art/Copilot_20260328_202651.png" alt="Issue #4 Cover — The Social Engineer">
+  <div class="cover-overlay">
+    <div class="cover-publisher">MIKE ANDERSON PRESENTS</div>
+    <div class="cover-title">LRN MAN</div>
+    <div class="cover-subtitle">DEFENDER OF THE NETWORK</div>
+    <div class="cover-issue">ISSUE #4</div>
+    <div class="cover-story">THE SOCIAL ENGINEER</div>
+    <div class="cover-tagline">"HOOK, LINE, AND SINKER"</div>
+  </div>
+</div>
+
+<!-- CREDITS PAGE -->
+<div class="credits-page">
+  <div class="credits-logo">
+    <img src="../art/LRN Man Logo.png" alt="LRN Man Logo">
+  </div>
+  <div class="credits-block">
+    <div class="credits-title">THE SOCIAL ENGINEER</div>
+    <div class="credits-subtitle">HOOK, LINE, AND SINKER</div>
+    <table class="credits-table">
+      <tr><td>Story &amp; Concept</td><td>Mike Anderson</td></tr>
+      <tr><td>Published by</td><td>Mike Anderson</td></tr>
+      <tr><td>Issue</td><td>#4 of the LRN Network Universe</td></tr>
+      <tr><td>New Tools</td><td>MFA · DMARC · Deepfake Detection · UEBA · Security Awareness Training · OSINT</td></tr>
+      <tr><td>Total Arsenal</td><td>44+ tools across 4 issues</td></tr>
+    </table>
+    <p class="credits-note">
+      Previously: LRN Man dismantled the Hive Mind's global botnet, secured fifty billion IoT devices, and introduced the Quantum Shield from Planet Maytag. Now — the most dangerous enemy yet. One who never touches a keyboard.
+    </p>
+  </div>
+</div>
+
+<!-- COVER ALTERNATE + INTRO -->
+<div class="chapter">
+  <div class="panel-grid grid-2">
+    <div class="panel">
+      <img src="../art/Copilot_20260328_202641.png" alt="The Phish King — social engineering mastermind">
+      <div class="bubble narration">NO FIREWALL CAN BLOCK A CONVINCING LIE.</div>
+    </div>
+    <div class="panel">
+      <img src="../art/Copilot_20260328_202644.png" alt="Phishing attack — the hook drops">
+      <div class="bubble narration">LRN MAN BUILT THE MOST SECURE NETWORK ON EARTH. BUT HE FORGOT ONE THING. THE MOST SOPHISTICATED FIREWALL IN THE WORLD CAN BE BYPASSED WITH A BOX OF DONUTS AND A SMILE.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROLOGUE -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">PROLOGUE</div>
+    <div class="chapter-title">THE WEAKEST LINK</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      LRN Man built the most secure network on Earth. Firewalls that could stop a nuclear-grade zero-day. Encryption that would take a quantum computer a thousand years to crack. Monitoring systems that could detect a single anomalous packet in a trillion. But he forgot one thing.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">A pristine corporate office. Floor-to-ceiling windows. A security operations center on the 40th floor glows with monitor light. Badge readers, cameras, biometric scanners at every door. Everything looks secure.</div>
+        <div class="bubble narration" style="position:relative;display:block;">A friendly-looking man in a delivery uniform approaches the front desk. Box of donuts. Warm smile. Name tag: "Dave." His eyes, however, are cold and calculating.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">Hey! IT sent me up with breakfast for the night shift. They said you guys have been working crazy hours. Badge me in?</div>
+        <div style="color:#00dd77;font-size:0.85rem;font-family:'Bangers',Impact,fantasy;letter-spacing:2px;margin:8px 0;">SECURITY GUARD: "Oh, that's so nice of them! Yeah, come on through."</div>
+        <div class="bubble narration" style="position:relative;display:block;margin-top:12px;">The guard buzzes him in without checking credentials.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:28px;text-align:center;">
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:0.9rem;letter-spacing:2px;color:#778;margin-bottom:8px;">CLICK</div>
+        <div class="bubble narration" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">"Dave" plugs a tiny USB device into an unattended workstation. The device glows faintly red. The Phish King doesn't need exploits. He doesn't need malware. He doesn't need zero-days.</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:2rem;letter-spacing:5px;color:var(--caption-yellow);text-shadow:0 0 15px rgba(255,232,77,0.6);">HE HAS TRUST.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 1 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 1</div>
+    <div class="chapter-title">FALSE FACES</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      LRN Man's Bastion — underground command center. All green. All quiet. Too quiet.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">Splunk shows zero anomalies. Wazuh — clean. Suricata — silent. CrowdStrike Falcon — no detections.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">It's too quiet.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">A priority alert flashes — not from a network sensor, but from a NEWS feed. Three major corporations breached. No intrusion signatures. No malware. No exploit chains.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">Someone walked in through the front door.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:16px;">LRN Man analyzes each breach. Five attacks. Five different vectors. Zero technical exploits:</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;">
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:10px;border-radius:4px;font-size:0.82rem;color:#dda;">
+            <strong style="color:#f66;display:block;margin-bottom:4px;">SPEAR PHISHING</strong>
+            CEO email clone, perfect writing style, trusted by HR director
+          </div>
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:10px;border-radius:4px;font-size:0.82rem;color:#dda;">
+            <strong style="color:#f66;display:block;margin-bottom:4px;">PHYSICAL INFILTRATION</strong>
+            Vendor with forged badge, tailgated through security
+          </div>
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:10px;border-radius:4px;font-size:0.82rem;color:#dda;">
+            <strong style="color:#f66;display:block;margin-bottom:4px;">DEEPFAKE CFO CALL</strong>
+            Fake video call authorized $40M wire transfer
+          </div>
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:10px;border-radius:4px;font-size:0.82rem;color:#dda;">
+            <strong style="color:#f66;display:block;margin-bottom:4px;">VISHING</strong>
+            "IT Support" phone call convinced admin to reset credentials
+          </div>
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:10px;border-radius:4px;font-size:0.82rem;color:#dda;">
+            <strong style="color:#f66;display:block;margin-bottom:4px;">WATERING HOLE</strong>
+            Compromised industry forum harvested login cookies
+          </div>
+        </div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-top:16px;">Five attacks. Five vectors. Zero technical exploits. Every single one targeted the HUMAN.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:600px;">Same signature. Same calling card. One operator. The Phish King.</div>
+        <div class="bubble narration" style="position:relative;display:inline-block;max-width:600px;">LRN Man had heard whispers on the dark web. A ghost who never touched a keyboard. A manipulator who turned employees into unwitting agents. The one villain his firewalls couldn't stop.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 2 — VILLAIN REVEALS -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 2</div>
+    <div class="chapter-title">KNOW YOUR ENEMY</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="villain-reveal">
+      <div class="villain-header">
+        <div class="villain-portrait">
+          <img src="../art/Copilot_20260328_202651.png" alt="The Phish King">
+        </div>
+        <div class="villain-info">
+          <div class="villain-designation">VILLAIN DESIGNATION: OMEGA — PRIMARY ANTAGONIST</div>
+          <div class="villain-name">THE PHISH KING</div>
+          <div class="villain-title">MASTER OF HUMAN EXPLOITATION</div>
+          <p>Wears a chrome featureless mask that reflects the faces of his victims. His suit is made of layered fake login pages from different corporations. His crown of golden fishhooks gleams. Forgettable face underneath the mask — the kind of face you'd trust instinctively.</p>
+          <p>Attack Vector: Pure social engineering. Fear, urgency, and authority as weapons. Never touches a keyboard. Turns people into unwitting agents.</p>
+          <p>Weakness: Verification. A single "let me call you back on a verified number" stops him cold.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;text-align:center;">
+        <div class="bubble villain" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">LRN Man built a fortress of code. Beautiful, really. Impenetrable walls. Unbreakable encryption. Perfect monitoring. But fortresses are only as strong as the people inside them. And people... people are MY operating system.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-3">
+      <div style="background:rgba(204,17,34,0.08);border:2px solid #cc1122;padding:16px;border-radius:4px;">
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:0.75rem;letter-spacing:2px;color:#cc1122;margin-bottom:6px;">LIEUTENANT ALPHA</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1.2rem;letter-spacing:2px;color:#ffe84d;margin-bottom:8px;">THE DEEPFAKE DUCHESS</div>
+        <p style="font-size:0.82rem;color:#aab;">Master of AI-generated forgery. Creates flawless deepfake videos of executives, celebrities, and heroes. Spent weeks studying each target. Can replicate voice, mannerisms, and micro-expressions. Attack vector: BEC fraud, fake executive video calls.</p>
+      </div>
+      <div style="background:rgba(204,17,34,0.08);border:2px solid #cc1122;padding:16px;border-radius:4px;">
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:0.75rem;letter-spacing:2px;color:#cc1122;margin-bottom:6px;">LIEUTENANT BETA</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1.2rem;letter-spacing:2px;color:#ffe84d;margin-bottom:8px;">THE VOICE</div>
+        <p style="font-size:0.82rem;color:#aab;">Voice actor and social engineer. Can perfectly imitate any executive, IT director, or authority figure. Uses vishing to bypass multi-factor authentication. Has never failed a credential reset. Attack vector: phone-based impersonation.</p>
+      </div>
+      <div style="background:rgba(204,17,34,0.08);border:2px solid #cc1122;padding:16px;border-radius:4px;">
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:0.75rem;letter-spacing:2px;color:#cc1122;margin-bottom:6px;">LIEUTENANT GAMMA</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1.2rem;letter-spacing:2px;color:#ffe84d;margin-bottom:8px;">THE INSIDER</div>
+        <p style="font-size:0.82rem;color:#aab;">Physical infiltration specialist. Can walk into any building in any uniform. Always has a forged badge, a plausible story, and a toolbox. Plants rogue network devices with precision. Attack vector: tailgating, physical access, hardware implants.</p>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;text-align:center;">
+        <div class="bubble villain" style="position:relative;display:inline-block;max-width:700px;">Three lieutenants. Three attack vectors. Zero technical exploits. LRN Man's network is about to learn that the biggest vulnerability... is the human sitting at the keyboard.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 3 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 3</div>
+    <div class="chapter-title">THE FIRST HOOK</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      NovaTech Industries. One of the most secure networks LRN Man ever built. 12,000 human beings who just want to do their jobs and go home.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">The Deepfake Duchess crafts a spear-phishing email. Personalized. She's studied the target's social media, writing style, and concerns.</div>
+        <div class="bubble villain" style="position:relative;display:block;">Subject line for the HR director: "Urgent: Updated Benefits Enrollment — Action Required by Friday." She's been posting about her daughter's medical bills on Facebook. She'll click this in under four seconds.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:10px;">Sarah Chen, NovaTech's HR Director. Stressed. Juggling multiple tasks. She sees the subject line. Her mouse hovers over the link.</div>
+        <div style="color:#ffe84d;font-size:0.85rem;font-family:'Bangers',Impact,fantasy;letter-spacing:2px;margin:8px 0;">SARAH CHEN: "Finally, the benefits update. I've been waiting for this..."</div>
+        <div style="color:#cc1122;font-size:1.8rem;font-family:'Bangers',Impact,fantasy;letter-spacing:5px;text-align:center;margin-top:12px;">CLICK</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;text-align:center;">
+        <div class="bubble narration" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">In 0.3 seconds, a credential harvester captured Sarah Chen's username, password, and session token. The Phish King's team now had a foothold inside one of the most secure networks on Earth. Not through a vulnerability. Through a PERSON.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:10px;">Back in The Bastion. LRN Man's Splunk dashboard lights up — a behavioral anomaly from the UEBA module.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">Sarah Chen... HR director. Accessing engineering schematics at 2 AM? She doesn't have engineering clearance. Someone's using her credentials.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">It's not a hack. It's a hijack. Someone convinced her to hand over the keys.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="tech-box" style="margin:0;">
+          <div class="tech-box-header">⚙ UEBA — USER & ENTITY BEHAVIOR ANALYTICS</div>
+          <div class="tech-box-body">
+            Detects the anomalies that signature-based tools miss. An HR director accessing engineering files at 2 AM isn't a malware signature — it's a behavioral red flag. UEBA says: this isn't how Sarah works. Someone else is wearing her identity.
+            <br><br><em>"The credentials were valid. The BEHAVIOR was wrong."</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 4 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 4</div>
+    <div class="chapter-title">MIND GAMES</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Three simultaneous attack vectors. Phishing. Vishing. Physical infiltration. Not a single line of malicious code.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:10px;">NovaTech's IT Help Desk. The phone rings.</div>
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:10px;">[Perfect imitation of NovaTech's CISO] This is Director Williams. We have a critical security incident and I need you to temporarily disable MFA on the executive accounts. Authorization code: ECHO-SEVEN-TANGO. Do it NOW — we're losing data every second.</div>
+        <div style="font-size:0.82rem;color:#aab;font-style:italic;padding:8px;">The real Director Williams was at his daughter's soccer game. He never made that call.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:10px;">Meanwhile, The Insider walks into NovaTech's data center in a perfect maintenance uniform. A forged badge. A toolbox.</div>
+        <div style="color:#ffe84d;font-size:0.83rem;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;margin:8px 0;">EMPLOYEE: "After you — you here for the HVAC check?"</div>
+        <div class="bubble villain" style="position:relative;display:block;margin-top:8px;">Yep, work order 7734. Should be quick.</div>
+        <div class="bubble narration" style="position:relative;display:block;margin-top:10px;">Inside, The Insider plugs a rogue device into a network switch. It begins creating a hidden tunnel through the firewall.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">MFA disabled on executive accounts without a change ticket? That's not a glitch — that's social engineering. Someone called in pretending to be Williams.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">CyberArk recorded the session. The credentials are Sarah Chen's but the behavior is all wrong. Lateral movement, reconnaissance patterns, data staging. This isn't Sarah.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">And there — Wazuh caught a rogue device on Switch 14 in the data center. Someone's INSIDE the building.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ DMARC / DKIM / SPF — EMAIL AUTHENTICATION</div>
+        <div class="tech-box-body">
+          The holy trinity of email authentication. SPF verifies the sending server. DKIM cryptographically signs the message. DMARC tells receiving servers what to do when checks fail: quarantine or reject. Together, they make email domain spoofing impossible — the Duchess's fake CEO emails die before reaching any inbox.
+          <br><br><em>"DMARC reject policy: the phishing campaign ends at the mail server."</em>
+        </div>
+      </div>
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ MFA — MULTI-FACTOR AUTHENTICATION</div>
+        <div class="tech-box-body">
+          Something you know, something you have, something you are. Even when The Voice tricks a help desk into believing it's the CISO — hardware tokens, authenticator apps, and biometrics can't be reset over the phone. MFA is the wall between a compromised password and a compromised account.
+          <br><br><em>"The password is the username now. MFA is the real lock."</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ DEEPFAKE DETECTION AI</div>
+        <div class="tech-box-body">
+          Analyzes video and audio streams for synthesis artifacts. Checks lip sync timing (humans within 8ms, fakes 10-15ms off). Scans for missing micro-saccades — the tiny involuntary eye movements genuine humans make. Voice analysis detects AI cloning from pitch variance and breath patterns. Integrated directly into video conferencing platforms.
+          <br><br><em>"A human wouldn't catch it. The AI does."</em>
+        </div>
+      </div>
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ OSINT DEFENSE — SOCIAL MEDIA HYGIENE</div>
+        <div class="tech-box-body">
+          The Phish King uses open-source intelligence to personalize attacks. Employee social media reveals concerns, schedules, relationships, and vocabulary — all ammunition. OSINT defense: audit what's public, train employees on operational security, and understand that every post is potential spear-phishing material.
+          <br><br><em>"Your public profile is the Phish King's research database."</em>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 5 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 5</div>
+    <div class="chapter-title">THE DEEPFAKE TRAP</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      GlobalBank. A virtual board meeting. Twelve executives. The CEO appears on screen with urgent instructions. But it isn't the CEO.
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">Listen carefully. We've been approached for an emergency acquisition. I need a wire transfer of $200 million to this account within the hour. This is time-sensitive and CONFIDENTIAL. Do not discuss this outside this call.</div>
+        <div style="font-size:0.82rem;color:#ffe84d;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;margin:8px 0;">CFO: "Sir, that's... highly irregular. Our procedures require—"</div>
+        <div class="bubble villain" style="position:relative;display:block;margin-top:8px;">I KNOW what our procedures require. I'm the one who wrote them. And I'm telling you this is an exception. Do you want to be the one who cost us this deal?</div>
+        <div class="bubble narration" style="position:relative;display:block;margin-top:12px;">The deepfake was flawless. Same voice. Same mannerisms. Same background in the CEO's home office — scraped from a magazine interview. The Deepfake Duchess had spent weeks on this one.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Got you. That's not the CEO — it's a deepfake. The lip sync is 12 milliseconds off and the micro-expressions don't match genuine emotion. A human wouldn't catch it, but my AI does.</div>
+        <div class="bubble narration" style="position:relative;display:block;">LRN Man patches into the call. The fake CEO's face glitches for a split second.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">Everyone — STOP. The person you're talking to is not your CEO. This is a deepfake — AI-generated video designed to manipulate you into authorizing a fraudulent transfer.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">Look at the eyes. Real humans have micro-saccades — tiny involuntary eye movements. This video has none. The voice is AI-cloned from public interviews.</div>
+        <div style="color:#ffe84d;font-size:0.82rem;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;margin:8px 0;">CFO: "My God... I was about to authorize $200 million..."</div>
+        <div class="bubble lrn" style="position:relative;display:block;">That's exactly what they're counting on. Fear, urgency, authority — the three prongs of the Phish King's trident.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;text-align:center;">
+        <div class="bubble villain" style="position:relative;display:inline-block;margin-bottom:16px;max-width:600px;">He detected the deepfake! HOW? The video was perfect!</div>
+        <div class="bubble villain" style="position:relative;display:inline-block;max-width:700px;">No deepfake is perfect, Duchess. There are always artifacts — if someone knows where to look. But don't worry. LRN Man can detect our fakes. So let's make him question what's REAL.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 6 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 6</div>
+    <div class="chapter-title">THE IDENTITY CRISIS</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Every hero has a weakness. The Phish King found LRN Man's. He weaponized trust itself.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">Every hero has a weakness. Superman had kryptonite. Batman had his identity. LRN Man? His weakness is that people TRUST him. So we're going to weaponize that trust.</div>
+        <div class="bubble villain" style="position:relative;display:block;">Create the most perfect deepfake you've ever made. Not a CEO. Not a politician. Create LRN Man himself.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">A deepfake LRN Man appears on screens across the internet. Identical — glasses, goatee, blue and silver suit with LRN emblem. But something is subtly wrong. The glasses are slightly different. The emblem flickers.</div>
+        <div class="bubble villain" style="position:relative;display:block;">Citizens, this is LRN Man. I have discovered a critical vulnerability. You must immediately download this emergency security patch from the link below. Do NOT wait for official channels — there is no time.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">He's using ME. My face, my voice, my reputation — weaponized against the people who trust me.</div>
+        <div class="bubble narration" style="position:relative;display:inline-block;max-width:700px;margin-bottom:16px;">LRN Man watches in horror as his own face spreads across social media, news channels, email chains — attached to a credential harvester. Millions of people who trusted him clicked without hesitation.</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:700px;">This is the cruelest attack of all. He's not stealing data. He's stealing TRUST.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ DIGITAL SIGNATURE VERIFICATION</div>
+        <div class="tech-box-body">
+          Every authentic LRN Man communication carries a quantum-authenticated digital signature that cannot be forged. Verified via DogTag certificate chain against the LRN Man public key. A fake video can look perfect — but it will never carry a valid signature. "You stole my face. You can't steal my SIGNATURE."
+        </div>
+      </div>
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ SECURITY AWARENESS TRAINING</div>
+        <div class="tech-box-body">
+          The only defense against social engineering at scale. Regular phishing simulations train employees to pause before clicking. Vishing scenarios teach help desk staff to verify callers. Physical security drills train receptionists to check badges. When humans become the firewall, the Phish King has nowhere to hide.
+          <br><br><em>"Technology defends the network. People defend each other."</em>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 7 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 7</div>
+    <div class="chapter-title">BREAKING THE SPELL</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      LRN Man addresses a massive virtual audience — thousands of employees across every network he protects.
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:28px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">I can build the most secure network in the universe. I've done it. But NONE of that matters if you click a link without thinking. If you share your password because someone sounded urgent. If you hold the door open for a stranger.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Here's what the Phish King uses against you:</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0;">
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:12px;border-radius:4px;text-align:center;">
+            <div style="font-family:'Bangers',Impact,fantasy;font-size:1.1rem;color:#ff6677;letter-spacing:2px;">FEAR</div>
+            <div style="font-size:0.78rem;color:#aab;margin-top:6px;">"Your account has been breached. Act now or lose everything."</div>
+          </div>
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:12px;border-radius:4px;text-align:center;">
+            <div style="font-family:'Bangers',Impact,fantasy;font-size:1.1rem;color:#ff6677;letter-spacing:2px;">URGENCY</div>
+            <div style="font-size:0.78rem;color:#aab;margin-top:6px;">"You have 60 seconds before the window closes. No time to think."</div>
+          </div>
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:12px;border-radius:4px;text-align:center;">
+            <div style="font-family:'Bangers',Impact,fantasy;font-size:1.1rem;color:#ff6677;letter-spacing:2px;">AUTHORITY</div>
+            <div style="font-size:0.78rem;color:#aab;margin-top:6px;">"This is the CEO. This is IT support. This is LRN Man. You can trust me."</div>
+          </div>
+        </div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-top:12px;">Every single one of these is a LIE designed to bypass your critical thinking. The Phish King's trident has three prongs: FEAR, URGENCY, and TRUST. But YOU have a shield.</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:2.5rem;letter-spacing:8px;color:var(--caption-yellow);text-align:center;margin:24px 0;text-shadow:0 0 20px rgba(255,232,77,0.6);">VERIFY. VERIFY. VERIFY.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:16px;">Montage — employees putting training into action across multiple organizations:</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div style="background:rgba(0,221,119,0.08);border:1px solid #00dd77;padding:10px;border-radius:4px;font-size:0.82rem;color:#aab;">
+            <strong style="color:#00dd77;display:block;">✓ PHISHING CAUGHT</strong>
+            Employee hovers over suspicious link, sees mismatched URL, reports to security instead of clicking.
+          </div>
+          <div style="background:rgba(0,221,119,0.08);border:1px solid #00dd77;padding:10px;border-radius:4px;font-size:0.82rem;color:#aab;">
+            <strong style="color:#00dd77;display:block;">✓ VISHING BLOCKED</strong>
+            Help desk receives "CEO" call demanding MFA disable. Hangs up. Calls CEO directly on verified number. Discovers fraud.
+          </div>
+          <div style="background:rgba(0,221,119,0.08);border:1px solid #00dd77;padding:10px;border-radius:4px;font-size:0.82rem;color:#aab;">
+            <strong style="color:#00dd77;display:block;">✓ TAILGATE STOPPED</strong>
+            Receptionist stops "delivery person" without pre-registered visitor badge. Calls sending company to verify.
+          </div>
+          <div style="background:rgba(0,221,119,0.08);border:1px solid #00dd77;padding:10px;border-radius:4px;font-size:0.82rem;color:#aab;">
+            <strong style="color:#00dd77;display:block;">✓ BEC PREVENTED</strong>
+            Accountant receives wire transfer request. Initiates voice callback on pre-established number. Email was fraudulent.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;padding:20px;font-family:'Bangers',Impact,fantasy;font-size:1.2rem;letter-spacing:4px;color:var(--tech-green);">
+      ACCESS DENIED. &nbsp; ACCESS DENIED. &nbsp; ACCESS DENIED. &nbsp; ACCESS DENIED.
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <div class="bubble villain" style="position:relative;display:inline-block;max-width:700px;">So... LRN Man taught the humans to think. Impressive. But there's always ONE person who doesn't listen. ONE person who thinks they're too smart to be fooled. And that person... is usually the one in charge.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 8 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 8</div>
+    <div class="chapter-title">THE FINAL DECEPTION</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      The Phish King's last gambit. He doesn't target employees. He targets LRN Man directly.
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">LRN Man receives an emergency communication on his quantum-encrypted channel. Elder Sudo's face appears — his mentor. His home world.</div>
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">LRN Man. Planet Maytag is under attack. The Shadow Syndicate has breached our outer defenses. We need you to transmit your quantum encryption keys immediately so we can reinforce our shields. There is no time — our world is DYING.</div>
+        <div class="bubble narration" style="position:relative;display:block;">LRN Man stares at the screen. His mentor. His home world. Under attack. Every instinct screams to help. His hand moves toward the console.</div>
+      </div>
+    </div>
+
+    <div class="splash-panel" style="background:linear-gradient(180deg,#0a0a14,#00081a);">
+      <img src="../art/Copilot_20260328_202641.png" alt="LRN Man — the moment of truth">
+      <div class="bubble lrn" style="top:8%;right:5%;max-width:350px;">Elder Sudo... Maytag... If they fall, I'm truly alone in the universe.</div>
+      <div style="position:absolute;top:45%;left:50%;transform:translateX(-50%);font-family:'Bangers',Impact,fantasy;font-size:4rem;letter-spacing:12px;color:var(--caption-yellow);text-shadow:0 0 30px rgba(255,232,77,0.8);">WAIT.</div>
+      <div class="bubble lrn" style="bottom:8%;left:5%;max-width:400px;">The quantum signature is wrong. Maytag communications use entangled-particle authentication. This signal is using conventional encryption with a quantum WRAPPER. Nice try, Phish King. You almost had me. ALMOST.</div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">You used my greatest fear — losing my home world — to try to steal my most powerful encryption keys. Fear. Urgency. Authority. Your three prongs.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">But I VERIFIED.</div>
+        <div style="color:var(--caption-yellow);font-size:1.4rem;font-family:'Bangers',Impact,fantasy;letter-spacing:3px;text-align:center;margin-top:12px;">FOUND YOU.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">LRN Man uses the spoofed signal to trace the Phish King's location. Zeek analyzes traffic patterns. Suricata captures the routing path. Rapid7 automates the trace.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">You made one mistake — to fake a quantum signal, you needed real quantum-adjacent hardware. And that hardware has a SIGNATURE.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:28px;text-align:center;">
+        <div style="font-size:2rem;font-family:'Bangers',Impact,fantasy;letter-spacing:5px;color:#fff;margin-bottom:20px;">KRAAASH!</div>
+        <div class="bubble narration" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">LRN Man crashes through the penthouse windows. The Phish King stands calmly, chrome mask reflecting LRN Man's armored form.</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">It's over, Phish King. Your lieutenants are neutralized. Your phishing campaigns are blocked. Your deepfakes are detected. And your last gambit just led me straight to your front door.</div>
+        <div class="bubble villain" style="position:relative;display:inline-block;margin-bottom:16px;max-width:600px;">Did it? Or did I WANT you to find me?</div>
+        <div class="bubble narration" style="position:relative;display:inline-block;max-width:700px;">The Phish King removes his chrome mask. Underneath — a completely ordinary face. Forgettable. Average. The kind of face you'd trust instinctively.</div>
+        <div class="bubble villain" style="position:relative;display:inline-block;max-width:700px;margin-top:12px;">That's my real power, LRN Man. I'm not memorable. I'm not threatening. I'm the person you'd hold the door open for. The face you'd trust with your password. The voice you'd believe on the phone.</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:700px;margin-top:12px;">And that's exactly why you're dangerous. But trust isn't your weapon anymore. Because now, people VERIFY before they trust.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">FreeIPA — all compromised identities revoked and reissued. CyberArk — full privileged credential rotation. DMARC enforcement — reject all. Ansible — deploying security awareness modules to 500,000 endpoints. Wazuh — continuous behavioral monitoring active.</div>
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:10px;">You can stop ME, LRN Man. But you can't stop what I represent. There will always be someone who clicks without thinking. Who trusts without verifying. Who lets a stranger through the door.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">You're right. I can't patch human nature. But I can TRAIN it. I can give people the tools to question, to verify, to THINK. And every person who stops and asks "Is this real?" is another brick in a firewall you can NEVER breach.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EPILOGUE -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">EPILOGUE</div>
+    <div class="chapter-title">THE HUMAN FIREWALL</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="epilogue-box">
+      <p>The Phish King was right about one thing: the human element is the most unpredictable variable in any security equation. You can't patch a person. You can't encrypt curiosity. You can't firewall trust.</p>
+      <p>But you CAN educate. You CAN train. You CAN build a culture where "verify before you trust" is as natural as locking your front door.</p>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">The network has seven layers in the OSI model. But the most important layer isn't in any textbook. It's Layer 8: the HUMAN layer. And from now on, it gets the same attention as every other layer.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <img src="../art/LRN Man.png" alt="LRN Man" style="max-width:160px;margin:0 auto 16px;display:block;filter:drop-shadow(0 0 20px rgba(26,106,255,0.6));">
+        <div style="font-size:0.85rem;color:#aab;font-style:italic;">LRN Man — middle-aged, short brown hair greying at temples, rectangular glasses, trimmed goatee — sits at the Bastion console, SUDO MAKE ME COFFEE mug in hand. All green. But now the human dashboard shows new metrics: security awareness scores, phishing simulation results, behavioral analytics.</div>
+      </div>
+    </div>
+
+    <!-- NEXT ISSUE TEASE -->
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:linear-gradient(135deg,#080818,#0a0a28);padding:28px;text-align:center;border:2px solid #4080ff;">
+        <div class="bubble narration" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">In a dark server room, a figure in a lab coat covered in mathematical equations watches LRN Man's broadcast on a cracked monitor. Quantum computing papers. Encryption algorithm diagrams. A sticky note: "BREAK EVERYTHING."</div>
+        <div class="bubble villain" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">Social engineering. Ransomware. Botnets. Amateur hour. LRN Man has prepared for every attack vector... except the one that makes ALL his defenses obsolete.</div>
+        <div class="bubble villain" style="position:relative;display:inline-block;max-width:600px;">When I crack his encryption — ALL encryption — every wall he's ever built crumbles. Every certificate. Every key. Every protocol. TLS. SSL. Kerberos. ALL of it.</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1.2rem;letter-spacing:3px;color:#a0c0ff;margin-top:20px;">THEY CALL ME THE QUANTUM CRACKER.</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1rem;letter-spacing:2px;color:#778;margin-top:6px;">AND THE AGE OF ENCRYPTION... IS ABOUT TO END.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BACK MATTER -->
+<div class="back-matter">
+  <div class="back-section">
+    <h2>UTILITY BELT UPGRADE — ISSUE #4 NEW TOOLS</h2>
+    <table class="tools-table">
+      <thead><tr><th>#</th><th>Tool</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td>39</td><td>UEBA</td><td>User and Entity Behavior Analytics — detects credential hijacking through behavioral anomalies</td></tr>
+        <tr><td>40</td><td>DMARC / DKIM / SPF</td><td>Email authentication trifecta — eliminates domain spoofing and phishing email delivery</td></tr>
+        <tr><td>41</td><td>MFA (Hardware)</td><td>Multi-factor authentication via hardware tokens and authenticator apps — survives credential theft</td></tr>
+        <tr><td>42</td><td>Deepfake Detection AI</td><td>Real-time analysis of video and audio streams for synthesis artifacts and temporal inconsistencies</td></tr>
+        <tr><td>43</td><td>OSINT Defense</td><td>Social media hygiene and operational security training to reduce spear-phishing attack surface</td></tr>
+        <tr><td>44</td><td>Security Awareness Platform</td><td>Continuous phishing simulation, vishing training, physical security drills — the human firewall</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="back-section">
+    <h2>VILLAIN DOSSIER — ISSUE #4</h2>
+    <table class="villains-table">
+      <thead>
+        <tr><th>Villain</th><th>Designation</th><th>Method</th><th>Defeated By</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Phish King</td>
+          <td>OMEGA — Primary</td>
+          <td>Master social engineer. Uses fear, urgency, and authority. Never touches a keyboard. Turns humans into attack vectors.</td>
+          <td>LRN Man verified quantum signal authenticity, traced hardware signature, confronted directly. DMARC + MFA + training dismantled his infrastructure.</td>
+        </tr>
+        <tr>
+          <td>The Deepfake Duchess</td>
+          <td>ALPHA — Lieutenant</td>
+          <td>AI-generated video forgery. Clones executive faces and voices for BEC fraud. Deepfake of LRN Man used to harvest credentials at scale.</td>
+          <td>Deepfake Detection AI (lip sync timing, micro-saccade analysis). Digital signature verification proved authenticity of real communications.</td>
+        </tr>
+        <tr>
+          <td>The Voice</td>
+          <td>BETA — Lieutenant</td>
+          <td>Vishing specialist. Perfectly impersonates executives over phone. Bypasses MFA by social engineering help desks.</td>
+          <td>Callback verification protocol. Security awareness training taught staff to hang up and call back on verified numbers.</td>
+        </tr>
+        <tr>
+          <td>The Insider</td>
+          <td>GAMMA — Lieutenant</td>
+          <td>Physical infiltration. Tailgating, forged badges, rogue network device implantation in data centers.</td>
+          <td>Pre-registration visitor policy, photo ID matching, Wazuh network anomaly detection caught rogue hardware on Switch 14.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="back-section">
+    <h2>THE PHISH KING'S TRIDENT — AND HOW TO BREAK IT</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;">
+      <div class="rule-card" style="border-color:#cc1122;">
+        <div class="rule-number" style="background:#cc1122;">PRONG 1</div>
+        <div class="rule-title">FEAR</div>
+        <div class="rule-body"><strong>The attack:</strong> "Your account is breached. Act now or lose everything." <br><strong>The defense:</strong> Pause. Fear is the signal to slow down, not speed up. Verify independently.</div>
+      </div>
+      <div class="rule-card" style="border-color:#cc1122;">
+        <div class="rule-number" style="background:#cc1122;">PRONG 2</div>
+        <div class="rule-title">URGENCY</div>
+        <div class="rule-body"><strong>The attack:</strong> "No time to think. Do it NOW." <br><strong>The defense:</strong> Urgency is manufactured. Real emergencies have verification paths. Take 60 seconds to confirm.</div>
+      </div>
+      <div class="rule-card" style="border-color:#cc1122;">
+        <div class="rule-number" style="background:#cc1122;">PRONG 3</div>
+        <div class="rule-title">AUTHORITY</div>
+        <div class="rule-body"><strong>The attack:</strong> "This is the CEO / IT Director / LRN Man. You can trust me." <br><strong>The defense:</strong> Authority can be faked. Verify the identity through an independent channel.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-section" style="text-align:center;">
+    <div style="border:2px solid #4080ff;padding:24px;border-radius:4px;max-width:600px;margin:0 auto;">
+      <div style="font-family:'Bangers',Impact,fantasy;font-size:1.4rem;letter-spacing:3px;color:var(--caption-yellow);margin-bottom:12px;">NEXT ISSUE — ISSUE #5</div>
+      <div style="font-family:'Bangers',Impact,fantasy;font-size:2rem;letter-spacing:4px;color:#a0c0ff;margin-bottom:8px;">THE QUANTUM CONSPIRACY</div>
+      <div style="font-style:italic;color:#aab;margin-bottom:16px;">"When Encryption Falls, the World Falls With It"</div>
+      <p style="font-size:0.88rem;color:#aab;">The Quantum Cracker arrives — and every encryption algorithm LRN Man has ever used is now obsolete. TLS? Broken. RSA? Shattered. Kerberos tickets? Forged. When the mathematical foundation of all modern cryptography crumbles, only one thing can save the network: the post-quantum algorithms of Planet Maytag.</p>
+      <div style="font-size:0.8rem;color:var(--tech-green);letter-spacing:2px;margin-top:16px;">⚛ POST-QUANTUM CRYPTOGRAPHY · NIST PQC STANDARDS · QUANTUM KEY DISTRIBUTION</div>
+    </div>
+  </div>
+</div>
+
+<div class="issue-footer">
+  <div>LRN MAN: THE SOCIAL ENGINEER — ISSUE #4 — "HOOK, LINE, AND SINKER"</div>
+  <div>Created by Mike Anderson · © Mike Anderson · All cybersecurity tools referenced are real, publicly available software.</div>
+  <div><em>"No firewall can block a convincing lie. But every person who stops and asks 'Is this real?' is a brick in a wall the Phish King can never breach."</em></div>
+</div>
+
+</body>
+</html>

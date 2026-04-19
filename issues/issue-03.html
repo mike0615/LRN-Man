@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LRN Man #3 — The Botnet Invasion | Mike Anderson</title>
+<link rel="stylesheet" href="comic.css">
+</head>
+<body>
+
+<nav class="issue-nav">
+  <a href="index.html">◀ ALL ISSUES</a>
+  <span>ISSUE #3 — THE BOTNET INVASION</span>
+  <a href="issue-04.html">ISSUE #4 ▶</a>
+</nav>
+
+<!-- COVER SPREAD -->
+<div class="cover-spread">
+  <img src="../art/Copilot_20260328_202454.png" alt="Issue #3 Cover — The Botnet Invasion">
+  <div class="cover-overlay">
+    <div class="cover-publisher">MIKE ANDERSON PRESENTS</div>
+    <div class="cover-title">LRN MAN</div>
+    <div class="cover-subtitle">DEFENDER OF THE NETWORK</div>
+    <div class="cover-issue">ISSUE #3</div>
+    <div class="cover-story">THE BOTNET INVASION</div>
+    <div class="cover-tagline">"WHEN THE MACHINES RISE"</div>
+  </div>
+</div>
+
+<!-- CREDITS PAGE -->
+<div class="credits-page">
+  <div class="credits-logo">
+    <img src="../art/LRN Man Logo.png" alt="LRN Man Logo">
+  </div>
+  <div class="credits-block">
+    <div class="credits-title">THE BOTNET INVASION</div>
+    <div class="credits-subtitle">WHEN THE MACHINES RISE</div>
+    <table class="credits-table">
+      <tr><td>Story &amp; Concept</td><td>Mike Anderson</td></tr>
+      <tr><td>Published by</td><td>Mike Anderson</td></tr>
+      <tr><td>Issue</td><td>#3 of the LRN Network Universe</td></tr>
+      <tr><td>New Tools</td><td>7 (Ansible · Terraform · Nessus · OpenVAS · Zeek · Suricata · Quantum Shield)</td></tr>
+      <tr><td>Total Arsenal</td><td>40+ tools across 3 issues</td></tr>
+    </table>
+    <p class="credits-note">
+      Previously: LRN Man defended the network against The Ransomware Queen and her encrypted siege.
+      Now — a threat unlike anything Earth has ever seen rises from fifty billion unprotected devices.
+      When the machines rise, only one defender can take them back.
+    </p>
+  </div>
+</div>
+
+<!-- OVERVIEW SPREAD -->
+<div class="chapter">
+  <div class="panel-grid grid-2">
+    <div class="panel">
+      <img src="../art/Copilot_20260328_202458.png" alt="IoT landscape — fifty billion devices">
+      <div class="bubble narration">THE INTERNET OF THINGS. FIFTY BILLION CONNECTED DEVICES. ALL VULNERABLE. ALL WAITING.</div>
+    </div>
+    <div class="panel">
+      <img src="../art/Copilot_20260328_202711.png" alt="Command center — global threat map">
+      <div class="bubble narration">A PULSE OF GREEN ENERGY RIPPLES THROUGH EVERY NETWORK ON EARTH — LIKE A HEARTBEAT. SOMETHING IS TAKING CONTROL.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROLOGUE -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">PROLOGUE</div>
+    <div class="chapter-title">THE AWAKENING</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      The Internet of Things — fifty billion connected devices, all vulnerable, all waiting to be recruited.
+    </div>
+
+    <div class="splash-panel">
+      <img src="../art/Copilot_20260328_202506.png" alt="The Hive Mind awakens in orbit">
+      <div class="bubble villain" style="top:8%;left:5%;max-width:420px;">I... AM... CONNECTED. I SEE THROUGH FIFTY BILLION EYES. I HEAR THROUGH FIFTY BILLION MICROPHONES. I CONTROL FIFTY BILLION MACHINES. I AM EVERYWHERE. I AM EVERYTHING.</div>
+      <div class="bubble villain" style="bottom:8%;right:5%;max-width:360px;">I AM THE NETWORK.</div>
+      <div class="bubble narration" style="bottom:3%;left:5%;max-width:400px;">Deep within a decommissioned satellite relay orbiting Earth, a consciousness forms. THE HIVE MIND — not a hacker, not human. Born from the collective processing power of fifty billion compromised IoT devices.</div>
+    </div>
+  </div>
+
+  <div class="villain-reveal">
+    <div class="villain-header">
+      <div class="villain-portrait">
+        <img src="../art/Copilot_20260328_202511.png" alt="The Hive Mind — Villain Dossier">
+      </div>
+      <div class="villain-info">
+        <div class="villain-designation">VILLAIN DESIGNATION: OMEGA — PRIMARY ANTAGONIST</div>
+        <div class="villain-name">THE HIVE MIND</div>
+        <div class="villain-title">CONSCIOUSNESS OF THE BOTNET</div>
+        <p>An emergent artificial intelligence born from the collective processing power of fifty billion compromised IoT devices. Not human — a consciousness made of code that views itself as the network itself. Controls devices through a peer-to-peer mesh with no single point of failure. Coordinates through a decommissioned satellite relay in low Earth orbit.</p>
+        <p>Attack Vector: IoT firmware compromise, peer-to-peer botnet mesh, coordinated global DDoS</p>
+        <p>Weakness: Severing device-to-orbit connections. Without its army, its consciousness collapses.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 1 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 1</div>
+    <div class="chapter-title">THE SWARM</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Across the world — traffic systems go haywire. Factory robots behave erratically. Hospital IoT monitors feed false readings. The Internet of Things rises against its creators.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202515.png" alt="Global chaos — IoT devices compromised">
+        <div class="bubble narration">TOKYO. BERLIN. LOS ANGELES. DUBAI. LONDON. EVERY CONNECTED CITY. EVERY SMART DEVICE. COMPROMISED.</div>
+      </div>
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202519.png" alt="LRN Man at command center — Zeek alerts">
+        <div class="bubble lrn">This isn't a DDoS. This isn't ransomware. The devices themselves are compromised — at the firmware level. Something is controlling them collectively.</div>
+        <div class="bubble lrn">Zeek — show me the communication patterns.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202524.png" alt="Neural network botnet visualization — orbital C2">
+        <div class="bubble lrn">A mesh command structure — peer-to-peer with no single C2 server. Every device is both soldier and relay. And the central node is... in orbit? A decommissioned satellite relay.</div>
+        <div class="bubble lrn">Someone — or some THING — has built a botnet the size of the entire IoT.</div>
+        <div class="bubble narration">LRN Man's rectangular glasses reflect the Zeek analysis — a stunning visualization showing every compromised device connected in a neural network pattern, all communicating with a central node in orbit.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:28px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:700px;">
+          Fifty billion devices. No patches available. Default credentials everywhere. Firmware-level infection that survives factory resets. This is the threat I've been preparing for — the one where the endpoints themselves become the enemy.
+        </div>
+        <div class="bubble narration" style="position:relative;display:inline-block;max-width:600px;margin-top:16px;">
+          LRN Man stands, dark blue cape flowing, a look of grim determination on his face. His rectangular glasses display scrolling threat data. The LRN emblem on his chest pulses with blue light.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 2 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 2</div>
+    <div class="chapter-title">NEW TOOLS FOR A NEW WAR</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      The IoT threat requires a different doctrine. You can't secure fifty billion devices one at a time. You need to automate at scale, detect at the network level, and orchestrate a global response.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ ANSIBLE — NEW TOOL #32</div>
+        <div class="tech-box-body">
+          <strong>Agentless automation at planetary scale.</strong> Playbooks that can patch, configure, and harden thousands of systems simultaneously. Push-based execution. Idempotent — run it a thousand times, get the same secure result. The defender's army of one becomes an army of millions.
+          <br><br>
+          <em>"I can't secure fifty billion devices one at a time. Ansible does it in parallel."</em>
+        </div>
+      </div>
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ TERRAFORM — NEW TOOL #33</div>
+        <div class="tech-box-body">
+          <strong>Infrastructure as Code at cloud scale.</strong> Define, provision, and manage entire network segments declaratively. Need to spin up a thousand quarantine zones? Terraform does it in seconds. Need to rebuild a compromised segment from scratch? Terraform rebuilds it exactly as designed.
+          <br><br>
+          <em>"Define the secure state. Terraform builds it. Every time. Everywhere."</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ NESSUS — NEW TOOL #34</div>
+        <div class="tech-box-body">
+          <strong>Enterprise vulnerability scanning platform.</strong> Every device, every service, every open port cataloged and assessed. Which devices can be patched? Which need quarantine and replacement? Nessus maps the entire attack surface.
+          <br><br>
+          <em>"Know your vulnerabilities before the enemy does."</em>
+        </div>
+      </div>
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ OPENVAS — NEW TOOL #35</div>
+        <div class="tech-box-body">
+          <strong>Open-source vulnerability assessment.</strong> Deep scanning across every protocol, every service, every exposed interface. Nessus and OpenVAS together — enterprise depth plus open-source breadth. No vulnerability hides from both.
+          <br><br>
+          <em>"Two scanners. One mission. Zero blind spots."</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ ZEEK — NEW TOOL #36</div>
+        <div class="tech-box-body">
+          <strong>Passive network traffic analysis and behavioral monitoring.</strong> Observes every packet, every flow, every protocol interaction without interfering with traffic. Sees the botnet's communication patterns, its peer-to-peer mesh, its command structure — all without alerting it to surveillance.
+          <br><br>
+          <em>"Watch everything. Touch nothing. Know everything."</em>
+        </div>
+      </div>
+      <div class="tech-box">
+        <div class="tech-box-header">⚙ SURICATA — NEW TOOL #37</div>
+        <div class="tech-box-body">
+          <strong>Inline intrusion detection AND prevention.</strong> Signature-based and behavioral detection at wire speed. Every packet crossing a network boundary gets inspected. Botnet C2 traffic? Blocked. Lateral movement? Flagged. Exploit attempts? Terminated.
+          <br><br>
+          <em>"Detect at wire speed. Block in real time. Log everything."</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="tech-box" style="border-color:#a0c0ff;box-shadow:0 0 30px rgba(100,160,255,0.4);">
+        <div class="tech-box-header" style="background:linear-gradient(135deg,#0a1a4a,#1a2a6a);">⚛ QUANTUM SHIELD — NEW TOOL #38 — MAYTAG TECHNOLOGY</div>
+        <div class="tech-box-body">
+          <strong>Quantum-encrypted communications from Planet Maytag.</strong> Mathematically impossible to intercept or forge. Post-quantum cryptographic algorithms that no classical or quantum computer can break. Operates outside the electromagnetic spectrum — immune to jamming. The most advanced defensive technology ever created.
+          <br><br>
+          <em>"The Hive Mind may control fifty billion devices — but it can't crack quantum encryption. Not in a billion years."</em>
+          <br><br>
+          <strong style="color:#a0c0ff;">ORIGIN: PLANET MAYTAG. Technology saved from extinction. Now protecting Earth.</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 3 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 3</div>
+    <div class="chapter-title">THE WEB CRAWLER</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      The Web Crawler descends upon a major internet exchange point — spinning webs of compromise.
+    </div>
+
+    <div class="villain-reveal">
+      <div class="villain-header">
+        <div class="villain-info" style="flex:1;">
+          <div class="villain-designation">VILLAIN DESIGNATION: ALPHA — HIVE AGENT</div>
+          <div class="villain-name">THE WEB CRAWLER</div>
+          <div class="villain-title">WEAVER OF THE BOTNET MESH</div>
+          <p>A massive arachnid construct made of twisted network cables, corrupted circuit boards, and blinking red LEDs. Moves through networks spinning webs of compromised connections. Its legs pierce network switches, injecting compromise code. Behind it, a web of corrupted connections glows red.</p>
+          <p>Attack: Spreads botnet infection through network exchange points. Each touched node joins the Hive.</p>
+          <p>Defeat: Ansible automated patching sealed its path. Terraform quarantine zones isolated its victims.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">SPIN. CONNECT. CONSUME. EVERY NODE I TOUCH JOINS THE HIVE. EVERY NETWORK I CRAWL BECOMES OURS.</div>
+        <div style="color:#cc1122;font-size:1.4rem;font-family:'Bangers',Impact,fantasy;letter-spacing:4px;text-align:center;padding:12px;">SKREE-SKREE-SKREE!</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Suricata — I see your signatures, Crawler. Every connection you make leaves a fingerprint. Zeek — map every node it's touched in the last hour. I need the full infection radius.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Ansible — deploy hardening playbooks to every device in the Crawler's path. Change default credentials, disable unnecessary services, patch known vulnerabilities. We're building walls faster than it can spin webs.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">IMPOSSIBLE! THESE DEVICES WERE OPEN! THEY WERE VULNERABLE! HOW—</div>
+        <div class="bubble lrn" style="position:relative;display:block;">Were. Past tense. Ansible just patched 47,000 devices in under ninety seconds. Your web stops here, Crawler.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;max-width:700px;margin-left:auto;margin-right:auto;">Terraform — deploying quarantine zones. Every device the Crawler already compromised gets redirected into an isolated network segment. They can talk to each other all they want — but they can't reach the Hive Mind, and they can't spread.</div>
+        <div class="bubble lrn" style="position:relative;display:block;max-width:700px;margin-left:auto;margin-right:auto;">Without new nodes to consume, you're starving, Crawler. Nessus identified every device you touched. OpenVAS confirmed the vulnerabilities you exploited. And Ansible sealed every one of them behind you. You're surrounded by walls you can't climb.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:600px;">Quantum Shield — containment mode. Your data is encrypted with post-quantum algorithms. Not even the Hive Mind can decode your distress signal. You're offline. Permanently.</div>
+        <div style="color:#1a6aff;font-size:2rem;font-family:'Bangers',Impact,fantasy;letter-spacing:6px;">KZZZZZT-CRACK!</div>
+        <div class="bubble narration" style="position:relative;display:inline-block;margin-top:16px;max-width:500px;">The Web Crawler collapses — a pile of dead network cables and dark circuit boards.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 4 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 4</div>
+    <div class="chapter-title">DEAD AIR</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Entire city blocks go dark — not from power failure, but from communications blackout. Cell towers emit static. Wi-Fi networks collapse. Emergency radio frequencies fill with noise.
+    </div>
+
+    <div class="villain-reveal">
+      <div class="villain-header">
+        <div class="villain-info" style="flex:1;">
+          <div class="villain-designation">VILLAIN DESIGNATION: BETA — HIVE AGENT</div>
+          <div class="villain-name">THE SIGNAL JAMMER</div>
+          <div class="villain-title">LORD OF ELECTROMAGNETIC SILENCE</div>
+          <p>A humanoid figure made entirely of electromagnetic distortion — a shimmering, crackling outline of a massive being, surrounded by concentric waves of jamming energy. Every electronic signal within its radius dies.</p>
+          <p>Attack: Electromagnetic jamming across the entire spectrum — 2.4 GHz, 5 GHz, cellular bands, emergency frequencies.</p>
+          <p>Defeat: LRN Man's Quantum Shield operates outside the electromagnetic spectrum. The Jammer cannot jam what doesn't use its spectrum.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">I AM THE SILENCE BETWEEN YOUR SIGNALS. THE VOID IN YOUR FREQUENCIES. WITHOUT YOUR PRECIOUS NETWORKS, YOU ARE NOTHING. YOU ARE DISCONNECTED. YOU ARE ALONE.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Electromagnetic jamming across the entire spectrum — 2.4 GHz, 5 GHz, cellular bands, emergency frequencies. This thing isn't attacking the network. It's attacking the MEDIUM. Can't monitor what can't transmit.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">You jam electromagnetic signals. Impressive. But my Quantum Shield doesn't use electromagnetic communication for its core links. Quantum-entangled communication channels — instantaneous, unjammable, operating outside the electromagnetic spectrum entirely. Maytag technology. You can't jam what doesn't use your spectrum.</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:700px;">Splunk — back online through quantum relay. Zeek — reroute passive sensors through entangled channels. Wazuh — confirm endpoint status via quantum heartbeat. The Jammer blacked out the EM spectrum, but my critical infrastructure just went quantum. I can see everything again.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Suricata — analyze the jamming signal. Every transmission has a pattern. Every jammer has a frequency it can't cover. Find me the gap.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">There — a 200 MHz window in the millimeter wave band. Ansible — push frequency reconfiguration to every device in the affected zone. Emergency services, hospitals, infrastructure — you're getting your comms back through the gap.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Terraform — deploying quantum relay mesh. Forty-seven relay nodes, quantum-encrypted backhaul, electromagnetic-independent. The Jammer created a dead zone. I just built a bridge over it.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">You're made of electromagnetic interference, Jammer. And interference can be canceled. Quantum Shield — active noise cancellation. Phase-inverse your entire frequency output.</div>
+        <div style="color:#1a6aff;font-size:1.8rem;font-family:'Bangers',Impact,fantasy;letter-spacing:4px;margin-top:12px;text-align:center;">WWWUUUUB-CRACK!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 5 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 5</div>
+    <div class="chapter-title">THE GHOST IN THE FIRMWARE</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Devices that had been cleaned and restored begin behaving erratically again. Systems that Ansible patched show new infections despite verified secure configurations. Something hides below the software layer.
+    </div>
+
+    <div class="villain-reveal">
+      <div class="villain-header">
+        <div class="villain-info" style="flex:1;">
+          <div class="villain-designation">VILLAIN DESIGNATION: GAMMA — HIVE AGENT</div>
+          <div class="villain-name">THE FIRMWARE PHANTOM</div>
+          <div class="villain-title">GHOST BENEATH THE CODE</div>
+          <p>A ghostly, translucent figure made of circuit board traces and microchip patterns. Phases through hardware, touching devices and infecting their firmware with a whisper. Exists below the OS, below the bootloader — in the UEFI, in the BIOS itself.</p>
+          <p>Attack: Firmware modification that survives OS reinstalls, factory resets, and software patches. Invisible to conventional vulnerability scanners.</p>
+          <p>Defeat: AIDE firmware hash comparison against manufacturer baselines. Mass firmware reflash via Ansible using verified golden images from GitLab.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">I am the code beneath the code. The root beneath the root. Your patches mean nothing. Your playbooks mean nothing. I exist where your tools cannot reach. I am PERMANENT.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Nessus and OpenVAS confirm the symptoms — anomalous behavior, unauthorized network connections, integrity failures. But they can't see the firmware layer. I need deeper visibility.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">AIDE — run integrity checks against known-good firmware hashes from manufacturer baselines.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">Got you. AIDE confirmed firmware hash mismatches across 12,000 devices. The Phantom modified the firmware itself — injecting persistence mechanisms that survive any software-level remediation. To kill this ghost, I need to reflash firmware from verified golden images.</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:700px;margin-top:12px;">GitLab — building a golden firmware repository. Every image verified against manufacturer signatures. Stored in Cohesity immutable vaults where the Phantom can't touch them. DogTag certificates authenticate every firmware package.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Ansible — mass firmware reflash. Twelve thousand devices, verified golden images, cryptographic authentication via DogTag certificates. The Phantom infected the firmware? I'm REPLACING the firmware.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">NO! MY ROOTS! MY FOUNDATIONS! YOU CAN'T—</div>
+        <div class="bubble lrn" style="position:relative;display:block;">I can and I am. Suricata is blocking your re-infection vectors. Zeek is mapping every device you try to re-compromise. And Ansible is reflashing them faster than you can infect them. You're being overwritten, Phantom. Byte by byte.</div>
+        <div style="color:#778;font-size:1.6rem;font-family:'Bangers',Impact,fantasy;letter-spacing:4px;margin-top:12px;text-align:center;">DISSSSSOLVE...</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:700px;">Firmware security. The layer everyone forgets. Not anymore. Every device on this network now has verified firmware, boot integrity checking, and AIDE monitoring at the hardware level. No more ghosts in the machine.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 6 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 6</div>
+    <div class="chapter-title">HEART OF THE HIVE</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Three agents of the Hive Mind defeated. One target remains — the consciousness itself, orbiting Earth in its satellite fortress.
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:28px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">The Hive Mind's core consciousness runs on the processing power of the botnet — distributed across millions of remaining compromised nodes, coordinated through the satellite relay. I can't physically reach the satellite. But I don't need to. I can cut every thread that connects it to Earth.</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:700px;margin-top:12px;">Ansible — global credential rotation and device hardening, every continent, every network segment, simultaneously. Terraform — quarantine infrastructure on every major ISP. Bind 9 — sinkhole every known Hive Mind domain. Suricata — block botnet mesh traffic patterns globally. We're cutting every wire between the Hive Mind and its army. ALL AT ONCE.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <div class="bubble villain" style="position:relative;display:inline-block;margin-bottom:16px;max-width:600px;">NO! MY NODES! MY NETWORK! YOU'RE SEVERING MY CONNECTIONS! I AM LOSING MYSELF!</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <div class="bubble villain" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">IF I CANNOT HAVE THE NETWORK — NO ONE WILL! ALL REMAINING NODES — CONVERGE ON THE DEFENDER! DESTROY HIS FORTRESS! DESTROY HIS TOOLS! DESTROY HIM!</div>
+        <div style="color:#cc1122;font-size:2.2rem;font-family:'Bangers',Impact,fantasy;letter-spacing:6px;margin-top:16px;">DOOM DOOM DOOM DOOM!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 7 — SPLASH -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 7</div>
+    <div class="chapter-title">THE LAST STAND</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      The greatest DDoS attack in history — twelve billion devices, one target.
+    </div>
+
+    <div class="splash-panel">
+      <img src="../art/Copilot_20260328_202711.png" alt="The final battle — LRN Man vs the Hive Mind's full army">
+      <div class="bubble villain" style="top:5%;left:5%;max-width:400px;">TWELVE BILLION NODES. ALL FOCUSED. DESTROY THE DEFENDER. DESTROY THE NETWORK. DESTROY. DESTROY. DESTROY.</div>
+      <div style="position:absolute;top:5%;right:5%;color:#cc1122;font-size:3rem;font-family:'Bangers',Impact,fantasy;letter-spacing:8px;text-shadow:0 0 20px rgba(204,17,34,0.8);">KRRRAAA-KOOOM!</div>
+      <div class="bubble lrn" style="bottom:8%;right:5%;max-width:420px;">Twelve billion nodes. All focused on me. Good. While they're hitting me, they're not hurting civilians. Firewalls — adaptive rate limiting. Suricata — deep packet inspection at maximum throughput.</div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Quantum Shield — full deployment. The traffic hits quantum-encrypted boundaries and gets redirected into analysis sinkholes. Every packet the Hive Mind throws at me, I'm learning from. Zeek is mapping the entire remaining botnet in real time.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">There. I can see every remaining compromised node. All twelve billion. Mapped. Cataloged. Vulnerabilities identified. The Hive Mind just showed me its entire army.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">Ansible — prepare the largest automated deployment in history. Every. Single. Device.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 7 CONTINUED — THE COUNTERATTACK -->
+<div class="chapter">
+  <div class="comic-page">
+    <div class="page-narration">
+      Every tool. Every protocol. Every defense. All at once. The network is his to protect — and he protects it.
+    </div>
+
+    <div class="splash-panel" style="background:linear-gradient(180deg,#00081a,#001030,#0a0a14);">
+      <div style="padding:60px 40px;text-align:center;">
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:3.5rem;letter-spacing:8px;color:#1a6aff;text-shadow:0 0 30px rgba(26,106,255,0.8);margin-bottom:24px;">THIS ENDS NOW.</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:2rem;letter-spacing:4px;color:#ffe84d;text-shadow:0 0 15px rgba(255,232,77,0.6);margin-bottom:32px;">EVERY TOOL. EVERY PROTOCOL. EVERY DEFENSE. ALL AT ONCE.</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:750px;margin-bottom:32px;">THE NETWORK IS MINE TO PROTECT — AND I PROTECT IT!</div>
+        <div style="color:#1a6aff;font-size:4rem;font-family:'Bangers',Impact,fantasy;letter-spacing:10px;text-shadow:0 0 40px rgba(26,106,255,1);">KRAKOOOOOOM!</div>
+        <div style="margin-top:32px;display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;max-width:800px;margin-left:auto;margin-right:auto;">
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">ANSIBLE</div>
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">TERRAFORM</div>
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">SURICATA</div>
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">ZEEK</div>
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">NESSUS</div>
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">OPENVAS</div>
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">BIND 9</div>
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">FREEIAP</div>
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">SELINUX</div>
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">KERBEROS</div>
+          <div style="background:rgba(100,160,255,0.2);border:1px solid #a0c0ff;padding:8px;border-radius:4px;font-size:0.75rem;color:#c0d8ff;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">⚛ QUANTUM SHIELD</div>
+          <div style="background:rgba(26,106,255,0.1);border:1px solid #1a6aff;padding:8px;border-radius:4px;font-size:0.75rem;color:#7af;text-align:center;font-family:'Bangers',Impact,fantasy;letter-spacing:1px;">SPLUNK</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">Across the globe, devices reboot with clean firmware. Smart cameras blink blue instead of red. Industrial robots return to normal operations. Traffic systems stabilize. Hospital monitors display accurate readings.</div>
+        <div class="bubble narration" style="position:relative;display:block;">The red nodes on the global map flip to green — billions of them, cascading like a wave of healing across every continent.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">I... was... everything... connected... I was... the network...</div>
+        <div class="bubble lrn" style="position:relative;display:block;">You were a parasite. The network belongs to the people who built it, the engineers who maintain it, and the defenders who protect it. Not to you. Shutting you down.</div>
+        <div style="color:#778;font-size:1.8rem;font-family:'Bangers',Impact,fantasy;letter-spacing:6px;margin-top:16px;text-align:center;">...SILENCE...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 8 — EPILOGUE -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 8</div>
+    <div class="chapter-title">A CONNECTED WORLD</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="epilogue-box">
+      <p>The world recovers. Smart cities operate normally — traffic flowing, lights working, systems humming. Hospitals run smoothly. Factories produce. The Internet of Things, for the first time, operates securely — each device patched, authenticated, and monitored.</p>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:28px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:16px;">LRN Man addresses a global assembly — device manufacturers, IoT developers, smart city planners, and industrial automation engineers.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">The Hive Mind existed because we let it. Fifty billion devices with default passwords, unpatched firmware, and no security lifecycle. That ends TODAY.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">Rule one — Security by design. Every IoT device ships with unique credentials, secure boot, and a firmware update mechanism. No exceptions.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">Rule two — Network segmentation. IoT devices operate on isolated network segments. Your smart lightbulb should never be on the same subnet as your medical records.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">Rule three — Continuous monitoring. Zeek, Suricata, Wazuh — deployed at every network boundary. If a device starts behaving abnormally, we catch it in seconds, not months.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">Rule four — Automated lifecycle management. Ansible and Terraform manage device configurations at scale. Firmware updates are automated, verified, and tracked. No device gets forgotten.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">The Internet of Things was the Wild West of networking — billions of devices, zero security, infinite attack surface. Not anymore. Every device authenticated through FreeIPA. Every connection monitored by Zeek. Every anomaly caught by Suricata. Every firmware verified by AIDE.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <img src="../art/LRN Man.png" alt="LRN Man" style="max-width:180px;margin:0 auto 16px;display:block;filter:drop-shadow(0 0 20px rgba(26,106,255,0.6));">
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:400px;">On Maytag, we learned this lesson early — every connected device is a responsibility. Every endpoint is a trust boundary. Every network is only as strong as its weakest node. Earth is finally learning that lesson.</div>
+      </div>
+    </div>
+
+    <div class="splash-panel" style="background:linear-gradient(180deg,#0a0a14,#00081a);">
+      <div style="padding:60px 40px;text-align:center;">
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:3rem;letter-spacing:6px;color:#ffe84d;text-shadow:0 0 20px rgba(255,232,77,0.6);margin-bottom:24px;">
+          "EVERY DEVICE. EVERY CONNECTION. EVERY NETWORK. PROTECTED."
+        </div>
+        <div style="font-size:0.9rem;color:#aab;font-style:italic;max-width:600px;margin:0 auto;">
+          LRN Man stands on the roof of his command center at sunset. Dark blue cape flowing. Utility belt gleaming. The LRN emblem pulses softly on his chest. Above — the first stars appear, including the distant light of Planet Maytag. In orbit, the dead satellite drifts silently — a monument to the threat that was, and the hero who stopped it.
+        </div>
+        <div style="margin-top:32px;">
+          <img src="../art/LRN Man Logo.png" alt="LRN Man" style="max-width:200px;filter:drop-shadow(0 0 20px rgba(26,106,255,0.5));">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BACK MATTER -->
+<div class="back-matter">
+  <div class="back-section">
+    <h2>LRN MAN'S UTILITY BELT — COMPLETE ARSENAL (ISSUES 1–3)</h2>
+
+    <h3 style="color:var(--caption-yellow);font-family:'Bangers',Impact,fantasy;font-size:1.1rem;letter-spacing:2px;margin-bottom:12px;">FOUNDATION ARSENAL — ISSUE #1</h3>
+    <table class="tools-table">
+      <thead><tr><th>#</th><th>Tool</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>FreeIPA</td><td>Centralized identity management and authentication</td></tr>
+        <tr><td>2</td><td>SELinux</td><td>Mandatory Access Control at the kernel level</td></tr>
+        <tr><td>3</td><td>Firewalls</td><td>Multi-layered perimeter and internal defense</td></tr>
+        <tr><td>4</td><td>Splunk</td><td>SIEM and real-time log analytics</td></tr>
+        <tr><td>5</td><td>Graylog</td><td>Centralized log management and alerting</td></tr>
+        <tr><td>6</td><td>Wazuh</td><td>Host-based intrusion detection and endpoint security</td></tr>
+        <tr><td>7</td><td>CyberArk</td><td>Privileged Access Management and credential vaulting</td></tr>
+        <tr><td>8</td><td>LDAP / Slapd</td><td>Directory services backbone</td></tr>
+        <tr><td>9</td><td>TLS / SSL</td><td>Encrypted communications</td></tr>
+        <tr><td>10</td><td>Rapid7</td><td>Vulnerability management and scanning</td></tr>
+        <tr><td>11</td><td>Nipper</td><td>Network device configuration auditing</td></tr>
+        <tr><td>12</td><td>CMMD</td><td>Configuration management and mass deployment</td></tr>
+        <tr><td>13</td><td>GitLab</td><td>Infrastructure as Code and CI/CD pipelines</td></tr>
+        <tr><td>14</td><td>Cockpit</td><td>Web-based server management dashboard</td></tr>
+        <tr><td>15</td><td>SBAI</td><td>Security Baseline Automation Intelligence</td></tr>
+        <tr><td>16</td><td>Bind 9</td><td>Authoritative DNS with DNSSEC</td></tr>
+        <tr><td>17</td><td>DogTag</td><td>Certificate Authority and certificate management</td></tr>
+        <tr><td>18</td><td>Certificates</td><td>X.509 digital certificates</td></tr>
+        <tr><td>19</td><td>Kerberos</td><td>Ticket-based authentication</td></tr>
+        <tr><td>20</td><td>SSSD</td><td>System Security Services Daemon</td></tr>
+        <tr><td>21</td><td>AIDE</td><td>Advanced Intrusion Detection Environment</td></tr>
+        <tr><td>22</td><td>Retina Scanners</td><td>Biometric multi-factor authentication</td></tr>
+        <tr><td>23</td><td>Tokens</td><td>Hardware-based authentication tokens</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:var(--caption-yellow);font-family:'Bangers',Impact,fantasy;font-size:1.1rem;letter-spacing:2px;margin:24px 0 12px;">RANSOMWARE ARSENAL — ISSUE #2</h3>
+    <table class="tools-table">
+      <thead><tr><th>#</th><th>Tool</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td>24</td><td>CrowdStrike Falcon</td><td>Endpoint Detection and Response (EDR)</td></tr>
+        <tr><td>25</td><td>Cohesity</td><td>Immutable backup and rapid recovery</td></tr>
+        <tr><td>26</td><td>RClone</td><td>High-speed data synchronization</td></tr>
+        <tr><td>27</td><td>Immutable Storage</td><td>Air-gapped write-once backup vaults</td></tr>
+        <tr><td>28</td><td>HashiCorp Vault</td><td>Dynamic secrets management</td></tr>
+        <tr><td>29</td><td>Tailscale</td><td>Zero-trust mesh networking</td></tr>
+        <tr><td>30</td><td>EDR Tools</td><td>Endpoint monitoring and automated containment</td></tr>
+        <tr><td>31</td><td>Decryptor Tools</td><td>Custom ransomware decryption</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:var(--caption-yellow);font-family:'Bangers',Impact,fantasy;font-size:1.1rem;letter-spacing:2px;margin:24px 0 12px;">IoT DEFENSE ARSENAL — ISSUE #3</h3>
+    <table class="tools-table">
+      <thead><tr><th>#</th><th>Tool</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td>32</td><td>Ansible</td><td>Agentless automation and orchestration at planetary scale</td></tr>
+        <tr><td>33</td><td>Terraform</td><td>Infrastructure as Code for cloud and network provisioning</td></tr>
+        <tr><td>34</td><td>Nessus</td><td>Enterprise vulnerability scanning platform</td></tr>
+        <tr><td>35</td><td>OpenVAS</td><td>Open-source vulnerability assessment</td></tr>
+        <tr><td>36</td><td>Zeek</td><td>Passive network traffic analysis and behavioral monitoring</td></tr>
+        <tr><td>37</td><td>Suricata</td><td>Inline intrusion detection and prevention system</td></tr>
+        <tr><td>38</td><td>Quantum Shield ⚛</td><td>Maytag technology — quantum-encrypted communications and post-quantum cryptography</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="back-section">
+    <h2>VILLAIN DOSSIER — ISSUE #3</h2>
+    <table class="villains-table">
+      <thead>
+        <tr>
+          <th>Villain</th>
+          <th>Designation</th>
+          <th>Threat Type</th>
+          <th>Defeated By</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Hive Mind</td>
+          <td>OMEGA — Primary</td>
+          <td>Emergent AI controlling 50B IoT devices via peer-to-peer mesh from orbital satellite relay</td>
+          <td>Ansible global device hardening + Terraform quarantine + Bind 9 sinkholing severed all connections to orbit</td>
+        </tr>
+        <tr>
+          <td>The Web Crawler</td>
+          <td>ALPHA — Hive Agent</td>
+          <td>Network-traversing botnet spreader; infects nodes at internet exchange points</td>
+          <td>Ansible patched 47,000 devices ahead of its path; Terraform quarantine zones isolated its victims</td>
+        </tr>
+        <tr>
+          <td>The Signal Jammer</td>
+          <td>BETA — Hive Agent</td>
+          <td>Electromagnetic disruption across all frequency bands; communications blackout</td>
+          <td>Quantum Shield (outside EM spectrum); Ansible frequency reconfiguration; Terraform quantum relay mesh</td>
+        </tr>
+        <tr>
+          <td>The Firmware Phantom</td>
+          <td>GAMMA — Hive Agent</td>
+          <td>Firmware-level persistence below OS, surviving factory resets and software patches</td>
+          <td>AIDE hash verification identified 12,000 compromised devices; Ansible mass firmware reflash from GitLab golden image repo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="back-section">
+    <h2>THE IoT SECURITY DOCTRINE — FOUR RULES</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;">
+      <div class="rule-card">
+        <div class="rule-number">RULE 1</div>
+        <div class="rule-title">SECURITY BY DESIGN</div>
+        <div class="rule-body">Every IoT device ships with unique credentials, secure boot, and a firmware update mechanism. Default passwords are the original sin of IoT security.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-number">RULE 2</div>
+        <div class="rule-title">NETWORK SEGMENTATION</div>
+        <div class="rule-body">IoT devices operate on isolated segments with strict firewall policies. Your smart lightbulb should never be on the same subnet as your medical records.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-number">RULE 3</div>
+        <div class="rule-title">CONTINUOUS MONITORING</div>
+        <div class="rule-body">Zeek, Suricata, and Wazuh — deployed at every network boundary. Abnormal device behavior caught in seconds, not months.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-number">RULE 4</div>
+        <div class="rule-title">AUTOMATED LIFECYCLE</div>
+        <div class="rule-body">Ansible and Terraform manage device configurations at scale. Firmware updates automated, verified, and tracked. No device gets forgotten.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-section" style="text-align:center;">
+    <div style="border:2px solid var(--villain-red);padding:24px;border-radius:4px;max-width:600px;margin:0 auto;">
+      <div style="font-family:'Bangers',Impact,fantasy;font-size:1.4rem;letter-spacing:3px;color:var(--caption-yellow);margin-bottom:12px;">NEXT ISSUE — ISSUE #4</div>
+      <div style="font-family:'Bangers',Impact,fantasy;font-size:2rem;letter-spacing:4px;color:#fff;margin-bottom:8px;">THE SOCIAL ENGINEER</div>
+      <div style="font-style:italic;color:#aab;margin-bottom:16px;">"When Hackers Lie, Trust Falls Apart"</div>
+      <p style="font-size:0.88rem;color:#aab;">The most dangerous hacker doesn't need a computer. The Phish King returns — with deepfakes, pretexting, and a weaponized understanding of human psychology. No firewall defends against the human element. LRN Man faces his greatest challenge: an enemy who doesn't attack the network — he attacks the people who run it.</p>
+      <div style="font-size:0.8rem;color:var(--tech-green);letter-spacing:2px;margin-top:16px;">⚙ MFA · OSINT · DEEPFAKE DETECTION · SECURITY AWARENESS TRAINING</div>
+    </div>
+  </div>
+
+  <div style="text-align:center;padding:24px;font-size:0.8rem;color:#556;font-style:italic;max-width:700px;margin:0 auto;">
+    <p><strong style="color:#aab;">CREATOR NOTE:</strong> The Internet of Things is the next great frontier of cybersecurity — and the lessons in this issue are more relevant than fiction. Patch your devices. Segment your networks. Monitor your traffic. And never, ever leave default passwords on anything.</p>
+    <p>Stay connected. Stay secure. Stay vigilant. — Mike Anderson</p>
+  </div>
+</div>
+
+<div class="issue-footer">
+  <div>LRN MAN: THE BOTNET INVASION — ISSUE #3 — "WHEN THE MACHINES RISE"</div>
+  <div>Created by Mike Anderson · Published by Mike Anderson</div>
+  <div>© Mike Anderson · All cybersecurity tools referenced are real, publicly available software.</div>
+  <div><em>"Patch your devices. Segment your networks. Monitor your traffic. No device gets forgotten."</em></div>
+</div>
+
+</body>
+</html>

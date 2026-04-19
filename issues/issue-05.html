@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LRN Man #5 — The Quantum Conspiracy | Mike Anderson</title>
+<link rel="stylesheet" href="comic.css">
+</head>
+<body>
+
+<nav class="issue-nav">
+  <a href="issue-04.html">◀ ISSUE #4</a>
+  <span>ISSUE #5 — THE QUANTUM CONSPIRACY</span>
+  <a href="index.html">ALL ISSUES ▶</a>
+</nav>
+
+<!-- COVER SPREAD -->
+<div class="cover-spread">
+  <img src="../art/Copilot_20260328_202748.png" alt="Issue #5 Cover — The Quantum Conspiracy">
+  <div class="cover-overlay">
+    <div class="cover-publisher">MIKE ANDERSON PRESENTS</div>
+    <div class="cover-title">LRN MAN</div>
+    <div class="cover-subtitle">DEFENDER OF THE NETWORK</div>
+    <div class="cover-issue">ISSUE #5</div>
+    <div class="cover-story">THE QUANTUM CONSPIRACY</div>
+    <div class="cover-tagline">"WHEN ENCRYPTION FALLS, CHAOS REIGNS"</div>
+  </div>
+</div>
+
+<!-- CREDITS PAGE -->
+<div class="credits-page">
+  <div class="credits-logo">
+    <img src="../art/LRN Man Logo.png" alt="LRN Man Logo">
+  </div>
+  <div class="credits-block">
+    <div class="credits-title">THE QUANTUM CONSPIRACY</div>
+    <div class="credits-subtitle">WHEN ENCRYPTION FAILS, CHAOS REIGNS</div>
+    <table class="credits-table">
+      <tr><td>Story &amp; Concept</td><td>Mike Anderson</td></tr>
+      <tr><td>Published by</td><td>Mike Anderson</td></tr>
+      <tr><td>Issue</td><td>#5 of the LRN Network Universe</td></tr>
+      <tr><td>New Tools</td><td>CRYSTALS-Kyber · CRYSTALS-Dilithium · SPHINCS+ · QKD · Post-Quantum TLS</td></tr>
+      <tr><td>Total Arsenal</td><td>50+ tools — complete series arsenal</td></tr>
+    </table>
+    <p class="credits-note">
+      Nine months of peace. Nine months since the fall of the Phish King. The networks are secure. For the first time — LRN Man can rest. Then the unbreakable becomes breakable. And everything changes.
+    </p>
+  </div>
+</div>
+
+<!-- OVERVIEW IMAGES -->
+<div class="chapter">
+  <div class="panel-grid grid-2">
+    <div class="panel">
+      <img src="../art/Copilot_20260328_202804.png" alt="The Quantum Oracle — encryption falls">
+      <div class="bubble narration">RSA. AES. TLS. ECC. THE MATHEMATICAL PILLARS THAT HOLD UP EVERY SECURE COMMUNICATION ON EARTH. CRUMBLING. ALL OF THEM. ALL AT ONCE.</div>
+    </div>
+    <div class="panel">
+      <img src="../art/Copilot_20260328_202808.png" alt="Post-quantum cryptography — the new standard">
+      <div class="bubble narration">THERE IS ONLY ONE THING THAT COULD DO THIS. SOMEONE HAS A QUANTUM COMPUTER. AND THEY KNOW HOW TO USE IT.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROLOGUE -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">PROLOGUE</div>
+    <div class="chapter-title">THE UNBREAKABLE BECOMES BREAKABLE</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Nine months have passed since the fall of the Phish King. The world listened. Firewalls were hardened. Encryption was strengthened. Multi-factor authentication became the standard. For the first time in the history of the digital age — the networks are secure. For the first time… LRN Man can rest.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202726.png" alt="LRN Man — a moment of peace">
+        <div class="bubble lrn">You know, Bastion… I could get used to this. All green. No alerts. No zero-days. No ransomware. No botnets. No phishing campaigns.</div>
+        <div class="bubble lrn">Just… peace.</div>
+        <div class="bubble narration">Peace. Such a fragile word in the digital age.</div>
+      </div>
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202730.png" alt="Cryptographic failure — all systems breaking">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:10px;">An anomaly. Probably a routine handshake error. LRN Man reaches for the diagnostics—</div>
+        <div style="color:#cc1122;font-size:1.4rem;font-family:'Bangers',Impact,fantasy;letter-spacing:4px;margin:8px 0;text-align:center;">BLAAAAAART! BLAAAAAART!</div>
+        <div class="bubble narration" style="position:relative;display:block;">BASTION AI: "ALERT. CRITICAL CRYPTOGRAPHIC FAILURE DETECTED. RSA-4096 ENCRYPTION COMPROMISED. TIME TO BREAK: 3.7 SECONDS."</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:28px;text-align:center;">
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:700px;margin:0 auto 20px;">
+          <div style="background:rgba(204,17,34,0.12);border:1px solid #cc1122;padding:12px;border-radius:4px;text-align:left;">
+            <div style="font-family:'Bangers',Impact,fantasy;color:#f44;font-size:0.85rem;letter-spacing:2px;margin-bottom:6px;">AES-256 — BROKEN</div>
+            <div style="font-size:0.78rem;color:#aab;">Time to break: 2.1 seconds</div>
+            <div style="color:#cc1122;font-size:1.2rem;font-family:'Bangers',Impact,fantasy;letter-spacing:3px;margin-top:6px;">SHATTER!</div>
+          </div>
+          <div style="background:rgba(204,17,34,0.12);border:1px solid #cc1122;padding:12px;border-radius:4px;text-align:left;">
+            <div style="font-family:'Bangers',Impact,fantasy;color:#f44;font-size:0.85rem;letter-spacing:2px;margin-bottom:6px;">TLS 1.3 — COMPROMISED</div>
+            <div style="font-size:0.78rem;color:#aab;">All secure handshakes failing globally</div>
+            <div style="color:#cc1122;font-size:1.2rem;font-family:'Bangers',Impact,fantasy;letter-spacing:3px;margin-top:6px;">CRACK!</div>
+          </div>
+          <div style="background:rgba(204,17,34,0.12);border:1px solid #cc1122;padding:12px;border-radius:4px;text-align:left;">
+            <div style="font-family:'Bangers',Impact,fantasy;color:#f44;font-size:0.85rem;letter-spacing:2px;margin-bottom:6px;">ECC — DEFEATED</div>
+            <div style="font-size:0.78rem;color:#aab;">All digital signatures invalid</div>
+            <div style="color:#cc1122;font-size:1.2rem;font-family:'Bangers',Impact,fantasy;letter-spacing:3px;margin-top:6px;">KRRSSHH!</div>
+          </div>
+          <div style="background:rgba(204,17,34,0.12);border:1px solid #cc1122;padding:12px;border-radius:4px;text-align:left;">
+            <div style="font-family:'Bangers',Impact,fantasy;color:#f44;font-size:0.85rem;letter-spacing:2px;margin-bottom:6px;">RSA — FACTORED</div>
+            <div style="font-size:0.78rem;color:#aab;">4096-bit key shattered</div>
+            <div style="color:#cc1122;font-size:1.2rem;font-family:'Bangers',Impact,fantasy;letter-spacing:3px;margin-top:6px;">BOOM!</div>
+          </div>
+        </div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:600px;">Someone has a quantum computer. And they know how to use it.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 1 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 1</div>
+    <div class="chapter-title">THE ORACLE SPEAKS</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Beneath the surface of the Earth. A place where particles once raced at nearly the speed of light. Now — the seat of the most dangerous mind in the world.
+    </div>
+
+    <div class="splash-panel">
+      <img src="../art/Copilot_20260329_000541.png" alt="The Quantum Oracle — global broadcast">
+      <div class="bubble villain" style="top:5%;left:5%;max-width:420px;">People of Earth. I am The Quantum Oracle. I speak to you now on every channel, every frequency, every connected screen — because I can. Because there is no encryption I cannot break.</div>
+      <div class="bubble villain" style="top:35%;right:5%;max-width:400px;">Your encryption is dead. RSA, AES, TLS, ECC — the mathematical locks you placed on your secrets were built for classical computers. I am not classical. I have rendered every cryptographic standard on Earth… obsolete.</div>
+      <div class="bubble villain" style="bottom:8%;left:5%;max-width:500px;">Pay tribute — every nation, every corporation, every institution. Pay tribute, or I will reveal everything. Every secret. Every lie. Every private shame hidden behind a password. ALL OF IT. You have seventy-two hours.</div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:16px;">And in seventy-two seconds… the world begins to break:</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:10px;border-radius:4px;font-size:0.82rem;color:#dda;">
+            <strong style="color:#f44;display:block;">WALL STREET</strong>Trading floors erupt. "ENCRYPTION FAILURE — ALL TRANSACTIONS SUSPENDED." The Dow plunges 4,000 points.
+          </div>
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:10px;border-radius:4px;font-size:0.82rem;color:#dda;">
+            <strong style="color:#f44;display:block;">THE PENTAGON</strong>Generals stare at classified communications displayed in plaintext. "Every nuclear launch code… is compromised."
+          </div>
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:10px;border-radius:4px;font-size:0.82rem;color:#dda;">
+            <strong style="color:#f44;display:block;">HOSPITALS</strong>Patient records — medical histories, diagnoses, psychiatric evaluations — streaming onto public websites.
+          </div>
+          <div style="background:rgba(204,17,34,0.1);border:1px solid #cc1122;padding:10px;border-radius:4px;font-size:0.82rem;color:#dda;">
+            <strong style="color:#f44;display:block;">GOVERNMENTS</strong>Classified communications between world leaders appear on news tickers. Alliances fracture. Trust evaporates.
+          </div>
+        </div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-top:16px;">Seventy-two hours. That's how long we have before every secret on Earth goes public. Then I'd better work fast.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 2 — VILLAIN REVEALS -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 2</div>
+    <div class="chapter-title">SHATTERED KEYS</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260329_000548.png" alt="The Quantum Oracle and lieutenants">
+        <div class="bubble villain">Forty-seven billion in cryptocurrency. All those 'unbreakable' private keys. Broken in the time it takes to brew a cup of tea.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">LRN Man analyzes the attack speed. The decryption is not just fast. It is impossibly fast.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">The speed of the decryption… it's not just a quantum computer. A standard quantum system would take minutes. This is doing it in seconds. BASTION — analysis.</div>
+        <div class="bubble narration" style="position:relative;display:block;">BASTION AI: "Estimated logical qubit count exceeds 10,000. The attacking system utilizes topological qubits with active error correction."</div>
+      </div>
+    </div>
+
+    <div class="villain-reveal">
+      <div class="villain-header">
+        <div class="villain-portrait">
+          <img src="../art/Copilot_20260329_000611.png" alt="The Quantum Oracle — villain dossier">
+        </div>
+        <div class="villain-info">
+          <div class="villain-designation">VILLAIN DESIGNATION: OMEGA — PRIMARY ANTAGONIST</div>
+          <div class="villain-name">THE QUANTUM ORACLE</div>
+          <div class="villain-title">DR. ELARA VOSS — QUANTUM CRYPTOGRAPHER</div>
+          <p>Spent twenty years warning the world that quantum computers would break all existing encryption. Ignored. Laughed at. Then she found the debris from LRN Man's arrival on Earth — Maytag technology fragments in a New Mexico desert. She built what no one else could: a 10,000-qubit topological quantum computer. Not to profit — to <em>prove</em> she was right.</p>
+          <p>Attack: The Great Decryption. Breaks all classical encryption globally in real time. Exposes every secret on Earth to force action on post-quantum security.</p>
+          <p>The twist: She was right about the problem the whole time.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">No… The quantum computing architecture shows significant correlation with Maytag technology signatures. The Oracle's quantum computer incorporates salvaged fragments of Maytag technology — components from the debris scattered when my escape pod entered Earth's atmosphere.</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:700px;">The debris from my arrival. Someone found it. Someone studied it. Someone built a weapon from the ashes of my homeworld. This is my fault. And that means it's my responsibility to stop it.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-3">
+      <div style="background:rgba(100,50,200,0.1);border:2px solid #8060ff;padding:16px;border-radius:4px;">
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:0.75rem;letter-spacing:2px;color:#8060ff;margin-bottom:6px;">LIEUTENANT ALPHA</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1.2rem;letter-spacing:2px;color:#ffe84d;margin-bottom:8px;">QUBIT</div>
+        <p style="font-size:0.82rem;color:#aab;">Quantum entangled twins. Two identical beings sharing a quantum state — what happens to one instantly affects the other. Can attack two targets simultaneously anywhere on Earth. Forces LRN Man to choose which crisis to address.</p>
+      </div>
+      <div style="background:rgba(100,50,200,0.1);border:2px solid #8060ff;padding:16px;border-radius:4px;">
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:0.75rem;letter-spacing:2px;color:#8060ff;margin-bottom:6px;">LIEUTENANT BETA</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1.2rem;letter-spacing:2px;color:#ffe84d;margin-bottom:8px;">THE DECOHERENCE</div>
+        <p style="font-size:0.82rem;color:#aab;">A being of pure quantum noise. Doesn't break systems — makes them break themselves through random bit-flips at the hardware level. Every calculation becomes uncertain. Every result unreliable. Not error. Entropy.</p>
+      </div>
+      <div style="background:rgba(100,50,200,0.1);border:2px solid #8060ff;padding:16px;border-radius:4px;">
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:0.75rem;letter-spacing:2px;color:#8060ff;margin-bottom:6px;">LIEUTENANT GAMMA</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1.2rem;letter-spacing:2px;color:#ffe84d;margin-bottom:8px;">SCHRÖDINGER</div>
+        <p style="font-size:0.82rem;color:#aab;">Exists in quantum superposition. Both present and absent simultaneously until observed. Can be in multiple locations at once. Evaded every sensor on Earth. The ultimate infiltrator — a threat that is both real and unreal until someone opens the box.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 3 — POST-QUANTUM TOOLS -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 3</div>
+    <div class="chapter-title">THE QUANTUM SHIELD REBORN</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      The Quantum Shield activates at full power. But 73% effectiveness is not enough. The world's encryption must be rebuilt — from the mathematical foundations up.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260329_000601.png" alt="Post-quantum cryptography — new mathematical foundations">
+        <div class="bubble lrn">The world's encryption was built on mathematical problems that classical computers can't solve. But quantum computers eat those for breakfast. We need new math. Post-quantum cryptography. Problems that even quantum computers can't crack efficiently.</div>
+      </div>
+      <div class="panel">
+        <img src="../art/Copilot_20260329_000616.png" alt="LRN Man deploys lattice-based cryptography">
+        <div class="bubble lrn">CRYSTALS-Kyber — NIST's selected post-quantum key encapsulation mechanism. Based on the hardness of lattice problems — mathematical structures so complex that even a million-qubit quantum computer would take longer than the age of the universe to solve them.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="tech-box" style="border-color:#a0c0ff;box-shadow:0 0 20px rgba(100,160,255,0.3);">
+        <div class="tech-box-header" style="background:linear-gradient(135deg,#0a1a4a,#1a2a6a);">⚛ CRYSTALS-KYBER — NEW TOOL #45 — NIST POST-QUANTUM STANDARD</div>
+        <div class="tech-box-body">
+          <strong>Post-quantum key encapsulation mechanism.</strong> Based on the hardness of Module Learning With Errors (MLWE) — a lattice problem. Replaces RSA and ECC for key exchange. Selected by NIST as the primary post-quantum encryption standard in 2024. Even a 10,000-qubit quantum computer cannot efficiently solve the underlying lattice mathematics.
+          <br><br><em>"Not magic. Mathematics. Specifically, mathematics that quantum computers cannot efficiently solve."</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="tech-box" style="border-color:#a0c0ff;">
+        <div class="tech-box-header" style="background:linear-gradient(135deg,#0a1a4a,#1a2a6a);">⚛ CRYSTALS-DILITHIUM — NEW TOOL #46</div>
+        <div class="tech-box-body">
+          <strong>Post-quantum digital signatures.</strong> Every document, every transaction, every communication — signed with lattice-based mathematics that laughs at quantum attacks. If anyone tampers with a signed message, the lattice structure collapses instantly. The replacement for RSA signatures and ECDSA worldwide.
+        </div>
+      </div>
+      <div class="tech-box" style="border-color:#a0c0ff;">
+        <div class="tech-box-header" style="background:linear-gradient(135deg,#0a1a4a,#1a2a6a);">⚛ SPHINCS+ — NEW TOOL #47</div>
+        <div class="tech-box-body">
+          <strong>Hash-based digital signatures — the eternal backstop.</strong> Hash functions are the oldest, most battle-tested tools in cryptography. These stateless hash-based signature trees cannot be uprooted by any computer, classical or quantum. Even if Kyber and Dilithium somehow fall — SPHINCS+ stands eternal.
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="tech-box" style="border-color:#a0c0ff;">
+        <div class="tech-box-header" style="background:linear-gradient(135deg,#0a1a4a,#1a2a6a);">⚛ QUANTUM KEY DISTRIBUTION — NEW TOOL #48</div>
+        <div class="tech-box-body">
+          <strong>Unhackable communication channels using quantum physics itself.</strong> Every photon carries a quantum state. Any eavesdropping — any measurement by an unauthorized observer — disturbs the quantum state and triggers an immediate alert. You cannot spy on a quantum channel. Physics won't allow it.
+        </div>
+      </div>
+      <div class="tech-box" style="border-color:#a0c0ff;">
+        <div class="tech-box-header" style="background:linear-gradient(135deg,#0a1a4a,#1a2a6a);">⚛ POST-QUANTUM TLS — NEW TOOL #49</div>
+        <div class="tech-box-body">
+          <strong>Lattice-based encryption wrapping every communication channel.</strong> Quantum decryption cannot touch lattice problems. Every HTTPS connection, every API call, every encrypted session — upgraded to algorithms that are immune to Shor's algorithm and Grover's algorithm. The new standard for secure transport.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 4 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 4</div>
+    <div class="chapter-title">ENTANGLED</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Qubit attacks. Both of them. At the same time. Two targets. Two crises. One hero.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260329_000631.png" alt="Qubit — quantum entangled twins attack">
+        <div class="bubble villain">Reactor cooling systems… accessed. We are adjusting control rod positions now.</div>
+        <div class="bubble villain">Clearinghouse transaction records… decrypted. We are rerouting fourteen trillion dollars.</div>
+        <div class="bubble villain">Let's see which one LRN Man chooses to save.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Quantum Key Distribution — online. I'm establishing unhackable communication channels using quantum physics itself. Any attempt to eavesdrop disturbs the quantum state and triggers an immediate alert. You can't spy on a quantum channel, Qubit. Physics won't let you.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">Post-Quantum TLS — wrapping every communication channel in lattice-based encryption. Your quantum decryption can't touch lattice problems. The math is against you.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">You know what's funny about quantum entanglement, Qubit? You and your twin are correlated. Measuring one tells me the state of the other. By observing YOU — by measuring your quantum state HERE — I collapse the wave function of your twin THERE.</div>
+        <div class="bubble villain" style="position:relative;display:inline-block;margin-bottom:16px;max-width:500px;">STOP OBSERVING! STOP—</div>
+        <div style="color:#1a6aff;font-size:2rem;font-family:'Bangers',Impact,fantasy;letter-spacing:5px;margin-bottom:16px;">SHATTER!</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:400px;">One down. Two to go.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 5 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 5</div>
+    <div class="chapter-title">NOISE AND CHAOS</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      The Decoherence doesn't attack like a hacker. It attacks like entropy itself — the fundamental tendency of the universe toward disorder.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260329_000702.png" alt="The Decoherence — quantum noise attack">
+        <div class="bubble villain">Ev...ery bit. Ev...ery byte. Ev...ery cal...cu...la...tion. Un...cer...tain. I do not de...stroy your sys...tems. I make them doubt them...selves.</div>
+        <div style="color:#778;font-size:1.2rem;font-family:'Bangers',Impact,fantasy;letter-spacing:3px;margin-top:12px;text-align:center;">FZZZZT! KRRKK! BZZZT! SKRRRTCH!</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">You can...not cor...rect what has no er...ror. I am not a mis...take. I am the na...tu...ral state. Or...der is the er...ror.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Then let me show you what ordered minds can do. Quantum error correction — encoding information across multiple qubits so that even if some are corrupted, the data can be reconstructed perfectly.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">You introduce noise? I weave order around it. You flip a bit? My codes detect and correct it before the damage propagates.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Wazuh — real-time security monitoring and integrity checking across every endpoint. Graylog — centralizing every log from every system, looking for patterns in the noise. Splunk — analyzing everything, correlating events, finding the signal in the chaos.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">AIDE verifies file integrity — if even a single bit changes, I know about it. HashiCorp Vault is rotating every credential faster than you can corrupt them.</div>
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">NO! You can...not — the noise — I AM the noise — you can...not si...lence en...tro...py!</div>
+        <div class="bubble lrn" style="position:relative;display:block;">I'm not silencing entropy. I'm correcting it. There's a difference.</div>
+        <div style="text-align:center;margin-top:16px;">
+          <div style="color:#1a6aff;font-size:1.4rem;font-family:'Bangers',Impact,fantasy;letter-spacing:4px;">CLANG! LOCK! SEAL!</div>
+          <div class="bubble lrn" style="position:relative;display:inline-block;margin-top:12px;">Error. Corrected. Two down. One to go.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 6 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 6</div>
+    <div class="chapter-title">THE CAT IN THE BOX</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Schrödinger — the assassin who exists in quantum superposition. Present and absent. Here and not here. A threat that is both real and unreal until someone opens the box.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260329_000823.png" alt="Schrödinger — quantum superposition infiltrator">
+        <div class="bubble villain">Hello, LRN Man. I'm in your fortress. Or am I? Check your server room. I might be there. Or I might be in your armory. Or standing right behind you. Or I might not be here at all.</div>
+        <div class="bubble villain">Are you willing to bet your life on which state I'm in?</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">You exist in superposition. Like Schrödinger's cat — present and absent until someone observes you. So the solution is simple. I need to observe you. I need to force a measurement. I need to collapse your wave function.</div>
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">Good luck. No camera, no motion detector, no thermal scanner can pin me down. I am the ultimate infiltrator.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">Maybe no single sensor. But what about all of them?</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Kerberos authentication — you need a ticket. SSSD — you need a verified identity in the directory. FreeIPA — centralized identity management that demands you exist as one entity, in one place, at one time. No superposition allowed.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">CyberArk — locking down every privileged credential. And DogTag Certificate System — every entity must present a valid certificate. No certificate? As far as my network is concerned, you don't exist.</div>
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">The cat enters the box. But this box has a thousand observers. And in quantum mechanics, observation changes everything.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <div style="color:#1a6aff;font-size:2rem;font-family:'Bangers',Impact,fantasy;letter-spacing:5px;margin-bottom:16px;">KRAKOOM! FLASH! SNAP!</div>
+        <div class="bubble villain" style="position:relative;display:inline-block;max-width:500px;">NO! I — I'm — I can feel it — I'm COLLAPSING — I can't — I'm only ONE—</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;text-align:center;">
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:500px;">That's right. You're observed. You're measured. You're ONE entity, in ONE place, at ONE time. Welcome to classical reality, Schrödinger.</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;max-width:300px;">Three for three. Now… the Oracle.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 7 -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 7</div>
+    <div class="chapter-title">THE ORACLE'S GAMBIT</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Three lieutenants. Three failures. The Oracle unleashes the Great Decryption — the end of all secrets.
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260329_000611.png" alt="The Quantum Oracle — Great Decryption begins">
+        <div class="bubble villain">No more demonstrations. No more ultimatums. THE GREAT DECRYPTION begins NOW.</div>
+        <div style="color:#cc1122;font-size:1.6rem;font-family:'Bangers',Impact,fantasy;letter-spacing:4px;margin-top:12px;text-align:center;">WHHHRRRRRRRMMMMMM!</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">BASTION AI: "ALERT. Mass decryption event detected. Scale: global. All encrypted data being compromised simultaneously. Estimated time to full exposure: 4 hours 17 minutes."</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Four hours. I need to reach the Oracle's facility, shut down the quantum computer, and deploy post-quantum encryption to every remaining vulnerable system on Earth. Simultaneously.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">Time to automate.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:24px;">
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">Ansible — automating the deployment of post-quantum encryption to every server I can reach. Terraform — provisioning quantum-resistant infrastructure as code, scaling across every cloud platform on Earth.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">GitLab CI/CD — continuous deployment of security patches. Every time I push an update, it rolls out to every connected system simultaneously. Automated. Unstoppable.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:10px;">Rapid7, Nessus, OpenVAS — scanning for any system not yet upgraded. Finding the gaps. Flagging the vulnerable. No system left behind.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">Bind 9 with DNSSEC — securing the Domain Name System itself. If the Oracle corrupts DNS, nothing works. We secure the phonebook of the internet first.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CHAPTER 8 — FINAL BATTLE -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">CHAPTER 8</div>
+    <div class="chapter-title">COLLAPSING THE WAVE FUNCTION</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="page-narration">
+      Beneath the Alps. Where particles once raced at 99.9999991% the speed of light. The final battle — not of fists and fury, but of mathematics and will.
+    </div>
+
+    <div class="splash-panel">
+      <img src="../art/Copilot_20260329_000616.png" alt="LRN Man vs the Quantum Oracle — final confrontation">
+      <div class="bubble lrn" style="top:5%;left:5%;max-width:400px;">Oracle! It's over. Your lieutenants are down. Post-quantum encryption is deploying across the globe as we speak. Shut down the computer.</div>
+      <div class="bubble villain" style="top:5%;right:5%;max-width:400px;">Shut it down? You want me to shut it down? LRN Man… do you know who I am? Not the Oracle. Not the mask. Do you know who I was?</div>
+      <div style="position:absolute;bottom:5%;left:50%;transform:translateX(-50%);color:#cc1122;font-size:2.5rem;font-family:'Bangers',Impact,fantasy;letter-spacing:8px;text-shadow:0 0 20px rgba(204,17,34,0.8);">KRAKOOM!</div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:28px;">
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">I am Dr. Elara Voss. I spent twenty years warning the world that quantum computers would break all existing encryption. And do you know what the world did with my warnings? They laughed. They called me paranoid. "We'll deal with it later," they said. "Stop being an alarmist."</div>
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">And then I found the debris. Your debris, LRN Man. Maytag technology fragments scattered across a New Mexico desert. Technology that let me build what no one else could.</div>
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">I built this computer to PROVE I was right. To FORCE the world to take post-quantum security seriously. I'm not the villain, LRN Man. I'm the wake-up call.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">You're right. You're right that the world was unprepared. You're right that people ignored the quantum threat. NIST has been working on it since 2016, but the world dragged its feet.</div>
+        <div class="bubble lrn" style="position:relative;display:block;">But Dr. Voss — you exposed the medical records of cancer patients. You revealed the identities of intelligence agents now in mortal danger. You were right about the problem. But the means don't justify the ends.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260329_000631.png" alt="The quantum battle — lattice mathematics vs Oracle's computer">
+        <div class="bubble lrn">CRYSTALS-Kyber — deploying globally! Every key exchange switching to lattice-based encryption! Dilithium signatures locking every system! SPHINCS+ as the backstop!</div>
+        <div class="bubble villain">Impressive. But I can still see what you're doing. I can predict where you'll deploy next.</div>
+      </div>
+      <div class="panel" style="background:#0a0a14;padding:20px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">She can calculate every possible move he might make. She can predict him — because everything he does follows a pattern. Logic. Strategy. Computation. She can model all of it.</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">So I need to do something she CAN'T model. Something no computer — classical or quantum — can predict. I need TRUE randomness.</div>
+        <div style="color:var(--caption-yellow);font-size:1.8rem;font-family:'Bangers',Impact,fantasy;letter-spacing:5px;text-align:center;margin-top:12px;">KRRAAAKKKOOOOOM!</div>
+      </div>
+    </div>
+
+    <div class="splash-panel" style="background:linear-gradient(180deg,#00081a,#0a0a14);">
+      <div style="padding:50px 40px;text-align:center;">
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1rem;letter-spacing:2px;color:#778;margin-bottom:12px;">LRN MAN FLOODS THE QUANTUM COMPUTER WITH TRUE RANDOMNESS — ENTROPY FROM THE QUANTUM SHIELD'S MAYTAG TECHNOLOGY</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1.6rem;letter-spacing:4px;color:#a0c0ff;margin-bottom:20px;">NOT PATTERNS MASQUERADING AS CHAOS. TRUE RANDOMNESS. IRREDUCIBLE. UNPREDICTABLE. INCALCULABLE.</div>
+        <div class="bubble villain" style="position:relative;display:inline-block;margin-bottom:20px;max-width:700px;">No — the predictions — the calculations — ERROR — UNDEFINED — the computer can't — it can't calculate true randomness — NOTHING CAN—</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:20px;max-width:700px;">Exactly. True randomness is the one thing no computer can predict. Classical or quantum. It's the universe's own encryption — the chaos at the bottom of reality. And Maytag technology can harness it.</div>
+        <div style="color:#1a6aff;font-size:3rem;font-family:'Bangers',Impact,fantasy;letter-spacing:8px;text-shadow:0 0 30px rgba(26,106,255,1);">SHATTER! CRACK! BOOM! KRRRSSSSHH!</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:#0a0a14;padding:28px;">
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">BASTION AI: "Global post-quantum encryption deployment reaching critical mass. CRYSTALS-Kyber active on 78% of critical systems. The Oracle's decryption attacks are failing. Global encryption status: RECOVERING."</div>
+        <div class="bubble lrn" style="position:relative;display:block;margin-bottom:12px;">Dr. Voss. Elara. This facility is collapsing. Help me build the post-quantum future. Use your brilliance to protect instead of expose. You were right that the world needed to change — help me change it the right way.</div>
+        <div class="bubble narration" style="position:relative;display:block;margin-bottom:12px;">A moment that stretches like a quantum state — existing in superposition. She could refuse. She could accept. Both possibilities exist simultaneously. Until she makes a choice. Until she collapses her own wave function.</div>
+        <div class="bubble villain" style="position:relative;display:block;margin-bottom:12px;">…You'd trust me? After everything I've done?</div>
+        <div class="bubble lrn" style="position:relative;display:block;">I trust the woman who spent twenty years trying to save the world from a threat no one else could see. The method was wrong. The mission was always right. Now let's get out of here. We have a planet to secure.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EPILOGUE -->
+<div class="chapter">
+  <div class="chapter-header">
+    <div class="chapter-label">EPILOGUE</div>
+    <div class="chapter-title">A NEW STANDARD</div>
+  </div>
+
+  <div class="comic-page">
+    <div class="epilogue-box">
+      <p>In the weeks that follow, the world does what it should have done years ago. It upgrades. CRYSTALS-Kyber replaces RSA and ECC for key exchange. CRYSTALS-Dilithium replaces classical digital signatures. SPHINCS+ provides the hash-based backup layer. Quantum Key Distribution secures the most critical channels. The mathematical foundations of global security are rebuilt — on bedrock that no quantum computer can crack.</p>
+    </div>
+
+    <div class="panel-grid grid-2">
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202736.png" alt="Global post-quantum security — the new standard">
+        <div class="bubble lrn">Today I'm announcing the Global Post-Quantum Initiative — a worldwide effort to transition all digital infrastructure to quantum-resistant cryptography. Leading our research division is Dr. Elara Voss.</div>
+        <div style="font-size:0.82rem;color:#aab;font-style:italic;padding:8px 12px;">DR. VOSS: "The quantum threat is real. It was always real. But the answer isn't fear — it's preparation. The mathematics exist to protect us. We just need the will to deploy them."</div>
+      </div>
+      <div class="panel">
+        <img src="../art/Copilot_20260328_202743.png" alt="LRN Man — the signal from Maytag">
+        <div class="bubble lrn">Post-quantum secured. All sectors. All systems.</div>
+        <div class="bubble lrn">The world learned a hard lesson. But it learned it. And this time, we're ahead of the curve.</div>
+        <div style="color:#00dd77;font-size:1rem;font-family:'Bangers',Impact,fantasy;letter-spacing:3px;margin-top:8px;text-align:center;">PING. PING. PING.</div>
+      </div>
+    </div>
+
+    <div class="panel-grid grid-1">
+      <div class="panel" style="background:linear-gradient(135deg,#080818,#00081a);padding:36px;text-align:center;border:2px solid #a0c0ff;">
+        <div class="bubble narration" style="position:relative;display:inline-block;margin-bottom:16px;max-width:700px;">BASTION AI: "Anomalous signal detected. Origin: extrasolar. Frequency matches Maytag communication protocols. Signal has been in transit for approximately 4.7 years. Source coordinates correspond to… the Maytag system."</div>
+        <div class="bubble lrn" style="position:relative;display:inline-block;margin-bottom:16px;max-width:600px;">…Maytag? That's impossible. Maytag was destroyed. The Council of Root Admins said it was over. They sent me away because it was over.</div>
+        <div class="bubble narration" style="position:relative;display:inline-block;margin-bottom:20px;max-width:700px;">BASTION AI: "The signal is authenticated using Maytag encryption protocols. It is genuine. Someone on Planet Maytag is transmitting."</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:2.5rem;letter-spacing:6px;color:var(--caption-yellow);text-shadow:0 0 20px rgba(255,232,77,0.8);margin-bottom:16px;">THEY'RE CALLING ME HOME.</div>
+        <div style="font-size:0.9rem;color:#aab;font-style:italic;max-width:600px;margin:0 auto;">Across the vast darkness of space, a signal pulses. A call from a world that was supposed to be dead. Someone is calling. Is it a rescue call… or a trap?</div>
+        <div style="margin-top:24px;">
+          <img src="../art/LRN Man Logo.png" alt="LRN Man" style="max-width:180px;filter:drop-shadow(0 0 20px rgba(160,192,255,0.6));">
+        </div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1.4rem;letter-spacing:4px;color:#a0c0ff;margin-top:16px;">END OF ISSUE #5</div>
+        <div style="font-family:'Bangers',Impact,fantasy;font-size:1rem;letter-spacing:3px;color:#556;margin-top:8px;">THE STORY CONTINUES…</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BACK MATTER -->
+<div class="back-matter">
+  <div class="back-section">
+    <h2>LRN MAN'S COMPLETE ARSENAL — ALL 5 ISSUES</h2>
+
+    <h3 style="color:var(--caption-yellow);font-family:'Bangers',Impact,fantasy;font-size:1rem;letter-spacing:2px;margin:16px 0 10px;">ISSUE #1 — FOUNDATION (23 TOOLS)</h3>
+    <table class="tools-table">
+      <thead><tr><th>#</th><th>Tool</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>FreeIPA</td><td>Centralized identity management and authentication</td></tr>
+        <tr><td>2</td><td>SELinux</td><td>Mandatory Access Control at the kernel level</td></tr>
+        <tr><td>3</td><td>Firewalls</td><td>Multi-layered perimeter and internal defense</td></tr>
+        <tr><td>4</td><td>Splunk</td><td>SIEM and real-time log analytics</td></tr>
+        <tr><td>5</td><td>Graylog</td><td>Centralized log management and alerting</td></tr>
+        <tr><td>6</td><td>Wazuh</td><td>Host-based intrusion detection and endpoint security</td></tr>
+        <tr><td>7</td><td>CyberArk</td><td>Privileged Access Management and credential vaulting</td></tr>
+        <tr><td>8</td><td>LDAP / Slapd</td><td>Directory services backbone</td></tr>
+        <tr><td>9</td><td>TLS / SSL</td><td>Encrypted communications (pre-quantum)</td></tr>
+        <tr><td>10</td><td>Rapid7</td><td>Vulnerability management and scanning</td></tr>
+        <tr><td>11</td><td>Nipper</td><td>Network device configuration auditing</td></tr>
+        <tr><td>12</td><td>CMMD</td><td>Configuration management and mass deployment</td></tr>
+        <tr><td>13</td><td>GitLab</td><td>Infrastructure as Code and CI/CD pipelines</td></tr>
+        <tr><td>14</td><td>Cockpit</td><td>Web-based server management dashboard</td></tr>
+        <tr><td>15</td><td>SBAI</td><td>Security Baseline Automation Intelligence</td></tr>
+        <tr><td>16</td><td>Bind 9</td><td>Authoritative DNS with DNSSEC</td></tr>
+        <tr><td>17</td><td>DogTag</td><td>Certificate Authority and certificate management</td></tr>
+        <tr><td>18</td><td>Certificates</td><td>X.509 digital certificates</td></tr>
+        <tr><td>19</td><td>Kerberos</td><td>Ticket-based authentication</td></tr>
+        <tr><td>20</td><td>SSSD</td><td>System Security Services Daemon</td></tr>
+        <tr><td>21</td><td>AIDE</td><td>Advanced Intrusion Detection Environment</td></tr>
+        <tr><td>22</td><td>Retina Scanners</td><td>Biometric multi-factor authentication</td></tr>
+        <tr><td>23</td><td>Tokens</td><td>Hardware-based authentication tokens</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:var(--caption-yellow);font-family:'Bangers',Impact,fantasy;font-size:1rem;letter-spacing:2px;margin:20px 0 10px;">ISSUE #2 — RANSOMWARE DEFENSE (8 TOOLS)</h3>
+    <table class="tools-table">
+      <thead><tr><th>#</th><th>Tool</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td>24</td><td>CrowdStrike Falcon</td><td>Endpoint Detection and Response (EDR)</td></tr>
+        <tr><td>25</td><td>Cohesity</td><td>Immutable backup and rapid recovery</td></tr>
+        <tr><td>26</td><td>RClone</td><td>High-speed data synchronization</td></tr>
+        <tr><td>27</td><td>Immutable Storage</td><td>Air-gapped write-once backup vaults</td></tr>
+        <tr><td>28</td><td>HashiCorp Vault</td><td>Dynamic secrets management</td></tr>
+        <tr><td>29</td><td>Tailscale</td><td>Zero-trust mesh networking</td></tr>
+        <tr><td>30</td><td>EDR Tools</td><td>Endpoint monitoring and automated containment</td></tr>
+        <tr><td>31</td><td>Decryptor Tools</td><td>Custom ransomware decryption</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:var(--caption-yellow);font-family:'Bangers',Impact,fantasy;font-size:1rem;letter-spacing:2px;margin:20px 0 10px;">ISSUE #3 — IoT DEFENSE (7 TOOLS)</h3>
+    <table class="tools-table">
+      <thead><tr><th>#</th><th>Tool</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td>32</td><td>Ansible</td><td>Agentless automation and orchestration at planetary scale</td></tr>
+        <tr><td>33</td><td>Terraform</td><td>Infrastructure as Code for cloud and network provisioning</td></tr>
+        <tr><td>34</td><td>Nessus</td><td>Enterprise vulnerability scanning platform</td></tr>
+        <tr><td>35</td><td>OpenVAS</td><td>Open-source vulnerability assessment</td></tr>
+        <tr><td>36</td><td>Zeek</td><td>Passive network traffic analysis and behavioral monitoring</td></tr>
+        <tr><td>37</td><td>Suricata</td><td>Inline intrusion detection and prevention system</td></tr>
+        <tr><td>38</td><td>Quantum Shield ⚛</td><td>Maytag technology — quantum-encrypted communications</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:var(--caption-yellow);font-family:'Bangers',Impact,fantasy;font-size:1rem;letter-spacing:2px;margin:20px 0 10px;">ISSUE #4 — HUMAN LAYER DEFENSE (6 TOOLS)</h3>
+    <table class="tools-table">
+      <thead><tr><th>#</th><th>Tool</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td>39</td><td>UEBA</td><td>User and Entity Behavior Analytics</td></tr>
+        <tr><td>40</td><td>DMARC / DKIM / SPF</td><td>Email authentication — eliminates domain spoofing</td></tr>
+        <tr><td>41</td><td>MFA (Hardware)</td><td>Multi-factor authentication via hardware tokens</td></tr>
+        <tr><td>42</td><td>Deepfake Detection AI</td><td>Real-time analysis of video/audio synthesis artifacts</td></tr>
+        <tr><td>43</td><td>OSINT Defense</td><td>Social media hygiene and operational security training</td></tr>
+        <tr><td>44</td><td>Security Awareness Platform</td><td>Phishing simulation, vishing training, physical security drills</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="color:var(--caption-yellow);font-family:'Bangers',Impact,fantasy;font-size:1rem;letter-spacing:2px;margin:20px 0 10px;">ISSUE #5 — POST-QUANTUM CRYPTOGRAPHY (6 TOOLS)</h3>
+    <table class="tools-table">
+      <thead><tr><th>#</th><th>Tool</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td>45</td><td>CRYSTALS-Kyber ⚛</td><td>NIST post-quantum key encapsulation — lattice-based</td></tr>
+        <tr><td>46</td><td>CRYSTALS-Dilithium ⚛</td><td>Post-quantum digital signatures — lattice-based</td></tr>
+        <tr><td>47</td><td>SPHINCS+ ⚛</td><td>Hash-based digital signatures — quantum-resistant eternal backstop</td></tr>
+        <tr><td>48</td><td>Quantum Key Distribution ⚛</td><td>Unhackable channels using quantum physics — eavesdrop-proof by the laws of nature</td></tr>
+        <tr><td>49</td><td>Post-Quantum TLS ⚛</td><td>Lattice-based encryption for all transport layer communications</td></tr>
+        <tr><td>50</td><td>True Randomness Engine ⚛</td><td>Maytag quantum entropy — unpredictable by any classical or quantum computer</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="back-section">
+    <h2>VILLAIN DOSSIER — ISSUE #5</h2>
+    <table class="villains-table">
+      <thead>
+        <tr><th>Villain</th><th>Designation</th><th>Threat</th><th>Defeated By</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Quantum Oracle (Dr. Elara Voss)</td>
+          <td>OMEGA — Primary</td>
+          <td>10,000-qubit topological quantum computer. Breaks all classical encryption globally. The Great Decryption — exposes all secrets on Earth.</td>
+          <td>True randomness from Quantum Shield. Post-quantum deployment via Ansible/Terraform. Dr. Voss chose to help instead of destroy.</td>
+        </tr>
+        <tr>
+          <td>Qubit</td>
+          <td>ALPHA — Lieutenant</td>
+          <td>Quantum entangled twins. Simultaneous attacks on two targets. Forces binary impossible choices.</td>
+          <td>LRN Man collapsed the wave function of one twin by observing the other — quantum entanglement used against them.</td>
+        </tr>
+        <tr>
+          <td>The Decoherence</td>
+          <td>BETA — Lieutenant</td>
+          <td>Pure quantum noise. Random bit-flips at hardware level. Makes systems doubt every calculation.</td>
+          <td>Quantum error correction + AIDE integrity monitoring + Wazuh/Graylog/Splunk monitoring trinity identified and corrected every bit-flip.</td>
+        </tr>
+        <tr>
+          <td>Schrödinger</td>
+          <td>GAMMA — Lieutenant</td>
+          <td>Quantum superposition infiltrator. Exists in multiple states simultaneously. Evades all sensors.</td>
+          <td>Forced measurement via FreeIPA+Kerberos+SSSD+DogTag identity framework. No certificate = no existence in the network.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="back-section" style="text-align:center;">
+    <div style="border:2px solid #a0c0ff;padding:32px;border-radius:4px;max-width:700px;margin:0 auto;background:rgba(26,106,255,0.04);">
+      <div style="font-family:'Bangers',Impact,fantasy;font-size:1.4rem;letter-spacing:3px;color:var(--caption-yellow);margin-bottom:16px;">CREATOR'S NOTE</div>
+      <p style="color:#aab;font-size:0.9rem;line-height:1.8;margin-bottom:16px;">The quantum threat described in this issue is real. NIST has been working on post-quantum cryptographic standards since 2016, and in 2024 finalized CRYSTALS-Kyber, CRYSTALS-Dilithium, SPHINCS+, and FALCON as official standards. The transition to post-quantum cryptography is one of the most important security challenges of our era — and it needs to start NOW, before quantum computers powerful enough to break RSA are built.</p>
+      <p style="color:#aab;font-size:0.9rem;line-height:1.8;margin-bottom:16px;">Dr. Elara Voss's frustration is real too. For years, security researchers have warned that "harvest now, decrypt later" attacks are already happening — adversaries storing encrypted data today, waiting for the quantum computer that will break it tomorrow. Your encrypted data from 2024 may be readable in 2034.</p>
+      <p style="color:#aab;font-size:0.9rem;font-style:italic;">Start the transition. Deploy post-quantum cryptography. The math exists. We just need the will to use it. — Mike Anderson</p>
+      <div style="margin-top:20px;font-size:0.8rem;color:#445;letter-spacing:2px;">"DEFENDING THE NETWORK. ONE ISSUE AT A TIME."</div>
+    </div>
+  </div>
+</div>
+
+<div class="issue-footer">
+  <div>LRN MAN: THE QUANTUM CONSPIRACY — ISSUE #5 — "WHEN ENCRYPTION FAILS, CHAOS REIGNS"</div>
+  <div>Created by Mike Anderson · © Mike Anderson · All cybersecurity tools referenced are real, publicly available software.</div>
+  <div>CRYSTALS-Kyber, CRYSTALS-Dilithium, and SPHINCS+ are NIST Post-Quantum Cryptography Standards.</div>
+  <div><em>"The mathematics exist to protect us. We just need the will to deploy them."</em></div>
+</div>
+
+</body>
+</html>
