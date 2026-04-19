@@ -9,7 +9,7 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    background: #ccc;
+    background: #bbb;
     font-family: 'Bangers', Impact, fantasy;
     display: flex;
     flex-direction: column;
@@ -28,25 +28,21 @@
     font-size: 0.85rem;
     line-height: 1.6;
   }
-
   .instructions h2 { font-size: 1rem; margin-bottom: 8px; }
-  .instructions ul { margin-left: 20px; }
+  .instructions ul  { margin-left: 20px; }
 
-  /* ── PRINT SHEET ── */
   .print-sheet {
     background: white;
     width: 8.5in;
     height: 11in;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: 0.5in 0;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.35);
   }
 
-  /* ── LABEL WRAPPER — centers each disc on the sheet ── */
   .label-wrap {
     display: flex;
     align-items: center;
@@ -56,44 +52,30 @@
     position: relative;
   }
 
-  /* ── THE SVG LABEL ── */
   .label-wrap svg {
     width: 4.72in;
     height: 4.72in;
     overflow: visible;
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.5));
   }
 
-  /* ── CUT GUIDE (screen only) ── */
+  /* Dashed cut-guide on screen only */
   .label-wrap::after {
     content: '';
     position: absolute;
     width: 4.72in;
     height: 4.72in;
     border-radius: 50%;
-    border: 1px dashed #999;
+    border: 1px dashed #888;
     pointer-events: none;
   }
 
-  /* ── PRINT STYLES ── */
   @media print {
-    body {
-      background: white;
-      padding: 0;
-    }
+    body { background: white; padding: 0; }
     .instructions { display: none; }
-    .print-sheet {
-      width: 8.5in;
-      height: 11in;
-      box-shadow: none;
-      page-break-after: avoid;
-    }
+    .print-sheet { width: 8.5in; height: 11in; box-shadow: none; }
     .label-wrap::after { display: none; }
-
-    @page {
-      size: letter;
-      margin: 0;
-    }
+    @page { size: letter; margin: 0; }
   }
 </style>
 </head>
@@ -102,339 +84,359 @@
 <div class="instructions">
   <h2>🖨 LRN Man DVD Label — Print Instructions</h2>
   <ul>
-    <li>Print on <strong>Avery 5692, 8692, 8942</strong> or compatible CD/DVD label sheets (2 per page).</li>
-    <li>Or print on plain paper and use a glue stick / CD label applicator.</li>
-    <li>Set printer to <strong>Actual Size / 100%</strong> — do NOT scale to fit.</li>
-    <li>Each label is exactly <strong>4.72 inches (120mm)</strong> in diameter.</li>
-    <li>Center hole cutout: <strong>0.63 inches (16mm)</strong>.</li>
-    <li>The dashed circle (screen only) is the cut guide — it won't print.</li>
+    <li>Print on <strong>Avery 5692, 8692, 8942</strong> or compatible CD/DVD label sheets (2 labels per sheet).</li>
+    <li>Or print on plain paper/glossy stock and trim to the dashed circle.</li>
+    <li>Set printer to <strong>Actual Size / 100%</strong> — do <em>not</em> scale to fit.</li>
+    <li>Each label is exactly <strong>4.72 inches (120mm)</strong> diameter · center hole <strong>0.63"</strong>.</li>
+    <li>The dashed circle is a screen-only cut guide — it will <em>not</em> appear on your printout.</li>
   </ul>
 </div>
 
 <div class="print-sheet">
 
-  <!-- ═══════════════════════════════════════════════
-       LABEL 1  (top position on Avery sheet)
-  ════════════════════════════════════════════════ -->
+  <!-- ═══════════════════  LABEL 1  ═══════════════════ -->
   <div class="label-wrap">
-    <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg"
-         xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
       <defs>
 
-        <!-- Outer circle clip -->
-        <clipPath id="disc-clip">
+        <!-- Clip to disc outline -->
+        <clipPath id="c1-disc">
           <circle cx="240" cy="240" r="238"/>
         </clipPath>
 
-        <!-- Hub hole clip (remove center) -->
-        <clipPath id="full-clip">
+        <!-- Clip to disc with hub hole -->
+        <clipPath id="c1-full">
           <path fill-rule="evenodd"
             d="M240,2 A238,238 0 1,1 239.999,2 Z
                M240,224 A16,16 0 1,0 240.001,224 Z"/>
         </clipPath>
 
-        <!-- Radial glow for center -->
-        <radialGradient id="bg-grad" cx="50%" cy="50%" r="50%">
-          <stop offset="0%"   stop-color="#0d1a3a"/>
-          <stop offset="60%"  stop-color="#06091a"/>
+        <!-- Background gradient -->
+        <radialGradient id="g1-bg" cx="50%" cy="38%" r="55%">
+          <stop offset="0%"   stop-color="#0e1d40"/>
+          <stop offset="55%"  stop-color="#06091c"/>
           <stop offset="100%" stop-color="#020408"/>
         </radialGradient>
 
-        <!-- Blue rim glow -->
-        <radialGradient id="rim-glow" cx="50%" cy="50%" r="50%">
-          <stop offset="85%"  stop-color="transparent"/>
-          <stop offset="100%" stop-color="#1a4aff" stop-opacity="0.5"/>
+        <!-- Rim glow -->
+        <radialGradient id="g1-rim" cx="50%" cy="50%" r="50%">
+          <stop offset="82%"  stop-color="transparent"/>
+          <stop offset="100%" stop-color="#1040ff" stop-opacity="0.55"/>
         </radialGradient>
 
-        <!-- Curved text paths -->
-        <!-- Top arc (outside → in, going left-to-right across top) -->
-        <path id="arc-top"
-          d="M 60,240 A 180,180 0 0,1 420,240"/>
+        <!-- Logo area dark backing -->
+        <linearGradient id="g1-logobg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#000814" stop-opacity="0.85"/>
+          <stop offset="100%" stop-color="#000814" stop-opacity="0.3"/>
+        </linearGradient>
 
-        <!-- Bottom arc -->
-        <path id="arc-bottom"
-          d="M 80,265 A 165,165 0 0,0 400,265"/>
-
-        <!-- Ring for issue list -->
-        <path id="arc-issues"
-          d="M 110,240 A 130,130 0 0,1 370,240"/>
-
-        <!-- Star field filter -->
-        <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-          <feGaussianBlur stdDeviation="3" result="blur"/>
+        <!-- Filters -->
+        <filter id="f1-glow" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="4" result="blur"/>
           <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
         </filter>
-
-        <filter id="text-glow" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="2.5" result="blur"/>
+        <filter id="f1-logo" x="-10%" y="-10%" width="120%" height="120%">
+          <feGaussianBlur stdDeviation="2" result="blur"/>
           <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
         </filter>
+        <filter id="f1-char" x="-5%" y="-5%" width="110%" height="110%">
+          <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#1a6aff" flood-opacity="0.7"/>
+        </filter>
 
-        <!-- Hex grid pattern -->
-        <pattern id="hex-pattern" x="0" y="0" width="30" height="26" patternUnits="userSpaceOnUse">
+        <!-- Hex grid -->
+        <pattern id="g1-hex" x="0" y="0" width="30" height="26" patternUnits="userSpaceOnUse">
           <polygon points="15,1 29,8.5 29,17.5 15,25 1,17.5 1,8.5"
-            fill="none" stroke="#1a3a6a" stroke-width="0.5" opacity="0.3"/>
+            fill="none" stroke="#1a3a6a" stroke-width="0.5" opacity="0.28"/>
         </pattern>
+
+        <!-- Curved text paths -->
+        <path id="t1-top"    d="M 72,240  A 168,168 0 0,1 408,240"/>
+        <path id="t1-bottom" d="M 68,258  A 172,172 0 0,0 412,258"/>
+        <path id="t1-tools"  d="M 105,257 A 135,135 0 0,0 375,257"/>
 
       </defs>
 
-      <!-- ── BACKGROUND ── -->
-      <g clip-path="url(#full-clip)">
+      <!-- ════ BACKGROUND ════ -->
+      <g clip-path="url(#c1-full)">
 
-        <!-- Deep space base -->
-        <circle cx="240" cy="240" r="238" fill="url(#bg-grad)"/>
+        <circle cx="240" cy="240" r="238" fill="url(#g1-bg)"/>
+        <circle cx="240" cy="240" r="238" fill="url(#g1-hex)"/>
+        <circle cx="240" cy="240" r="238" fill="url(#g1-rim)"/>
 
-        <!-- Hex grid overlay -->
-        <circle cx="240" cy="240" r="238" fill="url(#hex-pattern)"/>
-
-        <!-- Rim glow -->
-        <circle cx="240" cy="240" r="238" fill="url(#rim-glow)"/>
-
-        <!-- Stars — scattered dots -->
-        <g fill="white" opacity="0.6">
-          <circle cx="60"  cy="80"  r="1.2"/><circle cx="120" cy="45"  r="0.8"/>
-          <circle cx="200" cy="35"  r="1.5"/><circle cx="310" cy="55"  r="1"/>
-          <circle cx="390" cy="75"  r="1.3"/><circle cx="430" cy="140" r="0.9"/>
-          <circle cx="440" cy="210" r="1.2"/><circle cx="420" cy="320" r="0.8"/>
-          <circle cx="380" cy="400" r="1.4"/><circle cx="290" cy="440" r="1"/>
-          <circle cx="180" cy="435" r="1.2"/><circle cx="95"  cy="390" r="0.9"/>
-          <circle cx="45"  cy="310" r="1.3"/><circle cx="50"  cy="200" r="0.8"/>
-          <circle cx="75"  cy="155" r="1.1"/><circle cx="155" cy="65"  r="0.7"/>
-          <circle cx="350" cy="130" r="1"/><circle cx="410" cy="270" r="1.2"/>
-          <circle cx="100" cy="260" r="0.9"/><circle cx="340" cy="390" r="1.1"/>
-          <!-- Brighter stars -->
-          <circle cx="85"  cy="120" r="2" opacity="0.9" filter="url(#glow)"/>
-          <circle cx="395" cy="185" r="1.8" opacity="0.9" filter="url(#glow)"/>
-          <circle cx="265" cy="440" r="2.2" opacity="0.9" filter="url(#glow)"/>
-          <circle cx="140" cy="400" r="1.6" opacity="0.9" filter="url(#glow)"/>
+        <!-- Stars -->
+        <g fill="white">
+          <circle cx="58"  cy="82"  r="1.1" opacity=".55"/>
+          <circle cx="118" cy="48"  r="0.7" opacity=".55"/>
+          <circle cx="198" cy="36"  r="1.4" opacity=".6"/>
+          <circle cx="308" cy="52"  r="0.9" opacity=".55"/>
+          <circle cx="388" cy="72"  r="1.2" opacity=".55"/>
+          <circle cx="432" cy="138" r="0.8" opacity=".5"/>
+          <circle cx="442" cy="208" r="1.1" opacity=".55"/>
+          <circle cx="422" cy="318" r="0.7" opacity=".5"/>
+          <circle cx="382" cy="398" r="1.3" opacity=".6"/>
+          <circle cx="292" cy="442" r="0.9" opacity=".55"/>
+          <circle cx="182" cy="436" r="1.1" opacity=".55"/>
+          <circle cx="98"  cy="392" r="0.8" opacity=".5"/>
+          <circle cx="46"  cy="312" r="1.2" opacity=".55"/>
+          <circle cx="52"  cy="202" r="0.7" opacity=".5"/>
+          <circle cx="76"  cy="152" r="1"   opacity=".55"/>
+          <circle cx="152" cy="62"  r="0.6" opacity=".5"/>
+          <!-- Bright stars -->
+          <circle cx="82"  cy="118" r="2"   opacity=".85" filter="url(#f1-glow)"/>
+          <circle cx="392" cy="182" r="1.8" opacity=".85" filter="url(#f1-glow)"/>
+          <circle cx="262" cy="442" r="2.1" opacity=".85" filter="url(#f1-glow)"/>
+          <circle cx="138" cy="398" r="1.6" opacity=".8"  filter="url(#f1-glow)"/>
+          <circle cx="52"  cy="155" r="1.5" opacity=".75" filter="url(#f1-glow)"/>
         </g>
 
-        <!-- Planet Maytag — small distant planet upper-right -->
-        <circle cx="370" cy="85" r="22" fill="#0a2050" opacity="0.8"/>
-        <ellipse cx="370" cy="85" rx="34" ry="7" fill="none" stroke="#2255aa" stroke-width="2" opacity="0.6"/>
-        <circle cx="370" cy="85" r="22" fill="none" stroke="#1a4aaa" stroke-width="1" opacity="0.4"/>
+        <!-- Planet Maytag -->
+        <circle cx="368" cy="80" r="24" fill="#091e4a" opacity="0.85"/>
+        <circle cx="368" cy="80" r="24" fill="none" stroke="#1a4a99" stroke-width="0.8" opacity="0.5"/>
+        <ellipse cx="368" cy="80" rx="37" ry="8" fill="none" stroke="#2255aa" stroke-width="1.8" opacity="0.55"/>
 
-        <!-- Blue energy rings around center -->
-        <circle cx="240" cy="240" r="148" fill="none" stroke="#1a6aff" stroke-width="0.8" opacity="0.25"/>
-        <circle cx="240" cy="240" r="165" fill="none" stroke="#1a6aff" stroke-width="0.5" opacity="0.18"/>
-        <circle cx="240" cy="240" r="110" fill="none" stroke="#0040bb" stroke-width="1" opacity="0.3"/>
+        <!-- Energy rings -->
+        <circle cx="240" cy="240" r="172" fill="none" stroke="#1a6aff" stroke-width="0.7" opacity="0.2"/>
+        <circle cx="240" cy="240" r="155" fill="none" stroke="#1a6aff" stroke-width="0.5" opacity="0.15"/>
+        <circle cx="240" cy="240" r="115" fill="none" stroke="#0840bb" stroke-width="1"   opacity="0.22"/>
 
-        <!-- ── ARTWORK: LRN Man character ── -->
+        <!-- ══ LRN MAN CHARACTER — center stage ══ -->
         <image href="../art/LRN Man.png"
-          x="140" y="100" width="200" height="200"
-          clip-path="url(#disc-clip)"
+          x="130" y="148" width="220" height="220"
+          clip-path="url(#c1-disc)"
           preserveAspectRatio="xMidYMid meet"
-          opacity="0.95"/>
+          filter="url(#f1-char)"
+          opacity="1"/>
 
-        <!-- ── LOGO below character ── -->
+        <!-- ══ LRN MAN LOGO — top, prominent ══ -->
+        <!-- Dark backing so logo reads on starfield -->
+        <rect x="78" y="34" width="324" height="110" rx="8"
+              fill="url(#g1-logobg)"/>
+        <!-- Logo image — full width, top of disc -->
         <image href="../art/LRN Man Logo.png"
-          x="155" y="295" width="170" height="85"
+          x="78" y="36" width="324" height="108"
           preserveAspectRatio="xMidYMid meet"
-          opacity="0.9"/>
+          filter="url(#f1-logo)"
+          opacity="1"/>
 
-        <!-- ── CURVED TOP TEXT: MIKE ANDERSON PRESENTS ── -->
-        <path id="arc-top-label"
-          d="M 75,240 A 165,165 0 0,1 405,240"/>
-        <text font-family="'Bangers',Impact,fantasy" font-size="15"
-              fill="#6688bb" letter-spacing="4">
-          <textPath href="#arc-top-label" startOffset="50%" text-anchor="middle">
+        <!-- ══ CURVED TOP ARC: MIKE ANDERSON PRESENTS ══ -->
+        <text font-family="'Bangers',Impact,fantasy" font-size="14"
+              fill="#5577aa" letter-spacing="4.5">
+          <textPath href="#t1-top" startOffset="50%" text-anchor="middle">
             MIKE ANDERSON PRESENTS
           </textPath>
         </text>
 
-        <!-- ── CURVED BOTTOM TEXT: DEFENDER OF THE NETWORK ── -->
-        <path id="arc-bot-label"
-          d="M 72,255 A 168,168 0 0,0 408,255"/>
-        <text font-family="'Bangers',Impact,fantasy" font-size="15"
-              fill="#ffe84d" letter-spacing="3" filter="url(#text-glow)">
-          <textPath href="#arc-bot-label" startOffset="50%" text-anchor="middle">
-            DEFENDER OF THE NETWORK
+        <!-- ══ CURVED BOTTOM: DEFENDER OF THE NETWORK ══ -->
+        <text font-family="'Bangers',Impact,fantasy" font-size="15.5"
+              fill="#ffe84d" letter-spacing="3.5" filter="url(#f1-glow)">
+          <textPath href="#t1-bottom" startOffset="50%" text-anchor="middle">
+            DEFENDER  OF  THE  NETWORK
           </textPath>
         </text>
 
-        <!-- ── ISSUE COUNT BADGE ── -->
-        <rect x="178" y="383" width="124" height="24" rx="3"
-              fill="#1a6aff" opacity="0.85"/>
-        <text x="240" y="399" text-anchor="middle"
-              font-family="'Bangers',Impact,fantasy" font-size="13"
+        <!-- ══ INNER ARC: TOOL COUNT ══ -->
+        <text font-family="'Bangers',Impact,fantasy" font-size="9.5"
+              fill="#00dd77" letter-spacing="2" opacity="0.85">
+          <textPath href="#t1-tools" startOffset="50%" text-anchor="middle">
+            50+ REAL CYBERSECURITY TOOLS · 5 ISSUES · COMPLETE SERIES
+          </textPath>
+        </text>
+
+        <!-- ══ BADGE STRIP ══ -->
+        <rect x="148" y="376" width="184" height="26" rx="4"
+              fill="#1a6aff" opacity="0.9"/>
+        <rect x="149" y="377" width="182" height="24" rx="3"
+              fill="none" stroke="#7aafff" stroke-width="0.8" opacity="0.5"/>
+        <text x="240" y="393" text-anchor="middle"
+              font-family="'Bangers',Impact,fantasy" font-size="13.5"
               fill="white" letter-spacing="2">
           5-ISSUE COMPLETE SERIES
         </text>
 
-        <!-- ── CYBERSECURITY TOOLS BAND ── -->
-        <path id="arc-tools"
-          d="M 103,255 A 137,137 0 0,0 377,255"/>
-        <text font-family="'Bangers',Impact,fantasy" font-size="9.5"
-              fill="#00dd77" letter-spacing="1.5" opacity="0.9">
-          <textPath href="#arc-tools" startOffset="50%" text-anchor="middle">
-            50+ REAL CYBERSECURITY TOOLS
-          </textPath>
-        </text>
+        <!-- ══ OUTER RIM ══ -->
+        <circle cx="240" cy="240" r="231" fill="none" stroke="#1a6aff" stroke-width="3.5" opacity="0.55"/>
+        <circle cx="240" cy="240" r="227" fill="none" stroke="#000510" stroke-width="2.5"/>
 
-        <!-- ── OUTER RIM LABEL ── -->
-        <circle cx="240" cy="240" r="230" fill="none" stroke="#1a6aff" stroke-width="4" opacity="0.6"/>
-        <circle cx="240" cy="240" r="226" fill="none" stroke="#000822" stroke-width="3"/>
-
-        <!-- Tiny tech marks on rim -->
-        <g stroke="#1a6aff" stroke-width="1" opacity="0.5">
-          <line x1="240" y1="10"  x2="240" y2="20"/>
-          <line x1="240" y1="460" x2="240" y2="470"/>
-          <line x1="10"  y1="240" x2="20"  y2="240"/>
-          <line x1="460" y1="240" x2="470" y2="240"/>
-          <line x1="58"  y1="58"  x2="65"  y2="65"/>
-          <line x1="422" y1="58"  x2="415" y2="65"/>
-          <line x1="58"  y1="422" x2="65"  y2="415"/>
-          <line x1="422" y1="422" x2="415" y2="415"/>
+        <!-- Tick marks -->
+        <g stroke="#1a6aff" stroke-width="1.2" opacity="0.6">
+          <line x1="240" y1="10"  x2="240" y2="22"/>
+          <line x1="240" y1="458" x2="240" y2="470"/>
+          <line x1="10"  y1="240" x2="22"  y2="240"/>
+          <line x1="458" y1="240" x2="470" y2="240"/>
+          <line x1="59"  y1="59"  x2="67"  y2="67"/>
+          <line x1="421" y1="59"  x2="413" y2="67"/>
+          <line x1="59"  y1="421" x2="67"  y2="413"/>
+          <line x1="421" y1="421" x2="413" y2="413"/>
         </g>
 
-        <!-- ── HUB AREA ── -->
-        <!-- White hub ring (matching physical disc hub) -->
-        <circle cx="240" cy="240" r="32" fill="#111833" stroke="#334477" stroke-width="1.5"/>
-        <circle cx="240" cy="240" r="28" fill="#0d1220"/>
-        <!-- LRN initials in hub -->
-        <text x="240" y="245" text-anchor="middle" dominant-baseline="middle"
-              font-family="'Bangers',Impact,fantasy" font-size="16"
-              fill="#1a6aff" letter-spacing="2" filter="url(#glow)">LRN</text>
+        <!-- ══ HUB RING ══ -->
+        <circle cx="240" cy="240" r="34" fill="#0b1428" stroke="#2a4488" stroke-width="1.5"/>
+        <circle cx="240" cy="240" r="29" fill="#080e1e"/>
+        <text x="240" y="244" text-anchor="middle" dominant-baseline="middle"
+              font-family="'Bangers',Impact,fantasy" font-size="15"
+              fill="#1a6aff" letter-spacing="2" filter="url(#f1-glow)">LRN</text>
 
-        <!-- ── CENTER HOLE ── -->
+        <!-- ══ CENTER HOLE ══ -->
         <circle cx="240" cy="240" r="16" fill="white"/>
 
       </g>
-
-      <!-- Outer cut ring (visible for trimming, won't print on label stock) -->
-      <circle cx="240" cy="240" r="238" fill="none" stroke="#cccccc" stroke-width="0.5"
-              stroke-dasharray="4,4" class="cut-guide"/>
-
     </svg>
   </div>
 
-  <!-- ═══════════════════════════════════════════════
-       LABEL 2  (bottom position — identical)
-  ════════════════════════════════════════════════ -->
+  <!-- ═══════════════════  LABEL 2  ═══════════════════ -->
   <div class="label-wrap">
     <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <clipPath id="disc-clip2">
+        <clipPath id="c2-disc">
           <circle cx="240" cy="240" r="238"/>
         </clipPath>
-        <clipPath id="full-clip2">
+        <clipPath id="c2-full">
           <path fill-rule="evenodd"
             d="M240,2 A238,238 0 1,1 239.999,2 Z
                M240,224 A16,16 0 1,0 240.001,224 Z"/>
         </clipPath>
-        <radialGradient id="bg-grad2" cx="50%" cy="50%" r="50%">
-          <stop offset="0%"   stop-color="#0d1a3a"/>
-          <stop offset="60%"  stop-color="#06091a"/>
+        <radialGradient id="g2-bg" cx="50%" cy="38%" r="55%">
+          <stop offset="0%"   stop-color="#0e1d40"/>
+          <stop offset="55%"  stop-color="#06091c"/>
           <stop offset="100%" stop-color="#020408"/>
         </radialGradient>
-        <radialGradient id="rim-glow2" cx="50%" cy="50%" r="50%">
-          <stop offset="85%"  stop-color="transparent"/>
-          <stop offset="100%" stop-color="#1a4aff" stop-opacity="0.5"/>
+        <radialGradient id="g2-rim" cx="50%" cy="50%" r="50%">
+          <stop offset="82%"  stop-color="transparent"/>
+          <stop offset="100%" stop-color="#1040ff" stop-opacity="0.55"/>
         </radialGradient>
-        <pattern id="hex-pattern2" x="0" y="0" width="30" height="26" patternUnits="userSpaceOnUse">
+        <linearGradient id="g2-logobg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#000814" stop-opacity="0.85"/>
+          <stop offset="100%" stop-color="#000814" stop-opacity="0.3"/>
+        </linearGradient>
+        <filter id="f2-glow" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="4" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="f2-logo" x="-10%" y="-10%" width="120%" height="120%">
+          <feGaussianBlur stdDeviation="2" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <filter id="f2-char" x="-5%" y="-5%" width="110%" height="110%">
+          <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#1a6aff" flood-opacity="0.7"/>
+        </filter>
+        <pattern id="g2-hex" x="0" y="0" width="30" height="26" patternUnits="userSpaceOnUse">
           <polygon points="15,1 29,8.5 29,17.5 15,25 1,17.5 1,8.5"
-            fill="none" stroke="#1a3a6a" stroke-width="0.5" opacity="0.3"/>
+            fill="none" stroke="#1a3a6a" stroke-width="0.5" opacity="0.28"/>
         </pattern>
-        <filter id="glow2" x="-30%" y="-30%" width="160%" height="160%">
-          <feGaussianBlur stdDeviation="3" result="blur"/>
-          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
-        <filter id="text-glow2" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="2.5" result="blur"/>
-          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
+        <path id="t2-top"    d="M 72,240  A 168,168 0 0,1 408,240"/>
+        <path id="t2-bottom" d="M 68,258  A 172,172 0 0,0 412,258"/>
+        <path id="t2-tools"  d="M 105,257 A 135,135 0 0,0 375,257"/>
       </defs>
 
-      <g clip-path="url(#full-clip2)">
-        <circle cx="240" cy="240" r="238" fill="url(#bg-grad2)"/>
-        <circle cx="240" cy="240" r="238" fill="url(#hex-pattern2)"/>
-        <circle cx="240" cy="240" r="238" fill="url(#rim-glow2)"/>
+      <g clip-path="url(#c2-full)">
 
-        <g fill="white" opacity="0.6">
-          <circle cx="60"  cy="80"  r="1.2"/><circle cx="120" cy="45"  r="0.8"/>
-          <circle cx="200" cy="35"  r="1.5"/><circle cx="310" cy="55"  r="1"/>
-          <circle cx="390" cy="75"  r="1.3"/><circle cx="430" cy="140" r="0.9"/>
-          <circle cx="440" cy="210" r="1.2"/><circle cx="420" cy="320" r="0.8"/>
-          <circle cx="380" cy="400" r="1.4"/><circle cx="290" cy="440" r="1"/>
-          <circle cx="180" cy="435" r="1.2"/><circle cx="95"  cy="390" r="0.9"/>
-          <circle cx="45"  cy="310" r="1.3"/><circle cx="50"  cy="200" r="0.8"/>
-          <circle cx="85"  cy="120" r="2" opacity="0.9" filter="url(#glow2)"/>
-          <circle cx="395" cy="185" r="1.8" opacity="0.9" filter="url(#glow2)"/>
-          <circle cx="265" cy="440" r="2.2" opacity="0.9" filter="url(#glow2)"/>
+        <circle cx="240" cy="240" r="238" fill="url(#g2-bg)"/>
+        <circle cx="240" cy="240" r="238" fill="url(#g2-hex)"/>
+        <circle cx="240" cy="240" r="238" fill="url(#g2-rim)"/>
+
+        <g fill="white">
+          <circle cx="58"  cy="82"  r="1.1" opacity=".55"/>
+          <circle cx="118" cy="48"  r="0.7" opacity=".55"/>
+          <circle cx="198" cy="36"  r="1.4" opacity=".6"/>
+          <circle cx="308" cy="52"  r="0.9" opacity=".55"/>
+          <circle cx="388" cy="72"  r="1.2" opacity=".55"/>
+          <circle cx="432" cy="138" r="0.8" opacity=".5"/>
+          <circle cx="442" cy="208" r="1.1" opacity=".55"/>
+          <circle cx="422" cy="318" r="0.7" opacity=".5"/>
+          <circle cx="382" cy="398" r="1.3" opacity=".6"/>
+          <circle cx="292" cy="442" r="0.9" opacity=".55"/>
+          <circle cx="182" cy="436" r="1.1" opacity=".55"/>
+          <circle cx="98"  cy="392" r="0.8" opacity=".5"/>
+          <circle cx="46"  cy="312" r="1.2" opacity=".55"/>
+          <circle cx="52"  cy="202" r="0.7" opacity=".5"/>
+          <circle cx="82"  cy="118" r="2"   opacity=".85" filter="url(#f2-glow)"/>
+          <circle cx="392" cy="182" r="1.8" opacity=".85" filter="url(#f2-glow)"/>
+          <circle cx="262" cy="442" r="2.1" opacity=".85" filter="url(#f2-glow)"/>
+          <circle cx="138" cy="398" r="1.6" opacity=".8"  filter="url(#f2-glow)"/>
         </g>
 
-        <circle cx="370" cy="85" r="22" fill="#0a2050" opacity="0.8"/>
-        <ellipse cx="370" cy="85" rx="34" ry="7" fill="none" stroke="#2255aa" stroke-width="2" opacity="0.6"/>
+        <circle cx="368" cy="80" r="24" fill="#091e4a" opacity="0.85"/>
+        <circle cx="368" cy="80" r="24" fill="none" stroke="#1a4a99" stroke-width="0.8" opacity="0.5"/>
+        <ellipse cx="368" cy="80" rx="37" ry="8" fill="none" stroke="#2255aa" stroke-width="1.8" opacity="0.55"/>
 
-        <circle cx="240" cy="240" r="148" fill="none" stroke="#1a6aff" stroke-width="0.8" opacity="0.25"/>
-        <circle cx="240" cy="240" r="165" fill="none" stroke="#1a6aff" stroke-width="0.5" opacity="0.18"/>
-        <circle cx="240" cy="240" r="110" fill="none" stroke="#0040bb" stroke-width="1" opacity="0.3"/>
+        <circle cx="240" cy="240" r="172" fill="none" stroke="#1a6aff" stroke-width="0.7" opacity="0.2"/>
+        <circle cx="240" cy="240" r="155" fill="none" stroke="#1a6aff" stroke-width="0.5" opacity="0.15"/>
+        <circle cx="240" cy="240" r="115" fill="none" stroke="#0840bb" stroke-width="1"   opacity="0.22"/>
 
         <image href="../art/LRN Man.png"
-          x="140" y="100" width="200" height="200"
-          clip-path="url(#disc-clip2)"
+          x="130" y="148" width="220" height="220"
+          clip-path="url(#c2-disc)"
           preserveAspectRatio="xMidYMid meet"
-          opacity="0.95"/>
+          filter="url(#f2-char)"
+          opacity="1"/>
 
+        <!-- ══ LRN MAN LOGO — top, prominent ══ -->
+        <rect x="78" y="34" width="324" height="110" rx="8"
+              fill="url(#g2-logobg)"/>
         <image href="../art/LRN Man Logo.png"
-          x="155" y="295" width="170" height="85"
+          x="78" y="36" width="324" height="108"
           preserveAspectRatio="xMidYMid meet"
-          opacity="0.9"/>
+          filter="url(#f2-logo)"
+          opacity="1"/>
 
-        <path id="arc-top-label2" d="M 75,240 A 165,165 0 0,1 405,240"/>
-        <text font-family="'Bangers',Impact,fantasy" font-size="15" fill="#6688bb" letter-spacing="4">
-          <textPath href="#arc-top-label2" startOffset="50%" text-anchor="middle">
+        <text font-family="'Bangers',Impact,fantasy" font-size="14"
+              fill="#5577aa" letter-spacing="4.5">
+          <textPath href="#t2-top" startOffset="50%" text-anchor="middle">
             MIKE ANDERSON PRESENTS
           </textPath>
         </text>
 
-        <path id="arc-bot-label2" d="M 72,255 A 168,168 0 0,0 408,255"/>
-        <text font-family="'Bangers',Impact,fantasy" font-size="15"
-              fill="#ffe84d" letter-spacing="3" filter="url(#text-glow2)">
-          <textPath href="#arc-bot-label2" startOffset="50%" text-anchor="middle">
-            DEFENDER OF THE NETWORK
+        <text font-family="'Bangers',Impact,fantasy" font-size="15.5"
+              fill="#ffe84d" letter-spacing="3.5" filter="url(#f2-glow)">
+          <textPath href="#t2-bottom" startOffset="50%" text-anchor="middle">
+            DEFENDER  OF  THE  NETWORK
           </textPath>
         </text>
 
-        <rect x="178" y="383" width="124" height="24" rx="3" fill="#1a6aff" opacity="0.85"/>
-        <text x="240" y="399" text-anchor="middle"
-              font-family="'Bangers',Impact,fantasy" font-size="13"
-              fill="white" letter-spacing="2">5-ISSUE COMPLETE SERIES</text>
-
-        <path id="arc-tools2" d="M 103,255 A 137,137 0 0,0 377,255"/>
         <text font-family="'Bangers',Impact,fantasy" font-size="9.5"
-              fill="#00dd77" letter-spacing="1.5" opacity="0.9">
-          <textPath href="#arc-tools2" startOffset="50%" text-anchor="middle">
-            50+ REAL CYBERSECURITY TOOLS
+              fill="#00dd77" letter-spacing="2" opacity="0.85">
+          <textPath href="#t2-tools" startOffset="50%" text-anchor="middle">
+            50+ REAL CYBERSECURITY TOOLS · 5 ISSUES · COMPLETE SERIES
           </textPath>
         </text>
 
-        <circle cx="240" cy="240" r="230" fill="none" stroke="#1a6aff" stroke-width="4" opacity="0.6"/>
-        <circle cx="240" cy="240" r="226" fill="none" stroke="#000822" stroke-width="3"/>
+        <rect x="148" y="376" width="184" height="26" rx="4"
+              fill="#1a6aff" opacity="0.9"/>
+        <rect x="149" y="377" width="182" height="24" rx="3"
+              fill="none" stroke="#7aafff" stroke-width="0.8" opacity="0.5"/>
+        <text x="240" y="393" text-anchor="middle"
+              font-family="'Bangers',Impact,fantasy" font-size="13.5"
+              fill="white" letter-spacing="2">
+          5-ISSUE COMPLETE SERIES
+        </text>
 
-        <g stroke="#1a6aff" stroke-width="1" opacity="0.5">
-          <line x1="240" y1="10"  x2="240" y2="20"/>
-          <line x1="240" y1="460" x2="240" y2="470"/>
-          <line x1="10"  y1="240" x2="20"  y2="240"/>
-          <line x1="460" y1="240" x2="470" y2="240"/>
-          <line x1="58"  y1="58"  x2="65"  y2="65"/>
-          <line x1="422" y1="58"  x2="415" y2="65"/>
-          <line x1="58"  y1="422" x2="65"  y2="415"/>
-          <line x1="422" y1="422" x2="415" y2="415"/>
+        <circle cx="240" cy="240" r="231" fill="none" stroke="#1a6aff" stroke-width="3.5" opacity="0.55"/>
+        <circle cx="240" cy="240" r="227" fill="none" stroke="#000510" stroke-width="2.5"/>
+
+        <g stroke="#1a6aff" stroke-width="1.2" opacity="0.6">
+          <line x1="240" y1="10"  x2="240" y2="22"/>
+          <line x1="240" y1="458" x2="240" y2="470"/>
+          <line x1="10"  y1="240" x2="22"  y2="240"/>
+          <line x1="458" y1="240" x2="470" y2="240"/>
+          <line x1="59"  y1="59"  x2="67"  y2="67"/>
+          <line x1="421" y1="59"  x2="413" y2="67"/>
+          <line x1="59"  y1="421" x2="67"  y2="413"/>
+          <line x1="421" y1="421" x2="413" y2="413"/>
         </g>
 
-        <circle cx="240" cy="240" r="32" fill="#111833" stroke="#334477" stroke-width="1.5"/>
-        <circle cx="240" cy="240" r="28" fill="#0d1220"/>
-        <text x="240" y="245" text-anchor="middle" dominant-baseline="middle"
-              font-family="'Bangers',Impact,fantasy" font-size="16"
-              fill="#1a6aff" letter-spacing="2" filter="url(#glow2)">LRN</text>
+        <circle cx="240" cy="240" r="34" fill="#0b1428" stroke="#2a4488" stroke-width="1.5"/>
+        <circle cx="240" cy="240" r="29" fill="#080e1e"/>
+        <text x="240" y="244" text-anchor="middle" dominant-baseline="middle"
+              font-family="'Bangers',Impact,fantasy" font-size="15"
+              fill="#1a6aff" letter-spacing="2" filter="url(#f2-glow)">LRN</text>
 
         <circle cx="240" cy="240" r="16" fill="white"/>
+
       </g>
     </svg>
   </div>
 
-</div><!-- end print-sheet -->
+</div><!-- /print-sheet -->
 
 </body>
 </html>
